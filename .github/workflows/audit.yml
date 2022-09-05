@@ -2,7 +2,7 @@ name: Audit Data Repository
 on:
   push:
     branches:
-      - 'main'
+      - 'master'
 jobs:
   book-keeping:
     if: github.repository == 'uva-bi-sdad/sdc.broadband_dev'
