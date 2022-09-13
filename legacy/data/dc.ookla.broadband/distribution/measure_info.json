@@ -1,7 +1,7 @@
 {
   "speed_measurements:avg_down_using_devices": {
     "category": "Broadband",
-    "measure_table": "dmv_cttrbg_ookla_2019_2021q3_speed_measurements",
+    "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
     "full_name": "speed_measurements:avg_down_using_devices",
     "measure": "avg_down_using_devices",
     "short_name": "Average Download Speed",
@@ -9,7 +9,7 @@
     "short_description": "Average download speed weighted by number of devices.",
     "statement": "The average download speed is {value} in {features.name}.",
     "type": "internet speed",
-    "equity_category" : "Availability",
+    "equity_category": "Availability",
     "sources": [
       {
         "name": "Ookla",
@@ -20,7 +20,7 @@
   },
   "percent_above_threshold:perc_total_100_20_using_devices": {
     "category": "Broadband",
-    "measure_table": "dmv_cttrbg_sdad_2019_2021q3_percent_above_threshold",
+    "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
     "full_name": "percent_above_threshold:perc_total_100_20_using_devices",
     "measure": "perc_total_100_20_using_devices",
     "short_name": "Percent Fast (total)",
@@ -28,7 +28,7 @@
     "short_description": "Percent of the total population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
     "statement": "{value} of the total population in {features.name} has a fast internet speed.",
     "type": "percent",
-    "equity_category" : "Availability",
+    "equity_category": "Availability",
     "sources": [
       {
         "name": "Ookla",
@@ -39,7 +39,7 @@
   },
   "percent_above_threshold:perc_total_25_3_using_devices": {
     "category": "Broadband",
-    "measure_table": "dmv_cttrbg_sdad_2019_2021q3_percent_above_threshold",
+    "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
     "full_name": "percent_above_threshold:perc_total_25_3_using_devices",
     "measure": "perc_total_25_3_using_devices",
     "short_name": "Percent Good (total)",
@@ -47,7 +47,7 @@
     "short_description": "Percent of the total population with a good internet speed (above 25/3 MB/s, able to stream video or online game for one device).",
     "statement": "{value} of the total population in {features.name} has a good internet speed.",
     "type": "percent",
-    "equity_category" : "Availability",
+    "equity_category": "Availability",
     "sources": [
       {
         "name": "Ookla",
@@ -58,7 +58,7 @@
   },
   "percent_above_threshold:perc_w_int_100_20_using_devices": {
     "category": "Broadband",
-    "measure_table": "dmv_cttrbg_sdad_2019_2021q3_percent_above_threshold",
+    "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
     "full_name": "percent_above_threshold:perc_w_int_100_20_using_devices",
     "measure": "perc_w_int_100_20_using_devices",
     "short_name": "Percent Fast (internet-connected)",
@@ -66,7 +66,7 @@
     "short_description": "Percent of the internet-connected population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
     "statement": "{value} of the internet-connected population in {features.name} has a fast internet speed.",
     "type": "percent",
-    "equity_category" : "Availability",
+    "equity_category": "Availability",
     "sources": [
       {
         "name": "Ookla",
@@ -77,7 +77,7 @@
   },
   "percent_above_threshold:perc_w_int_25_3_using_devices": {
     "category": "Broadband",
-    "measure_table": "dmv_cttrbg_sdad_2019_2021q3_percent_above_threshold",
+    "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
     "full_name": "percent_above_threshold:perc_w_int_25_3_using_devices",
     "measure": "perc_w_int_25_3_using_devices",
     "short_name": "Percent Good (internet-connected)",
@@ -85,7 +85,7 @@
     "short_description": "Percent of the internet-connected population with a good internet speed (above 25/3 MB/s, able to stream video or online game for one device).",
     "statement": "{value} of the internet-connected population in {features.name} has a good internet speed.",
     "type": "percent",
-    "equity_category" : "Availability",
+    "equity_category": "Availability",
     "sources": [
       {
         "name": "Ookla",
@@ -96,7 +96,7 @@
   },
   "speed_measurements:avg_up_using_devices": {
     "category": "Broadband",
-    "measure_table": "dmv_cttrbg_ookla_2019_2021q3_speed_measurements",
+    "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
     "full_name": "speed_measurements:avg_up_using_devices",
     "measure": "avg_up_using_devices",
     "short_name": "Average Upload Speed",
@@ -104,7 +104,7 @@
     "short_description": "Average upload speed weighted by number of devices.",
     "statement": "The average upload speed is {value} in {features.name}.",
     "type": "internet speed",
-    "equity_category" : "Availability",
+    "equity_category": "Availability",
     "sources": [
       {
         "name": "Ookla",
@@ -115,7 +115,7 @@
   },
   "speed_measurements:devices": {
     "category": "Broadband",
-    "measure_table": "dmv_cttrbg_ookla_2019_2021q3_speed_measurements",
+    "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
     "full_name": "speed_measurements:devices",
     "measure": "devices",
     "short_name": "Number of devices",
@@ -123,7 +123,7 @@
     "short_description": "The number of unique devices accessing Ookla Internet speed tests.",
     "statement": "There are {value} unique devices in {features.name} accessing Ookla Internet speed tests.",
     "type": "count",
-    "equity_category" : "Accessibility",
+    "equity_category": "Accessibility",
     "sources": [
       {
         "name": "Ookla",
