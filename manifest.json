@@ -1,14 +1,1199 @@
 {
   "name": "sdc.broadband_dev",
   "measure_not_found": 15,
-  "count": 85,
-  "utc_audited": "2022-09-14 19:10:34",
+  "count": 56,
+  "utc_audited": "2022-10-05 15:31:19",
   "data": [
     {
-      "name": "ncr_cttrbg_2021_broadband_now_internet_package_price.csv.xz",
-      "path": "legacy/data/dc.broadbandnow.broadband.prices/distribution/ncr_cttrbg_2021_broadband_now_internet_package_price.csv.xz",
-      "md5": "cea0cb0b482972a2f580bec109078012",
-      "size": 107388
+      "name": "measure_info.json",
+      "path": "Wired/Accessibility/Average Upload Speed/data/distribution/measure_info.json",
+      "md5": "51538d4e8cb9dbd43b9170142f38476d",
+      "size": 635
+    },
+    {
+      "name": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
+      "path": "Wired/Accessibility/Average Upload Speed/data/distribution/dcmdva_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
+      "md5": "4f289aa947ffbe684cfce3dab4ff25a6",
+      "size": 455400,
+      "measure_info": [
+        "avg_up_using_devices"
+      ]
+    },
+    {
+      "name": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+      "path": "Wired/Accessibility/Percent Good (total)/data/distribution/dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+      "md5": "41f164a77e597edb760a2759148cdbe5",
+      "size": 459984
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Wired/Accessibility/Percent Good (total)/data/distribution/measure_info.json",
+      "md5": "209fcf1078448d48d647169809cb67f0",
+      "size": 792
+    },
+    {
+      "name": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+      "path": "Wired/Accessibility/Percent Fast (internet-connected)/data/distribution/dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+      "md5": "84815a15b628d306df4b3f1d11f5b5ad",
+      "size": 477040
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Wired/Accessibility/Percent Fast (internet-connected)/data/distribution/measure_info.json",
+      "md5": "e969083aec21da69e6383f94a2664807",
+      "size": 875
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Wired/Accessibility/Average Download Speed/data/distribution/measure_info.json",
+      "md5": "3b9e2505dd4cd7cb53d909f5d0114e14",
+      "size": 647
+    },
+    {
+      "name": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
+      "path": "Wired/Accessibility/Average Download Speed/data/distribution/dcmdva_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
+      "md5": "614486f5b8dafdf250c5e99fff6ca3ad",
+      "size": 458628,
+      "measure_info": [
+        "avg_down_using_devices"
+      ]
+    },
+    {
+      "name": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+      "path": "Wired/Accessibility/Percent Fast (total)/data/distribution/dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+      "md5": "878a2f88df5a4228009dbe7348c10188",
+      "size": 477180
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Wired/Accessibility/Percent Fast (total)/data/distribution/measure_info.json",
+      "md5": "6c95c7860f21215eab3c1c3065bfcf62",
+      "size": 823
+    },
+    {
+      "name": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+      "path": "Wired/Accessibility/Percent Good (internet-connected)/data/distribution/dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+      "md5": "40b41948e019d337487890e267293513",
+      "size": 457848
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Wired/Accessibility/Percent Good (internet-connected)/data/distribution/measure_info.json",
+      "md5": "b54f805945f907afb1139e832675a1c1",
+      "size": 844
+    },
+    {
+      "name": "dcmdva_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
+      "path": "Wired/Affordability/Percentage of income for good internet/data/distribution/dcmdva_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
+      "md5": "94b8435aba3c6327f6d05afb5eb232ee",
+      "size": 193552
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Wired/Affordability/Percentage of income for good internet/data/distribution/measure_info.json",
+      "md5": "5938cd9ea018eb7d2671968a87f90fad",
+      "size": 1071
+    },
+    {
+      "name": "dcmdva_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
+      "path": "Wired/Affordability/Percentage of income for internet (average)/data/distribution/dcmdva_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
+      "md5": "c71d3b99e447d84fea1405ee8780e704",
+      "size": 192668
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Wired/Affordability/Percentage of income for internet (average)/data/distribution/measure_info.json",
+      "md5": "c16512b7e68f650fa36bea5b52436b61",
+      "size": 1070
+    },
+    {
+      "name": "dcmdva_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
+      "path": "Wired/Affordability/Percentage of income for fast internet/data/distribution/dcmdva_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
+      "md5": "1cba2936e59d21fdb7a92d9c29c35636",
+      "size": 190544
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Wired/Affordability/Percentage of income for fast internet/data/distribution/measure_info.json",
+      "md5": "178c78a2881842f41d2bbe9bb30a61f9",
+      "size": 1073
+    },
+    {
+      "name": "dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+      "path": "Wired/Adoption/Households without a computer/data/distribution/dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+      "md5": "b4e4bb2f7c65446d712254a415decaae",
+      "size": 420844
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Wired/Adoption/Households without a computer/data/distribution/measure_info.json",
+      "md5": "f0c9470d4c9f058eb55cdde818525893",
+      "size": 960
+    },
+    {
+      "name": "dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+      "path": "Wired/Adoption/Households without internet access/data/distribution/dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+      "md5": "d305b430e9192de1e09e0761b6301ece",
+      "size": 428832
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Wired/Adoption/Households without internet access/data/distribution/measure_info.json",
+      "md5": "190ae91d3dc576e678967d0f8fadf058",
+      "size": 952
+    },
+    {
+      "name": "dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+      "path": "Wired/Adoption/Households with broadband/data/distribution/dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+      "md5": "e460261e329d800d5ec42267d87bc4fc",
+      "size": 433728
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Wired/Adoption/Households with broadband/data/distribution/measure_info.json",
+      "md5": "90e23cac0adfe4244300d3ad5a58094f",
+      "size": 1058
+    },
+    {
+      "name": "dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+      "path": "Wired/Adoption/Households with cable, fiber optic, or DSL/data/distribution/dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+      "md5": "7178c07a836eec49349d02d420ad12b0",
+      "size": 8168
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Wired/Adoption/Households with cable, fiber optic, or DSL/data/distribution/measure_info.json",
+      "md5": "3d9c84ef5b1b0c626e8b3967dd006ecc",
+      "size": 1161
+    },
+    {
+      "name": "ncr_cttrbg_2019_2021_speed_measurements_fixed.csv.xz",
+      "path": "legacy/data/dc.ookla.broadband/distribution/ncr_cttrbg_2019_2021_speed_measurements_fixed.csv.xz",
+      "md5": "f1690ae69605b6989886e5e733dae47f",
+      "size": 1096732,
+      "measure_info": [
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:avg_down_using_devices",
+          "measure": "avg_down_using_devices",
+          "short_name": "Average Download Speed",
+          "long_name": "Average Download Speed",
+          "short_description": "Average download speed weighted by number of devices.",
+          "statement": "The average download speed is {value} in {features.name}.",
+          "type": "internet speed",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:avg_up_using_devices",
+          "measure": "avg_up_using_devices",
+          "short_name": "Average Upload Speed",
+          "long_name": "Average Upload Speed",
+          "short_description": "Average upload speed weighted by number of devices.",
+          "statement": "The average upload speed is {value} in {features.name}.",
+          "type": "internet speed",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:devices",
+          "measure": "devices",
+          "short_name": "Number of devices",
+          "long_name": "Number of devices",
+          "short_description": "The number of unique devices accessing Ookla Internet speed tests.",
+          "statement": "There are {value} unique devices in {features.name} accessing Ookla Internet speed tests.",
+          "type": "count",
+          "equity_category": "Accessibility",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "va_hdcttr_2019_2021_percent_above_threshold_mobile.csv.xz",
+      "path": "legacy/data/dc.ookla.broadband/distribution/va_hdcttr_2019_2021_percent_above_threshold_mobile.csv.xz",
+      "md5": "e227092fb08718aa66b4e0b3cdad39ee",
+      "size": 1570472,
+      "measure_info": [
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
+          "full_name": "percent_above_threshold:perc_total_100_20_using_devices",
+          "measure": "perc_total_100_20_using_devices",
+          "short_name": "Percent Fast (total)",
+          "long_name": "Percent of the Total Population with Fast Internet Speed",
+          "short_description": "Percent of the total population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
+          "statement": "{value} of the total population in {features.name} has a fast internet speed.",
+          "type": "percent",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
+          "full_name": "percent_above_threshold:perc_total_25_3_using_devices",
+          "measure": "perc_total_25_3_using_devices",
+          "short_name": "Percent Good (total)",
+          "long_name": "Percent of the Total Population with Good Internet Speed",
+          "short_description": "Percent of the total population with a good internet speed (above 25/3 MB/s, able to stream video or online game for one device).",
+          "statement": "{value} of the total population in {features.name} has a good internet speed.",
+          "type": "percent",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
+          "full_name": "percent_above_threshold:perc_w_int_100_20_using_devices",
+          "measure": "perc_w_int_100_20_using_devices",
+          "short_name": "Percent Fast (internet-connected)",
+          "long_name": "Percent of the Internet-Connected Population with Fast Internet Speed",
+          "short_description": "Percent of the internet-connected population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
+          "statement": "{value} of the internet-connected population in {features.name} has a fast internet speed.",
+          "type": "percent",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
+          "full_name": "percent_above_threshold:perc_w_int_25_3_using_devices",
+          "measure": "perc_w_int_25_3_using_devices",
+          "short_name": "Percent Good (internet-connected)",
+          "long_name": "Percent of the Internet-Connected Population with Good Internet Speed",
+          "short_description": "Percent of the internet-connected population with a good internet speed (above 25/3 MB/s, able to stream video or online game for one device).",
+          "statement": "{value} of the internet-connected population in {features.name} has a good internet speed.",
+          "type": "percent",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "va_hdcttr_2019_2021_speed_measurements_fixed.csv.xz",
+      "path": "legacy/data/dc.ookla.broadband/distribution/va_hdcttr_2019_2021_speed_measurements_fixed.csv.xz",
+      "md5": "9fd276701585850f03f860f849f960b2",
+      "size": 520456,
+      "measure_info": [
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:avg_down_using_devices",
+          "measure": "avg_down_using_devices",
+          "short_name": "Average Download Speed",
+          "long_name": "Average Download Speed",
+          "short_description": "Average download speed weighted by number of devices.",
+          "statement": "The average download speed is {value} in {features.name}.",
+          "type": "internet speed",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:avg_up_using_devices",
+          "measure": "avg_up_using_devices",
+          "short_name": "Average Upload Speed",
+          "long_name": "Average Upload Speed",
+          "short_description": "Average upload speed weighted by number of devices.",
+          "statement": "The average upload speed is {value} in {features.name}.",
+          "type": "internet speed",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:devices",
+          "measure": "devices",
+          "short_name": "Number of devices",
+          "long_name": "Number of devices",
+          "short_description": "The number of unique devices accessing Ookla Internet speed tests.",
+          "statement": "There are {value} unique devices in {features.name} accessing Ookla Internet speed tests.",
+          "type": "count",
+          "equity_category": "Accessibility",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "va059_spd_sdad_2019_2021_speed_measurements.csv.xz",
+      "path": "legacy/data/dc.ookla.broadband/distribution/va059_spd_sdad_2019_2021_speed_measurements.csv.xz",
+      "md5": "2261508c997071bbec9f53a2b5e7c4b2",
+      "size": 2784,
+      "measure_info": [
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:avg_down_using_devices",
+          "measure": "avg_down_using_devices",
+          "short_name": "Average Download Speed",
+          "long_name": "Average Download Speed",
+          "short_description": "Average download speed weighted by number of devices.",
+          "statement": "The average download speed is {value} in {features.name}.",
+          "type": "internet speed",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:avg_up_using_devices",
+          "measure": "avg_up_using_devices",
+          "short_name": "Average Upload Speed",
+          "long_name": "Average Upload Speed",
+          "short_description": "Average upload speed weighted by number of devices.",
+          "statement": "The average upload speed is {value} in {features.name}.",
+          "type": "internet speed",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:devices",
+          "measure": "devices",
+          "short_name": "Number of devices",
+          "long_name": "Number of devices",
+          "short_description": "The number of unique devices accessing Ookla Internet speed tests.",
+          "statement": "There are {value} unique devices in {features.name} accessing Ookla Internet speed tests.",
+          "type": "count",
+          "equity_category": "Accessibility",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ncr_cttrbg_2019_2021_speed_measurements_mobile.csv.xz",
+      "path": "legacy/data/dc.ookla.broadband/distribution/ncr_cttrbg_2019_2021_speed_measurements_mobile.csv.xz",
+      "md5": "0c444e3d7c5692c490f88c3da9eb97ee",
+      "size": 1107988,
+      "measure_info": [
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:avg_down_using_devices",
+          "measure": "avg_down_using_devices",
+          "short_name": "Average Download Speed",
+          "long_name": "Average Download Speed",
+          "short_description": "Average download speed weighted by number of devices.",
+          "statement": "The average download speed is {value} in {features.name}.",
+          "type": "internet speed",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:avg_up_using_devices",
+          "measure": "avg_up_using_devices",
+          "short_name": "Average Upload Speed",
+          "long_name": "Average Upload Speed",
+          "short_description": "Average upload speed weighted by number of devices.",
+          "statement": "The average upload speed is {value} in {features.name}.",
+          "type": "internet speed",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:devices",
+          "measure": "devices",
+          "short_name": "Number of devices",
+          "long_name": "Number of devices",
+          "short_description": "The number of unique devices accessing Ookla Internet speed tests.",
+          "statement": "There are {value} unique devices in {features.name} accessing Ookla Internet speed tests.",
+          "type": "count",
+          "equity_category": "Accessibility",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+      "path": "legacy/data/dc.ookla.broadband/distribution/dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+      "md5": "76e6f2e155dfb88ebe7926bc9644d63f",
+      "size": 8955944,
+      "measure_info": [
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
+          "full_name": "percent_above_threshold:perc_total_100_20_using_devices",
+          "measure": "perc_total_100_20_using_devices",
+          "short_name": "Percent Fast (total)",
+          "long_name": "Percent of the Total Population with Fast Internet Speed",
+          "short_description": "Percent of the total population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
+          "statement": "{value} of the total population in {features.name} has a fast internet speed.",
+          "type": "percent",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
+          "full_name": "percent_above_threshold:perc_total_25_3_using_devices",
+          "measure": "perc_total_25_3_using_devices",
+          "short_name": "Percent Good (total)",
+          "long_name": "Percent of the Total Population with Good Internet Speed",
+          "short_description": "Percent of the total population with a good internet speed (above 25/3 MB/s, able to stream video or online game for one device).",
+          "statement": "{value} of the total population in {features.name} has a good internet speed.",
+          "type": "percent",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
+          "full_name": "percent_above_threshold:perc_w_int_100_20_using_devices",
+          "measure": "perc_w_int_100_20_using_devices",
+          "short_name": "Percent Fast (internet-connected)",
+          "long_name": "Percent of the Internet-Connected Population with Fast Internet Speed",
+          "short_description": "Percent of the internet-connected population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
+          "statement": "{value} of the internet-connected population in {features.name} has a fast internet speed.",
+          "type": "percent",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
+          "full_name": "percent_above_threshold:perc_w_int_25_3_using_devices",
+          "measure": "perc_w_int_25_3_using_devices",
+          "short_name": "Percent Good (internet-connected)",
+          "long_name": "Percent of the Internet-Connected Population with Good Internet Speed",
+          "short_description": "Percent of the internet-connected population with a good internet speed (above 25/3 MB/s, able to stream video or online game for one device).",
+          "statement": "{value} of the internet-connected population in {features.name} has a good internet speed.",
+          "type": "percent",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "measure_info.json",
+      "path": "legacy/data/dc.ookla.broadband/distribution/measure_info.json",
+      "md5": "fe6fcde49297bb15e3b2846605009731",
+      "size": 5892
+    },
+    {
+      "name": "va059_zp_sdad_2019_2021_speed_measurements.csv.xz",
+      "path": "legacy/data/dc.ookla.broadband/distribution/va059_zp_sdad_2019_2021_speed_measurements.csv.xz",
+      "md5": "faa4bcf2d1c54da5b9aac82ad7887cee",
+      "size": 12824,
+      "measure_info": [
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:avg_down_using_devices",
+          "measure": "avg_down_using_devices",
+          "short_name": "Average Download Speed",
+          "long_name": "Average Download Speed",
+          "short_description": "Average download speed weighted by number of devices.",
+          "statement": "The average download speed is {value} in {features.name}.",
+          "type": "internet speed",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:avg_up_using_devices",
+          "measure": "avg_up_using_devices",
+          "short_name": "Average Upload Speed",
+          "long_name": "Average Upload Speed",
+          "short_description": "Average upload speed weighted by number of devices.",
+          "statement": "The average upload speed is {value} in {features.name}.",
+          "type": "internet speed",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:devices",
+          "measure": "devices",
+          "short_name": "Number of devices",
+          "long_name": "Number of devices",
+          "short_description": "The number of unique devices accessing Ookla Internet speed tests.",
+          "statement": "There are {value} unique devices in {features.name} accessing Ookla Internet speed tests.",
+          "type": "count",
+          "equity_category": "Accessibility",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ncr_cttrbg_2019_2021_percent_above_threshold_fixed.csv.xz",
+      "path": "legacy/data/dc.ookla.broadband/distribution/ncr_cttrbg_2019_2021_percent_above_threshold_fixed.csv.xz",
+      "md5": "26ac7c5a646180916f1b8030017dbf43",
+      "size": 2868712,
+      "measure_info": [
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
+          "full_name": "percent_above_threshold:perc_total_100_20_using_devices",
+          "measure": "perc_total_100_20_using_devices",
+          "short_name": "Percent Fast (total)",
+          "long_name": "Percent of the Total Population with Fast Internet Speed",
+          "short_description": "Percent of the total population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
+          "statement": "{value} of the total population in {features.name} has a fast internet speed.",
+          "type": "percent",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
+          "full_name": "percent_above_threshold:perc_total_25_3_using_devices",
+          "measure": "perc_total_25_3_using_devices",
+          "short_name": "Percent Good (total)",
+          "long_name": "Percent of the Total Population with Good Internet Speed",
+          "short_description": "Percent of the total population with a good internet speed (above 25/3 MB/s, able to stream video or online game for one device).",
+          "statement": "{value} of the total population in {features.name} has a good internet speed.",
+          "type": "percent",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
+          "full_name": "percent_above_threshold:perc_w_int_100_20_using_devices",
+          "measure": "perc_w_int_100_20_using_devices",
+          "short_name": "Percent Fast (internet-connected)",
+          "long_name": "Percent of the Internet-Connected Population with Fast Internet Speed",
+          "short_description": "Percent of the internet-connected population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
+          "statement": "{value} of the internet-connected population in {features.name} has a fast internet speed.",
+          "type": "percent",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
+          "full_name": "percent_above_threshold:perc_w_int_25_3_using_devices",
+          "measure": "perc_w_int_25_3_using_devices",
+          "short_name": "Percent Good (internet-connected)",
+          "long_name": "Percent of the Internet-Connected Population with Good Internet Speed",
+          "short_description": "Percent of the internet-connected population with a good internet speed (above 25/3 MB/s, able to stream video or online game for one device).",
+          "statement": "{value} of the internet-connected population in {features.name} has a good internet speed.",
+          "type": "percent",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "va_hdcttr_2019_2021_percent_above_threshold_fixed.csv.xz",
+      "path": "legacy/data/dc.ookla.broadband/distribution/va_hdcttr_2019_2021_percent_above_threshold_fixed.csv.xz",
+      "md5": "e9974d8746de154231ff38b12f6d92bd",
+      "size": 1473876,
+      "measure_info": [
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
+          "full_name": "percent_above_threshold:perc_total_100_20_using_devices",
+          "measure": "perc_total_100_20_using_devices",
+          "short_name": "Percent Fast (total)",
+          "long_name": "Percent of the Total Population with Fast Internet Speed",
+          "short_description": "Percent of the total population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
+          "statement": "{value} of the total population in {features.name} has a fast internet speed.",
+          "type": "percent",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
+          "full_name": "percent_above_threshold:perc_total_25_3_using_devices",
+          "measure": "perc_total_25_3_using_devices",
+          "short_name": "Percent Good (total)",
+          "long_name": "Percent of the Total Population with Good Internet Speed",
+          "short_description": "Percent of the total population with a good internet speed (above 25/3 MB/s, able to stream video or online game for one device).",
+          "statement": "{value} of the total population in {features.name} has a good internet speed.",
+          "type": "percent",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
+          "full_name": "percent_above_threshold:perc_w_int_100_20_using_devices",
+          "measure": "perc_w_int_100_20_using_devices",
+          "short_name": "Percent Fast (internet-connected)",
+          "long_name": "Percent of the Internet-Connected Population with Fast Internet Speed",
+          "short_description": "Percent of the internet-connected population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
+          "statement": "{value} of the internet-connected population in {features.name} has a fast internet speed.",
+          "type": "percent",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
+          "full_name": "percent_above_threshold:perc_w_int_25_3_using_devices",
+          "measure": "perc_w_int_25_3_using_devices",
+          "short_name": "Percent Good (internet-connected)",
+          "long_name": "Percent of the Internet-Connected Population with Good Internet Speed",
+          "short_description": "Percent of the internet-connected population with a good internet speed (above 25/3 MB/s, able to stream video or online game for one device).",
+          "statement": "{value} of the internet-connected population in {features.name} has a good internet speed.",
+          "type": "percent",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "va_hdcttr_2019_2021_speed_measurements_mobile.csv.xz",
+      "path": "legacy/data/dc.ookla.broadband/distribution/va_hdcttr_2019_2021_speed_measurements_mobile.csv.xz",
+      "md5": "411a913394e6080bde7d50875ee238ec",
+      "size": 522796,
+      "measure_info": [
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:avg_down_using_devices",
+          "measure": "avg_down_using_devices",
+          "short_name": "Average Download Speed",
+          "long_name": "Average Download Speed",
+          "short_description": "Average download speed weighted by number of devices.",
+          "statement": "The average download speed is {value} in {features.name}.",
+          "type": "internet speed",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:avg_up_using_devices",
+          "measure": "avg_up_using_devices",
+          "short_name": "Average Upload Speed",
+          "long_name": "Average Upload Speed",
+          "short_description": "Average upload speed weighted by number of devices.",
+          "statement": "The average upload speed is {value} in {features.name}.",
+          "type": "internet speed",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:devices",
+          "measure": "devices",
+          "short_name": "Number of devices",
+          "long_name": "Number of devices",
+          "short_description": "The number of unique devices accessing Ookla Internet speed tests.",
+          "statement": "There are {value} unique devices in {features.name} accessing Ookla Internet speed tests.",
+          "type": "count",
+          "equity_category": "Accessibility",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dataset_doi",
+      "path": "legacy/data/dc.ookla.broadband/distribution/dataset_doi",
+      "md5": "d60d01b823976d1ae87d8dda1067e6ba",
+      "size": 23
+    },
+    {
+      "name": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
+      "path": "legacy/data/dc.ookla.broadband/distribution/dcmdva_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
+      "md5": "822a31ea38e56e6c177dbbd095798c26",
+      "size": 3320496,
+      "measure_info": [
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:avg_down_using_devices",
+          "measure": "avg_down_using_devices",
+          "short_name": "Average Download Speed",
+          "long_name": "Average Download Speed",
+          "short_description": "Average download speed weighted by number of devices.",
+          "statement": "The average download speed is {value} in {features.name}.",
+          "type": "internet speed",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:avg_up_using_devices",
+          "measure": "avg_up_using_devices",
+          "short_name": "Average Upload Speed",
+          "long_name": "Average Upload Speed",
+          "short_description": "Average upload speed weighted by number of devices.",
+          "statement": "The average upload speed is {value} in {features.name}.",
+          "type": "internet speed",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:devices",
+          "measure": "devices",
+          "short_name": "Number of devices",
+          "long_name": "Number of devices",
+          "short_description": "The number of unique devices accessing Ookla Internet speed tests.",
+          "statement": "There are {value} unique devices in {features.name} accessing Ookla Internet speed tests.",
+          "type": "count",
+          "equity_category": "Accessibility",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "va059_pd_sdad_2019_2021_speed_measurements.csv.xz",
+      "path": "legacy/data/dc.ookla.broadband/distribution/va059_pd_sdad_2019_2021_speed_measurements.csv.xz",
+      "md5": "bb81057a940d6fc16ed14670626c7d0d",
+      "size": 4012,
+      "measure_info": [
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:avg_down_using_devices",
+          "measure": "avg_down_using_devices",
+          "short_name": "Average Download Speed",
+          "long_name": "Average Download Speed",
+          "short_description": "Average download speed weighted by number of devices.",
+          "statement": "The average download speed is {value} in {features.name}.",
+          "type": "internet speed",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:avg_up_using_devices",
+          "measure": "avg_up_using_devices",
+          "short_name": "Average Upload Speed",
+          "long_name": "Average Upload Speed",
+          "short_description": "Average upload speed weighted by number of devices.",
+          "statement": "The average upload speed is {value} in {features.name}.",
+          "type": "internet speed",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:devices",
+          "measure": "devices",
+          "short_name": "Number of devices",
+          "long_name": "Number of devices",
+          "short_description": "The number of unique devices accessing Ookla Internet speed tests.",
+          "statement": "There are {value} unique devices in {features.name} accessing Ookla Internet speed tests.",
+          "type": "count",
+          "equity_category": "Accessibility",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ncr_cttrbg_2019_2021_percent_above_threshold_mobile.csv.xz",
+      "path": "legacy/data/dc.ookla.broadband/distribution/ncr_cttrbg_2019_2021_percent_above_threshold_mobile.csv.xz",
+      "md5": "cf5def406537fec89da70d3d6ed19506",
+      "size": 3143204,
+      "measure_info": [
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
+          "full_name": "percent_above_threshold:perc_total_100_20_using_devices",
+          "measure": "perc_total_100_20_using_devices",
+          "short_name": "Percent Fast (total)",
+          "long_name": "Percent of the Total Population with Fast Internet Speed",
+          "short_description": "Percent of the total population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
+          "statement": "{value} of the total population in {features.name} has a fast internet speed.",
+          "type": "percent",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
+          "full_name": "percent_above_threshold:perc_total_25_3_using_devices",
+          "measure": "perc_total_25_3_using_devices",
+          "short_name": "Percent Good (total)",
+          "long_name": "Percent of the Total Population with Good Internet Speed",
+          "short_description": "Percent of the total population with a good internet speed (above 25/3 MB/s, able to stream video or online game for one device).",
+          "statement": "{value} of the total population in {features.name} has a good internet speed.",
+          "type": "percent",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
+          "full_name": "percent_above_threshold:perc_w_int_100_20_using_devices",
+          "measure": "perc_w_int_100_20_using_devices",
+          "short_name": "Percent Fast (internet-connected)",
+          "long_name": "Percent of the Internet-Connected Population with Fast Internet Speed",
+          "short_description": "Percent of the internet-connected population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
+          "statement": "{value} of the internet-connected population in {features.name} has a fast internet speed.",
+          "type": "percent",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
+          "full_name": "percent_above_threshold:perc_w_int_25_3_using_devices",
+          "measure": "perc_w_int_25_3_using_devices",
+          "short_name": "Percent Good (internet-connected)",
+          "long_name": "Percent of the Internet-Connected Population with Good Internet Speed",
+          "short_description": "Percent of the internet-connected population with a good internet speed (above 25/3 MB/s, able to stream video or online game for one device).",
+          "statement": "{value} of the internet-connected population in {features.name} has a good internet speed.",
+          "type": "percent",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "va059_hsr_sdad_2019_2019_speed_measurements.csv.xz",
+      "path": "legacy/data/dc.ookla.broadband/distribution/va059_hsr_sdad_2019_2019_speed_measurements.csv.xz",
+      "md5": "8f9029c3d52bef24c3e00351110eac3c",
+      "size": 1276,
+      "measure_info": [
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:avg_down_using_devices",
+          "measure": "avg_down_using_devices",
+          "short_name": "Average Download Speed",
+          "long_name": "Average Download Speed",
+          "short_description": "Average download speed weighted by number of devices.",
+          "statement": "The average download speed is {value} in {features.name}.",
+          "type": "internet speed",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:avg_up_using_devices",
+          "measure": "avg_up_using_devices",
+          "short_name": "Average Upload Speed",
+          "long_name": "Average Upload Speed",
+          "short_description": "Average upload speed weighted by number of devices.",
+          "statement": "The average upload speed is {value} in {features.name}.",
+          "type": "internet speed",
+          "equity_category": "Availability",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        },
+        {
+          "category": "Broadband",
+          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+          "full_name": "speed_measurements:devices",
+          "measure": "devices",
+          "short_name": "Number of devices",
+          "long_name": "Number of devices",
+          "short_description": "The number of unique devices accessing Ookla Internet speed tests.",
+          "statement": "There are {value} unique devices in {features.name} accessing Ookla Internet speed tests.",
+          "type": "count",
+          "equity_category": "Accessibility",
+          "sources": [
+            {
+              "name": "Ookla",
+              "date_accessed": 2021,
+              "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "va_hdcttr_2021_broadband_now_internet_package_price.csv.xz",
+      "path": "legacy/data/dc.broadbandnow.broadband.prices/distribution/va_hdcttr_2021_broadband_now_internet_package_price.csv.xz",
+      "md5": "f425934e0d6bb2b0b97417f11d213d80",
+      "size": 59568
+    },
+    {
+      "name": "dmv_tr_broadband_now_2021_internet_package_price.csv.xz",
+      "path": "legacy/data/dc.broadbandnow.broadband.prices/distribution/dmv_tr_broadband_now_2021_internet_package_price.csv.xz",
+      "md5": "3bc8f81359b8c82aeef42918c2a28be7",
+      "size": 39856
     },
     {
       "name": "dcmdva_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
@@ -94,6 +1279,12 @@
       ]
     },
     {
+      "name": "measure_info.json",
+      "path": "legacy/data/dc.broadbandnow.broadband.prices/distribution/measure_info.json",
+      "md5": "5b7961dd5d95e435cbc048d53453b950",
+      "size": 3532
+    },
+    {
       "name": "ncr_cttrbg_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
       "path": "legacy/data/dc.broadbandnow.broadband.prices/distribution/ncr_cttrbg_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
       "md5": "ff1a576d1a3d7a5d12af924b91b020c6",
@@ -175,24 +1366,6 @@
           ]
         }
       ]
-    },
-    {
-      "name": "measure_info.json",
-      "path": "legacy/data/dc.broadbandnow.broadband.prices/distribution/measure_info.json",
-      "md5": "5b7961dd5d95e435cbc048d53453b950",
-      "size": 3532
-    },
-    {
-      "name": "dmv_tr_broadband_now_2021_internet_package_price.csv.xz",
-      "path": "legacy/data/dc.broadbandnow.broadband.prices/distribution/dmv_tr_broadband_now_2021_internet_package_price.csv.xz",
-      "md5": "3bc8f81359b8c82aeef42918c2a28be7",
-      "size": 39856
-    },
-    {
-      "name": "dcmdva_hdcttrbg_2021_broadband_now_internet_package_price.csv.xz",
-      "path": "legacy/data/dc.broadbandnow.broadband.prices/distribution/dcmdva_hdcttrbg_2021_broadband_now_internet_package_price.csv.xz",
-      "md5": "a711aaf460dfe6d8c67b3656fc702d8b",
-      "size": 337564
     },
     {
       "name": "dcmdva_hdcttrbg_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
@@ -278,16 +1451,28 @@
       ]
     },
     {
-      "name": "va_hdcttr_2021_broadband_now_internet_package_price.csv.xz",
-      "path": "legacy/data/dc.broadbandnow.broadband.prices/distribution/va_hdcttr_2021_broadband_now_internet_package_price.csv.xz",
-      "md5": "f425934e0d6bb2b0b97417f11d213d80",
-      "size": 59568
+      "name": "dataset_doi",
+      "path": "legacy/data/dc.broadbandnow.broadband.prices/distribution/dataset_doi",
+      "md5": "5e1cce3c40ec24a8291dd24f40b0090b",
+      "size": 23
     },
     {
-      "name": "va_hdcttr_2017_2019_broadband_withoutint_compdev.csv.xz",
-      "path": "legacy/data/dc.acs.broadband/distribution/va_hdcttr_2017_2019_broadband_withoutint_compdev.csv.xz",
-      "md5": "fe5a034ba486676a25c50b90ee7c65c1",
-      "size": 288344,
+      "name": "dcmdva_hdcttrbg_2021_broadband_now_internet_package_price.csv.xz",
+      "path": "legacy/data/dc.broadbandnow.broadband.prices/distribution/dcmdva_hdcttrbg_2021_broadband_now_internet_package_price.csv.xz",
+      "md5": "a711aaf460dfe6d8c67b3656fc702d8b",
+      "size": 337564
+    },
+    {
+      "name": "ncr_cttrbg_2021_broadband_now_internet_package_price.csv.xz",
+      "path": "legacy/data/dc.broadbandnow.broadband.prices/distribution/ncr_cttrbg_2021_broadband_now_internet_package_price.csv.xz",
+      "md5": "cea0cb0b482972a2f580bec109078012",
+      "size": 107388
+    },
+    {
+      "name": "ncr_cttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+      "path": "legacy/data/dc.acs.broadband/distribution/ncr_cttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+      "md5": "1954de85806bfc8a965c0afd7c4b64c1",
+      "size": 539972,
       "measure_info": [
         {
           "category": "Broadband",
@@ -466,16 +1651,10 @@
       "size": 4530
     },
     {
-      "name": "dataset_doi",
-      "path": "legacy/data/dc.acs.broadband/distribution/dataset_doi",
-      "md5": "652971a1c89ed9ca3f1c653f59034271",
-      "size": 23
-    },
-    {
-      "name": "ncr_cttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
-      "path": "legacy/data/dc.acs.broadband/distribution/ncr_cttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
-      "md5": "1954de85806bfc8a965c0afd7c4b64c1",
-      "size": 539972,
+      "name": "va_hdcttr_2017_2019_broadband_withoutint_compdev.csv.xz",
+      "path": "legacy/data/dc.acs.broadband/distribution/va_hdcttr_2017_2019_broadband_withoutint_compdev.csv.xz",
+      "md5": "fe5a034ba486676a25c50b90ee7c65c1",
+      "size": 288344,
       "measure_info": [
         {
           "category": "Broadband",
@@ -560,1393 +1739,10 @@
       ]
     },
     {
-      "name": "va059_spd_sdad_2019_2021_speed_measurements.csv.xz",
-      "path": "legacy/data/dc.ookla.broadband/distribution/va059_spd_sdad_2019_2021_speed_measurements.csv.xz",
-      "md5": "2261508c997071bbec9f53a2b5e7c4b2",
-      "size": 2784,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:avg_down_using_devices",
-          "measure": "avg_down_using_devices",
-          "short_name": "Average Download Speed",
-          "long_name": "Average Download Speed",
-          "short_description": "Average download speed weighted by number of devices.",
-          "statement": "The average download speed is {value} in {features.name}.",
-          "type": "internet speed",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:avg_up_using_devices",
-          "measure": "avg_up_using_devices",
-          "short_name": "Average Upload Speed",
-          "long_name": "Average Upload Speed",
-          "short_description": "Average upload speed weighted by number of devices.",
-          "statement": "The average upload speed is {value} in {features.name}.",
-          "type": "internet speed",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:devices",
-          "measure": "devices",
-          "short_name": "Number of devices",
-          "long_name": "Number of devices",
-          "short_description": "The number of unique devices accessing Ookla Internet speed tests.",
-          "statement": "There are {value} unique devices in {features.name} accessing Ookla Internet speed tests.",
-          "type": "count",
-          "equity_category": "Accessibility",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "va_hdcttr_2019_2021_percent_above_threshold_mobile.csv.xz",
-      "path": "legacy/data/dc.ookla.broadband/distribution/va_hdcttr_2019_2021_percent_above_threshold_mobile.csv.xz",
-      "md5": "e227092fb08718aa66b4e0b3cdad39ee",
-      "size": 1570472,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
-          "full_name": "percent_above_threshold:perc_total_100_20_using_devices",
-          "measure": "perc_total_100_20_using_devices",
-          "short_name": "Percent Fast (total)",
-          "long_name": "Percent of the Total Population with Fast Internet Speed",
-          "short_description": "Percent of the total population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
-          "statement": "{value} of the total population in {features.name} has a fast internet speed.",
-          "type": "percent",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
-          "full_name": "percent_above_threshold:perc_total_25_3_using_devices",
-          "measure": "perc_total_25_3_using_devices",
-          "short_name": "Percent Good (total)",
-          "long_name": "Percent of the Total Population with Good Internet Speed",
-          "short_description": "Percent of the total population with a good internet speed (above 25/3 MB/s, able to stream video or online game for one device).",
-          "statement": "{value} of the total population in {features.name} has a good internet speed.",
-          "type": "percent",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
-          "full_name": "percent_above_threshold:perc_w_int_100_20_using_devices",
-          "measure": "perc_w_int_100_20_using_devices",
-          "short_name": "Percent Fast (internet-connected)",
-          "long_name": "Percent of the Internet-Connected Population with Fast Internet Speed",
-          "short_description": "Percent of the internet-connected population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
-          "statement": "{value} of the internet-connected population in {features.name} has a fast internet speed.",
-          "type": "percent",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
-          "full_name": "percent_above_threshold:perc_w_int_25_3_using_devices",
-          "measure": "perc_w_int_25_3_using_devices",
-          "short_name": "Percent Good (internet-connected)",
-          "long_name": "Percent of the Internet-Connected Population with Good Internet Speed",
-          "short_description": "Percent of the internet-connected population with a good internet speed (above 25/3 MB/s, able to stream video or online game for one device).",
-          "statement": "{value} of the internet-connected population in {features.name} has a good internet speed.",
-          "type": "percent",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "va059_pd_sdad_2019_2021_speed_measurements.csv.xz",
-      "path": "legacy/data/dc.ookla.broadband/distribution/va059_pd_sdad_2019_2021_speed_measurements.csv.xz",
-      "md5": "bb81057a940d6fc16ed14670626c7d0d",
-      "size": 4012,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:avg_down_using_devices",
-          "measure": "avg_down_using_devices",
-          "short_name": "Average Download Speed",
-          "long_name": "Average Download Speed",
-          "short_description": "Average download speed weighted by number of devices.",
-          "statement": "The average download speed is {value} in {features.name}.",
-          "type": "internet speed",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:avg_up_using_devices",
-          "measure": "avg_up_using_devices",
-          "short_name": "Average Upload Speed",
-          "long_name": "Average Upload Speed",
-          "short_description": "Average upload speed weighted by number of devices.",
-          "statement": "The average upload speed is {value} in {features.name}.",
-          "type": "internet speed",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:devices",
-          "measure": "devices",
-          "short_name": "Number of devices",
-          "long_name": "Number of devices",
-          "short_description": "The number of unique devices accessing Ookla Internet speed tests.",
-          "statement": "There are {value} unique devices in {features.name} accessing Ookla Internet speed tests.",
-          "type": "count",
-          "equity_category": "Accessibility",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "va059_hsr_sdad_2019_2019_speed_measurements.csv.xz",
-      "path": "legacy/data/dc.ookla.broadband/distribution/va059_hsr_sdad_2019_2019_speed_measurements.csv.xz",
-      "md5": "8f9029c3d52bef24c3e00351110eac3c",
-      "size": 1276,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:avg_down_using_devices",
-          "measure": "avg_down_using_devices",
-          "short_name": "Average Download Speed",
-          "long_name": "Average Download Speed",
-          "short_description": "Average download speed weighted by number of devices.",
-          "statement": "The average download speed is {value} in {features.name}.",
-          "type": "internet speed",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:avg_up_using_devices",
-          "measure": "avg_up_using_devices",
-          "short_name": "Average Upload Speed",
-          "long_name": "Average Upload Speed",
-          "short_description": "Average upload speed weighted by number of devices.",
-          "statement": "The average upload speed is {value} in {features.name}.",
-          "type": "internet speed",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:devices",
-          "measure": "devices",
-          "short_name": "Number of devices",
-          "long_name": "Number of devices",
-          "short_description": "The number of unique devices accessing Ookla Internet speed tests.",
-          "statement": "There are {value} unique devices in {features.name} accessing Ookla Internet speed tests.",
-          "type": "count",
-          "equity_category": "Accessibility",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "ncr_cttrbg_2019_2021_speed_measurements_mobile.csv.xz",
-      "path": "legacy/data/dc.ookla.broadband/distribution/ncr_cttrbg_2019_2021_speed_measurements_mobile.csv.xz",
-      "md5": "0c444e3d7c5692c490f88c3da9eb97ee",
-      "size": 1107988,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:avg_down_using_devices",
-          "measure": "avg_down_using_devices",
-          "short_name": "Average Download Speed",
-          "long_name": "Average Download Speed",
-          "short_description": "Average download speed weighted by number of devices.",
-          "statement": "The average download speed is {value} in {features.name}.",
-          "type": "internet speed",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:avg_up_using_devices",
-          "measure": "avg_up_using_devices",
-          "short_name": "Average Upload Speed",
-          "long_name": "Average Upload Speed",
-          "short_description": "Average upload speed weighted by number of devices.",
-          "statement": "The average upload speed is {value} in {features.name}.",
-          "type": "internet speed",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:devices",
-          "measure": "devices",
-          "short_name": "Number of devices",
-          "long_name": "Number of devices",
-          "short_description": "The number of unique devices accessing Ookla Internet speed tests.",
-          "statement": "There are {value} unique devices in {features.name} accessing Ookla Internet speed tests.",
-          "type": "count",
-          "equity_category": "Accessibility",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "ncr_cttrbg_2019_2021_percent_above_threshold_mobile.csv.xz",
-      "path": "legacy/data/dc.ookla.broadband/distribution/ncr_cttrbg_2019_2021_percent_above_threshold_mobile.csv.xz",
-      "md5": "cf5def406537fec89da70d3d6ed19506",
-      "size": 3143204,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
-          "full_name": "percent_above_threshold:perc_total_100_20_using_devices",
-          "measure": "perc_total_100_20_using_devices",
-          "short_name": "Percent Fast (total)",
-          "long_name": "Percent of the Total Population with Fast Internet Speed",
-          "short_description": "Percent of the total population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
-          "statement": "{value} of the total population in {features.name} has a fast internet speed.",
-          "type": "percent",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
-          "full_name": "percent_above_threshold:perc_total_25_3_using_devices",
-          "measure": "perc_total_25_3_using_devices",
-          "short_name": "Percent Good (total)",
-          "long_name": "Percent of the Total Population with Good Internet Speed",
-          "short_description": "Percent of the total population with a good internet speed (above 25/3 MB/s, able to stream video or online game for one device).",
-          "statement": "{value} of the total population in {features.name} has a good internet speed.",
-          "type": "percent",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
-          "full_name": "percent_above_threshold:perc_w_int_100_20_using_devices",
-          "measure": "perc_w_int_100_20_using_devices",
-          "short_name": "Percent Fast (internet-connected)",
-          "long_name": "Percent of the Internet-Connected Population with Fast Internet Speed",
-          "short_description": "Percent of the internet-connected population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
-          "statement": "{value} of the internet-connected population in {features.name} has a fast internet speed.",
-          "type": "percent",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
-          "full_name": "percent_above_threshold:perc_w_int_25_3_using_devices",
-          "measure": "perc_w_int_25_3_using_devices",
-          "short_name": "Percent Good (internet-connected)",
-          "long_name": "Percent of the Internet-Connected Population with Good Internet Speed",
-          "short_description": "Percent of the internet-connected population with a good internet speed (above 25/3 MB/s, able to stream video or online game for one device).",
-          "statement": "{value} of the internet-connected population in {features.name} has a good internet speed.",
-          "type": "percent",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "ncr_cttrbg_2019_2021_percent_above_threshold_fixed.csv.xz",
-      "path": "legacy/data/dc.ookla.broadband/distribution/ncr_cttrbg_2019_2021_percent_above_threshold_fixed.csv.xz",
-      "md5": "26ac7c5a646180916f1b8030017dbf43",
-      "size": 2868712,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
-          "full_name": "percent_above_threshold:perc_total_100_20_using_devices",
-          "measure": "perc_total_100_20_using_devices",
-          "short_name": "Percent Fast (total)",
-          "long_name": "Percent of the Total Population with Fast Internet Speed",
-          "short_description": "Percent of the total population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
-          "statement": "{value} of the total population in {features.name} has a fast internet speed.",
-          "type": "percent",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
-          "full_name": "percent_above_threshold:perc_total_25_3_using_devices",
-          "measure": "perc_total_25_3_using_devices",
-          "short_name": "Percent Good (total)",
-          "long_name": "Percent of the Total Population with Good Internet Speed",
-          "short_description": "Percent of the total population with a good internet speed (above 25/3 MB/s, able to stream video or online game for one device).",
-          "statement": "{value} of the total population in {features.name} has a good internet speed.",
-          "type": "percent",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
-          "full_name": "percent_above_threshold:perc_w_int_100_20_using_devices",
-          "measure": "perc_w_int_100_20_using_devices",
-          "short_name": "Percent Fast (internet-connected)",
-          "long_name": "Percent of the Internet-Connected Population with Fast Internet Speed",
-          "short_description": "Percent of the internet-connected population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
-          "statement": "{value} of the internet-connected population in {features.name} has a fast internet speed.",
-          "type": "percent",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
-          "full_name": "percent_above_threshold:perc_w_int_25_3_using_devices",
-          "measure": "perc_w_int_25_3_using_devices",
-          "short_name": "Percent Good (internet-connected)",
-          "long_name": "Percent of the Internet-Connected Population with Good Internet Speed",
-          "short_description": "Percent of the internet-connected population with a good internet speed (above 25/3 MB/s, able to stream video or online game for one device).",
-          "statement": "{value} of the internet-connected population in {features.name} has a good internet speed.",
-          "type": "percent",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "va_hdcttr_2019_2021_speed_measurements_fixed.csv.xz",
-      "path": "legacy/data/dc.ookla.broadband/distribution/va_hdcttr_2019_2021_speed_measurements_fixed.csv.xz",
-      "md5": "9fd276701585850f03f860f849f960b2",
-      "size": 520456,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:avg_down_using_devices",
-          "measure": "avg_down_using_devices",
-          "short_name": "Average Download Speed",
-          "long_name": "Average Download Speed",
-          "short_description": "Average download speed weighted by number of devices.",
-          "statement": "The average download speed is {value} in {features.name}.",
-          "type": "internet speed",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:avg_up_using_devices",
-          "measure": "avg_up_using_devices",
-          "short_name": "Average Upload Speed",
-          "long_name": "Average Upload Speed",
-          "short_description": "Average upload speed weighted by number of devices.",
-          "statement": "The average upload speed is {value} in {features.name}.",
-          "type": "internet speed",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:devices",
-          "measure": "devices",
-          "short_name": "Number of devices",
-          "long_name": "Number of devices",
-          "short_description": "The number of unique devices accessing Ookla Internet speed tests.",
-          "statement": "There are {value} unique devices in {features.name} accessing Ookla Internet speed tests.",
-          "type": "count",
-          "equity_category": "Accessibility",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
-      "path": "legacy/data/dc.ookla.broadband/distribution/dcmdva_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
-      "md5": "822a31ea38e56e6c177dbbd095798c26",
-      "size": 3320496,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:avg_down_using_devices",
-          "measure": "avg_down_using_devices",
-          "short_name": "Average Download Speed",
-          "long_name": "Average Download Speed",
-          "short_description": "Average download speed weighted by number of devices.",
-          "statement": "The average download speed is {value} in {features.name}.",
-          "type": "internet speed",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:avg_up_using_devices",
-          "measure": "avg_up_using_devices",
-          "short_name": "Average Upload Speed",
-          "long_name": "Average Upload Speed",
-          "short_description": "Average upload speed weighted by number of devices.",
-          "statement": "The average upload speed is {value} in {features.name}.",
-          "type": "internet speed",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:devices",
-          "measure": "devices",
-          "short_name": "Number of devices",
-          "long_name": "Number of devices",
-          "short_description": "The number of unique devices accessing Ookla Internet speed tests.",
-          "statement": "There are {value} unique devices in {features.name} accessing Ookla Internet speed tests.",
-          "type": "count",
-          "equity_category": "Accessibility",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "va059_zp_sdad_2019_2021_speed_measurements.csv.xz",
-      "path": "legacy/data/dc.ookla.broadband/distribution/va059_zp_sdad_2019_2021_speed_measurements.csv.xz",
-      "md5": "faa4bcf2d1c54da5b9aac82ad7887cee",
-      "size": 12824,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:avg_down_using_devices",
-          "measure": "avg_down_using_devices",
-          "short_name": "Average Download Speed",
-          "long_name": "Average Download Speed",
-          "short_description": "Average download speed weighted by number of devices.",
-          "statement": "The average download speed is {value} in {features.name}.",
-          "type": "internet speed",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:avg_up_using_devices",
-          "measure": "avg_up_using_devices",
-          "short_name": "Average Upload Speed",
-          "long_name": "Average Upload Speed",
-          "short_description": "Average upload speed weighted by number of devices.",
-          "statement": "The average upload speed is {value} in {features.name}.",
-          "type": "internet speed",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:devices",
-          "measure": "devices",
-          "short_name": "Number of devices",
-          "long_name": "Number of devices",
-          "short_description": "The number of unique devices accessing Ookla Internet speed tests.",
-          "statement": "There are {value} unique devices in {features.name} accessing Ookla Internet speed tests.",
-          "type": "count",
-          "equity_category": "Accessibility",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "measure_info.json",
-      "path": "legacy/data/dc.ookla.broadband/distribution/measure_info.json",
-      "md5": "fe6fcde49297bb15e3b2846605009731",
-      "size": 5892
-    },
-    {
       "name": "dataset_doi",
-      "path": "legacy/data/dc.ookla.broadband/distribution/dataset_doi",
-      "md5": "d60d01b823976d1ae87d8dda1067e6ba",
+      "path": "legacy/data/dc.acs.broadband/distribution/dataset_doi",
+      "md5": "652971a1c89ed9ca3f1c653f59034271",
       "size": 23
-    },
-    {
-      "name": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-      "path": "legacy/data/dc.ookla.broadband/distribution/dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-      "md5": "76e6f2e155dfb88ebe7926bc9644d63f",
-      "size": 8955944,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
-          "full_name": "percent_above_threshold:perc_total_100_20_using_devices",
-          "measure": "perc_total_100_20_using_devices",
-          "short_name": "Percent Fast (total)",
-          "long_name": "Percent of the Total Population with Fast Internet Speed",
-          "short_description": "Percent of the total population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
-          "statement": "{value} of the total population in {features.name} has a fast internet speed.",
-          "type": "percent",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
-          "full_name": "percent_above_threshold:perc_total_25_3_using_devices",
-          "measure": "perc_total_25_3_using_devices",
-          "short_name": "Percent Good (total)",
-          "long_name": "Percent of the Total Population with Good Internet Speed",
-          "short_description": "Percent of the total population with a good internet speed (above 25/3 MB/s, able to stream video or online game for one device).",
-          "statement": "{value} of the total population in {features.name} has a good internet speed.",
-          "type": "percent",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
-          "full_name": "percent_above_threshold:perc_w_int_100_20_using_devices",
-          "measure": "perc_w_int_100_20_using_devices",
-          "short_name": "Percent Fast (internet-connected)",
-          "long_name": "Percent of the Internet-Connected Population with Fast Internet Speed",
-          "short_description": "Percent of the internet-connected population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
-          "statement": "{value} of the internet-connected population in {features.name} has a fast internet speed.",
-          "type": "percent",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
-          "full_name": "percent_above_threshold:perc_w_int_25_3_using_devices",
-          "measure": "perc_w_int_25_3_using_devices",
-          "short_name": "Percent Good (internet-connected)",
-          "long_name": "Percent of the Internet-Connected Population with Good Internet Speed",
-          "short_description": "Percent of the internet-connected population with a good internet speed (above 25/3 MB/s, able to stream video or online game for one device).",
-          "statement": "{value} of the internet-connected population in {features.name} has a good internet speed.",
-          "type": "percent",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "va_hdcttr_2019_2021_speed_measurements_mobile.csv.xz",
-      "path": "legacy/data/dc.ookla.broadband/distribution/va_hdcttr_2019_2021_speed_measurements_mobile.csv.xz",
-      "md5": "411a913394e6080bde7d50875ee238ec",
-      "size": 522796,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:avg_down_using_devices",
-          "measure": "avg_down_using_devices",
-          "short_name": "Average Download Speed",
-          "long_name": "Average Download Speed",
-          "short_description": "Average download speed weighted by number of devices.",
-          "statement": "The average download speed is {value} in {features.name}.",
-          "type": "internet speed",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:avg_up_using_devices",
-          "measure": "avg_up_using_devices",
-          "short_name": "Average Upload Speed",
-          "long_name": "Average Upload Speed",
-          "short_description": "Average upload speed weighted by number of devices.",
-          "statement": "The average upload speed is {value} in {features.name}.",
-          "type": "internet speed",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:devices",
-          "measure": "devices",
-          "short_name": "Number of devices",
-          "long_name": "Number of devices",
-          "short_description": "The number of unique devices accessing Ookla Internet speed tests.",
-          "statement": "There are {value} unique devices in {features.name} accessing Ookla Internet speed tests.",
-          "type": "count",
-          "equity_category": "Accessibility",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "va_hdcttr_2019_2021_percent_above_threshold_fixed.csv.xz",
-      "path": "legacy/data/dc.ookla.broadband/distribution/va_hdcttr_2019_2021_percent_above_threshold_fixed.csv.xz",
-      "md5": "e9974d8746de154231ff38b12f6d92bd",
-      "size": 1473876,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
-          "full_name": "percent_above_threshold:perc_total_100_20_using_devices",
-          "measure": "perc_total_100_20_using_devices",
-          "short_name": "Percent Fast (total)",
-          "long_name": "Percent of the Total Population with Fast Internet Speed",
-          "short_description": "Percent of the total population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
-          "statement": "{value} of the total population in {features.name} has a fast internet speed.",
-          "type": "percent",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
-          "full_name": "percent_above_threshold:perc_total_25_3_using_devices",
-          "measure": "perc_total_25_3_using_devices",
-          "short_name": "Percent Good (total)",
-          "long_name": "Percent of the Total Population with Good Internet Speed",
-          "short_description": "Percent of the total population with a good internet speed (above 25/3 MB/s, able to stream video or online game for one device).",
-          "statement": "{value} of the total population in {features.name} has a good internet speed.",
-          "type": "percent",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
-          "full_name": "percent_above_threshold:perc_w_int_100_20_using_devices",
-          "measure": "perc_w_int_100_20_using_devices",
-          "short_name": "Percent Fast (internet-connected)",
-          "long_name": "Percent of the Internet-Connected Population with Fast Internet Speed",
-          "short_description": "Percent of the internet-connected population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
-          "statement": "{value} of the internet-connected population in {features.name} has a fast internet speed.",
-          "type": "percent",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
-          "full_name": "percent_above_threshold:perc_w_int_25_3_using_devices",
-          "measure": "perc_w_int_25_3_using_devices",
-          "short_name": "Percent Good (internet-connected)",
-          "long_name": "Percent of the Internet-Connected Population with Good Internet Speed",
-          "short_description": "Percent of the internet-connected population with a good internet speed (above 25/3 MB/s, able to stream video or online game for one device).",
-          "statement": "{value} of the internet-connected population in {features.name} has a good internet speed.",
-          "type": "percent",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "ncr_cttrbg_2019_2021_speed_measurements_fixed.csv.xz",
-      "path": "legacy/data/dc.ookla.broadband/distribution/ncr_cttrbg_2019_2021_speed_measurements_fixed.csv.xz",
-      "md5": "f1690ae69605b6989886e5e733dae47f",
-      "size": 1096732,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:avg_down_using_devices",
-          "measure": "avg_down_using_devices",
-          "short_name": "Average Download Speed",
-          "long_name": "Average Download Speed",
-          "short_description": "Average download speed weighted by number of devices.",
-          "statement": "The average download speed is {value} in {features.name}.",
-          "type": "internet speed",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:avg_up_using_devices",
-          "measure": "avg_up_using_devices",
-          "short_name": "Average Upload Speed",
-          "long_name": "Average Upload Speed",
-          "short_description": "Average upload speed weighted by number of devices.",
-          "statement": "The average upload speed is {value} in {features.name}.",
-          "type": "internet speed",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        },
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:devices",
-          "measure": "devices",
-          "short_name": "Number of devices",
-          "long_name": "Number of devices",
-          "short_description": "The number of unique devices accessing Ookla Internet speed tests.",
-          "statement": "There are {value} unique devices in {features.name} accessing Ookla Internet speed tests.",
-          "type": "count",
-          "equity_category": "Accessibility",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
-      "path": "Wired/Adoption/Percentage of households with broadband/data/distribution/dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
-      "md5": "181a9926e34b12cb1ff033b0c8c35c5d",
-      "size": 116
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Wired/Adoption/Percentage of households with broadband/data/distribution/measure_info.json",
-      "md5": "90e23cac0adfe4244300d3ad5a58094f",
-      "size": 1058
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Adoption/Percentage of households with broadband/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Adoption/Percentage of households with broadband/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
-      "path": "Wired/Adoption/Percentage of households with a high speed internet service (cable, fiber optic, or DSL)/data/distribution/dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
-      "md5": "181a9926e34b12cb1ff033b0c8c35c5d",
-      "size": 116
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Wired/Adoption/Percentage of households with a high speed internet service (cable, fiber optic, or DSL)/data/distribution/measure_info.json",
-      "md5": "3d9c84ef5b1b0c626e8b3967dd006ecc",
-      "size": 1161
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Adoption/Percentage of households with a high speed internet service (cable, fiber optic, or DSL)/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Adoption/Percentage of households with a high speed internet service (cable, fiber optic, or DSL)/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
-      "path": "Wired/Adoption/Percentage of households without a computer/data/distribution/dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
-      "md5": "181a9926e34b12cb1ff033b0c8c35c5d",
-      "size": 116
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Wired/Adoption/Percentage of households without a computer/data/distribution/measure_info.json",
-      "md5": "f0c9470d4c9f058eb55cdde818525893",
-      "size": 960
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Adoption/Percentage of households without a computer/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Adoption/Percentage of households without a computer/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
-      "path": "Wired/Adoption/Percentage of households without internet access/data/distribution/dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
-      "md5": "181a9926e34b12cb1ff033b0c8c35c5d",
-      "size": 116
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Wired/Adoption/Percentage of households without internet access/data/distribution/measure_info.json",
-      "md5": "190ae91d3dc576e678967d0f8fadf058",
-      "size": 952
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Adoption/Percentage of households without internet access/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Adoption/Percentage of households without internet access/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Wired/Accessibility/Percent of the Total Population with Fast Internet Speed/data/distribution/measure_info.json",
-      "md5": "6c95c7860f21215eab3c1c3065bfcf62",
-      "size": 823
-    },
-    {
-      "name": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-      "path": "Wired/Accessibility/Percent of the Total Population with Fast Internet Speed/data/distribution/dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-      "md5": "181a9926e34b12cb1ff033b0c8c35c5d",
-      "size": 116
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Percent of the Total Population with Fast Internet Speed/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Percent of the Total Population with Fast Internet Speed/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Wired/Accessibility/Percent of the Total Population with Good Internet Speed/data/distribution/measure_info.json",
-      "md5": "209fcf1078448d48d647169809cb67f0",
-      "size": 792
-    },
-    {
-      "name": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-      "path": "Wired/Accessibility/Percent of the Total Population with Good Internet Speed/data/distribution/dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-      "md5": "181a9926e34b12cb1ff033b0c8c35c5d",
-      "size": 116
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Percent of the Total Population with Good Internet Speed/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Percent of the Total Population with Good Internet Speed/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
-      "path": "Wired/Accessibility/Average Upload Speed/data/distribution/dcmdva_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
-      "md5": "181a9926e34b12cb1ff033b0c8c35c5d",
-      "size": 116,
-      "measure_info": [
-        "avg_up_using_devices"
-      ]
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Wired/Accessibility/Average Upload Speed/data/distribution/measure_info.json",
-      "md5": "51538d4e8cb9dbd43b9170142f38476d",
-      "size": 635
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Average Upload Speed/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Average Upload Speed/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Wired/Accessibility/Percent of the Internet-Connected Population with Good Internet Speed/data/distribution/measure_info.json",
-      "md5": "b54f805945f907afb1139e832675a1c1",
-      "size": 844
-    },
-    {
-      "name": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-      "path": "Wired/Accessibility/Percent of the Internet-Connected Population with Good Internet Speed/data/distribution/dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-      "md5": "181a9926e34b12cb1ff033b0c8c35c5d",
-      "size": 116
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Percent of the Internet-Connected Population with Good Internet Speed/data/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Percent of the Internet-Connected Population with Good Internet Speed/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Percent of the Internet-Connected Population with Good Internet Speed/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
-      "path": "Wired/Accessibility/Number of Devices/data/distribution/dcmdva_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
-      "md5": "181a9926e34b12cb1ff033b0c8c35c5d",
-      "size": 116,
-      "measure_info": [
-        "devices"
-      ]
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Wired/Accessibility/Number of Devices/data/distribution/measure_info.json",
-      "md5": "189a9b895678aa3b6cb184efc4cbeaee",
-      "size": 644
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Number of Devices/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Number of Devices/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Wired/Accessibility/Percent of the Internet-Connected Population with Fast Internet Speed/data/distribution/measure_info.json",
-      "md5": "e969083aec21da69e6383f94a2664807",
-      "size": 875
-    },
-    {
-      "name": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-      "path": "Wired/Accessibility/Percent of the Internet-Connected Population with Fast Internet Speed/data/distribution/dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-      "md5": "181a9926e34b12cb1ff033b0c8c35c5d",
-      "size": 116
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Percent of the Internet-Connected Population with Fast Internet Speed/data/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Percent of the Internet-Connected Population with Fast Internet Speed/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Percent of the Internet-Connected Population with Fast Internet Speed/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
-      "path": "Wired/Accessibility/Average Download Speed/data/distribution/dcmdva_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
-      "md5": "181a9926e34b12cb1ff033b0c8c35c5d",
-      "size": 116,
-      "measure_info": [
-        "avg_down_using_devices"
-      ]
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Wired/Accessibility/Average Download Speed/data/distribution/measure_info.json",
-      "md5": "3b9e2505dd4cd7cb53d909f5d0114e14",
-      "size": 647
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Average Download Speed/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Average Download Speed/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "dcmdva_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
-      "path": "Wired/Affordability/The minimum price for good internet (25 MBs upload) as a percentage of median household income/data/distribution/dcmdva_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
-      "md5": "181a9926e34b12cb1ff033b0c8c35c5d",
-      "size": 116
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Wired/Affordability/The minimum price for good internet (25 MBs upload) as a percentage of median household income/data/distribution/measure_info.json",
-      "md5": "5938cd9ea018eb7d2671968a87f90fad",
-      "size": 1071
-    },
-    {
-      "name": "dcmdva_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
-      "path": "Wired/Affordability/The minimum price for fast internet (100 MBs upload) as a percentage of median household income/data/distribution/dcmdva_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
-      "md5": "181a9926e34b12cb1ff033b0c8c35c5d",
-      "size": 116
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Wired/Affordability/The minimum price for fast internet (100 MBs upload) as a percentage of median household income/data/distribution/measure_info.json",
-      "md5": "178c78a2881842f41d2bbe9bb30a61f9",
-      "size": 1073
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Wired/Affordability/Percentage of income for internet (average)/data/distribution/measure_info.json",
-      "md5": "b6822b385c149ca840bcea4ed0b7003a",
-      "size": 1193
-    },
-    {
-      "name": "va_hdcttr_sdad_2021_perc_income_on_internet.csv.xz",
-      "path": "Wired/Affordability/Percentage of income for internet (average)/data/distribution/va_hdcttr_sdad_2021_perc_income_on_internet.csv.xz",
-      "md5": "9094b5e139f8b709d1188991a0b092ad",
-      "size": 28364,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dc_digital_communications.va_hdcttr_sdad_2021_perc_income_on_internet",
-          "full_name": "perc_income_on_internet:perc_income_avg_nat_package",
-          "measure": "perc_income_avg_nat_package",
-          "type": "percent",
-          "short_name": "Percentage of income for internet (average)",
-          "long_name": "The national average price for internet as a percentage of average income",
-          "short_description": "The national average price for internet ($64) as a percentage of median household income",
-          "long_description": "The national average price for internet ($64) as a percentage of median household income.",
-          "statement": "The national average internet package costs {value} of the median household income in {features.name}.",
-          "equity_category": "Affordability",
-          "sources": [
-            {
-              "name": "American Community Survey",
-              "date_accessed": 2021,
-              "url": "https://www.census.gov/programs-surveys/acs.html"
-            },
-            {
-              "name": "Broadband Now",
-              "date_accessed": 2021,
-              "url": "https://broadbandnow.com/"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Affordability/Percentage of income for internet (average)/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Affordability/Percentage of income for internet (average)/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "dcmdva_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
-      "path": "Wired/Affordability/The national average price for internet as a percentage of average income/data/distribution/dcmdva_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
-      "md5": "181a9926e34b12cb1ff033b0c8c35c5d",
-      "size": 116
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Wired/Affordability/The national average price for internet as a percentage of average income/data/distribution/measure_info.json",
-      "md5": "c16512b7e68f650fa36bea5b52436b61",
-      "size": 1070
     }
   ],
   "_references": {}
