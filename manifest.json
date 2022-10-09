@@ -1,8 +1,8 @@
 {
   "name": "sdc.broadband_dev",
-  "measure_not_found": 15,
-  "count": 56,
-  "utc_audited": "2022-10-05 15:31:19",
+  "measure_not_found": 16,
+  "count": 57,
+  "utc_audited": "2022-10-09 16:43:34",
   "data": [
     {
       "name": "measure_info.json",
@@ -153,6 +153,12 @@
       "path": "Wired/Adoption/Households with broadband/data/distribution/measure_info.json",
       "md5": "90e23cac0adfe4244300d3ad5a58094f",
       "size": 1058
+    },
+    {
+      "name": "dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv",
+      "path": "Wired/Adoption/Households with cable, fiber optic, or DSL/data/distribution/dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv",
+      "md5": "166bdd47120408c4823185b251a35630",
+      "size": 57539
     },
     {
       "name": "dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
