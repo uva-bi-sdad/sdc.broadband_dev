@@ -1,6 +1,19 @@
 {
   "name": "sdc.broadband_dev",
   "measure_not_found": [
+    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Adoption/Households without internet access/data/distribution/ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Adoption/Households with cable, fiber optic, or DSL/data/distribution/ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Adoption/Households with broadband/data/distribution/ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Adoption/Households without a computer/data/distribution/ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Accessibility/Average Download Speed/data/distribution/ncr_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
+    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Accessibility/Average Upload Speed/data/distribution/ncr_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
+    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Accessibility/Percent Fast (internet-connected)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Accessibility/Percent Good (total)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Accessibility/Percent Good (internet-connected)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Accessibility/Percent Fast (total)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Affordability/Percentage of income for good internet/data/distribution/ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
+    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Affordability/Percentage of income for fast internet/data/distribution/ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
+    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Affordability/Percentage of income for internet (average)/data/distribution/ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
     "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/legacy/data/dc.ookla.broadband/distribution/va_hdcttr_2019_2021_percent_above_threshold_mobile.csv.xz",
     "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/legacy/data/dc.ookla.broadband/distribution/ncr_cttrbg_2019_2021_percent_above_threshold_mobile.csv.xz",
     "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/legacy/data/dc.ookla.broadband/distribution/va059_hsr_sdad_2019_2019_speed_measurements.csv.xz",
@@ -23,7 +36,7 @@
     "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/legacy/data/dc.acs.broadband/distribution/va_hdcttr_2017_2019_broadband_withoutint_compdev.csv.xz"
   ],
   "count": 83,
-  "utc_audited": "2022-11-29 21:31:55",
+  "utc_audited": "2022-11-29 21:57:21",
   "data": [
     {
       "name": "measure_info.json",
@@ -32,32 +45,10 @@
       "size": 952
     },
     {
-      "name": "dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
-      "path": "Wired/Adoption/Households without internet access/data/distribution/dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+      "name": "ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+      "path": "Wired/Adoption/Households without internet access/data/distribution/ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
       "md5": "018a30da277df7de44d12a862652a4f4",
-      "size": 368568,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev",
-          "full_name": "broadband_withoutint_compdev:perc_hh_without_internet",
-          "measure": "perc_hh_without_internet",
-          "type": "percent",
-          "short_name": "Households without internet access",
-          "long_name": "Percentage of households without internet access",
-          "short_description": "Percentage of households self-reported to not have internet access at home",
-          "long_description": "Percentage of households self-reported to not have internet access at home. Based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates.",
-          "statement": "{value} of households in {features.name} do not have internet access.",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "American Community Survey Table B28002",
-              "date_accessed": 2021,
-              "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-          ]
-        }
-      ]
+      "size": 368568
     },
     {
       "name": "temp",
@@ -78,32 +69,10 @@
       "size": 1161
     },
     {
-      "name": "dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
-      "path": "Wired/Adoption/Households with cable, fiber optic, or DSL/data/distribution/dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+      "name": "ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+      "path": "Wired/Adoption/Households with cable, fiber optic, or DSL/data/distribution/ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
       "md5": "155ca29cbc7bd30d9405ba5ce1113861",
-      "size": 7100,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev",
-          "full_name": "broadband_withoutint_compdev:perc_hh_with_cable_fiber_dsl",
-          "measure": "perc_hh_with_cable_fiber_dsl",
-          "type": "percent",
-          "short_name": "Households with cable, fiber optic, or DSL",
-          "long_name": "Percentage of households with a high speed internet service (cable, fiber optic, or DSL)",
-          "short_description": "Percentage of households self-reported to have a high speed internet service (cable, fiber optic, or DSL)",
-          "long_description": "Percentage of households self-reported to have a high speed internet service. A high speed internet service is defined as a cable, fiber optic, or DSL internet connection. Based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates.",
-          "statement": "{value} of households in {features.name} have a cable, fiber optic, or DSL internet connection.",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "American Community Survey Table B28002",
-              "date_accessed": 2021,
-              "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-          ]
-        }
-      ]
+      "size": 7100
     },
     {
       "name": "dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv",
@@ -152,32 +121,10 @@
       "size": 1058
     },
     {
-      "name": "dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
-      "path": "Wired/Adoption/Households with broadband/data/distribution/dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+      "name": "ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+      "path": "Wired/Adoption/Households with broadband/data/distribution/ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
       "md5": "8c8953c672c8154c139cdf51693ecf11",
-      "size": 370364,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev",
-          "full_name": "broadband_withoutint_compdev:perc_hh_with_broadband",
-          "measure": "perc_hh_with_broadband",
-          "type": "percent",
-          "short_name": "Households with broadband",
-          "long_name": "Percentage of households with broadband",
-          "short_description": "Percentage of households self-reported to have a broadband internet connection (any type of internet other than a dial-up)",
-          "long_description": "Percentage of households self-reported to have a broadband internet connection. Broadband internet is defined as any type of internet other than a dial-up. Based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates.",
-          "statement": "{value} of households in {features.name} have a broadband connection.",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "American Community Survey Table B28002",
-              "date_accessed": 2021,
-              "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-          ]
-        }
-      ]
+      "size": 370364
     },
     {
       "name": "temp",
@@ -198,32 +145,10 @@
       "size": 960
     },
     {
-      "name": "dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
-      "path": "Wired/Adoption/Households without a computer/data/distribution/dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+      "name": "ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+      "path": "Wired/Adoption/Households without a computer/data/distribution/ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
       "md5": "01b932f3a3e9aee37e70dea8df4679be",
-      "size": 359112,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev",
-          "full_name": "broadband_withoutint_compdev:perc_hh_without_compdev",
-          "measure": "perc_hh_without_compdev",
-          "type": "percent",
-          "short_name": "Households without a computer",
-          "long_name": "Percentage of households without a computer",
-          "short_description": "Percentage of households self-reported to not have a computer or device at home",
-          "long_description": "Percentage of the households self-reported to not have a computer or device at home. Based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates.",
-          "statement": "{value} of households in {features.name} do not have a computer or device.",
-          "equity_category": "Accessibility",
-          "sources": [
-            {
-              "name": "American Community Survey Table B28002",
-              "date_accessed": 2021,
-              "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-          ]
-        }
-      ]
+      "size": 359112
     },
     {
       "name": "temp",
@@ -244,32 +169,10 @@
       "size": 647
     },
     {
-      "name": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
-      "path": "Wired/Accessibility/Average Download Speed/data/distribution/dcmdva_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
+      "name": "ncr_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
+      "path": "Wired/Accessibility/Average Download Speed/data/distribution/ncr_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
       "md5": "ab7638d184616212944a56d5aa3c16aa",
-      "size": 418776,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:avg_down_using_devices",
-          "measure": "avg_down_using_devices",
-          "type": "internet speed",
-          "short_name": "Average Download Speed",
-          "long_name": "Average Download Speed",
-          "short_description": "Average download speed weighted by number of devices.",
-          "long_description": [],
-          "statement": "The average download speed is {value} in {features.name}.",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        }
-      ]
+      "size": 418776
     },
     {
       "name": "temp",
@@ -290,32 +193,10 @@
       "size": 635
     },
     {
-      "name": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
-      "path": "Wired/Accessibility/Average Upload Speed/data/distribution/dcmdva_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
+      "name": "ncr_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
+      "path": "Wired/Accessibility/Average Upload Speed/data/distribution/ncr_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
       "md5": "a21fc21761f8c4f367ded69604e09fda",
-      "size": 406868,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-          "full_name": "speed_measurements:avg_up_using_devices",
-          "measure": "avg_up_using_devices",
-          "type": "internet speed",
-          "short_name": "Average Upload Speed",
-          "long_name": "Average Upload Speed",
-          "short_description": "Average upload speed weighted by number of devices.",
-          "long_description": [],
-          "statement": "The average upload speed is {value} in {features.name}.",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        }
-      ]
+      "size": 406868
     },
     {
       "name": "temp",
@@ -336,32 +217,10 @@
       "size": 875
     },
     {
-      "name": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-      "path": "Wired/Accessibility/Percent Fast (internet-connected)/data/distribution/dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+      "name": "ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+      "path": "Wired/Accessibility/Percent Fast (internet-connected)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
       "md5": "7639f7c916c6e88010f6adddfcfec875",
-      "size": 425976,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
-          "full_name": "percent_above_threshold:perc_w_int_100_20_using_devices",
-          "measure": "perc_w_int_100_20_using_devices",
-          "type": "percent",
-          "short_name": "Percent Fast (internet-connected)",
-          "long_name": "Percent of the Internet-Connected Population with Fast Internet Speed",
-          "short_description": "Percent of the internet-connected population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
-          "long_description": [],
-          "statement": "{value} of the internet-connected population in {features.name} has a fast internet speed.",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        }
-      ]
+      "size": 425976
     },
     {
       "name": "temp",
@@ -382,32 +241,10 @@
       "size": 792
     },
     {
-      "name": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-      "path": "Wired/Accessibility/Percent Good (total)/data/distribution/dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+      "name": "ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+      "path": "Wired/Accessibility/Percent Good (total)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
       "md5": "51e1a1e775917f1f60d8ee350ef47db3",
-      "size": 412464,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
-          "full_name": "percent_above_threshold:perc_total_25_3_using_devices",
-          "measure": "perc_total_25_3_using_devices",
-          "type": "percent",
-          "short_name": "Percent Good (total)",
-          "long_name": "Percent of the Total Population with Good Internet Speed",
-          "short_description": "Percent of the total population with a good internet speed (above 25/3 MB/s, able to stream video or online game for one device).",
-          "long_description": [],
-          "statement": "{value} of the total population in {features.name} has a good internet speed.",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        }
-      ]
+      "size": 412464
     },
     {
       "name": "temp",
@@ -428,32 +265,10 @@
       "size": 844
     },
     {
-      "name": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-      "path": "Wired/Accessibility/Percent Good (internet-connected)/data/distribution/dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+      "name": "ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+      "path": "Wired/Accessibility/Percent Good (internet-connected)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
       "md5": "94605b03ea16f602d2b1476b03cb2580",
-      "size": 408360,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
-          "full_name": "percent_above_threshold:perc_w_int_25_3_using_devices",
-          "measure": "perc_w_int_25_3_using_devices",
-          "type": "percent",
-          "short_name": "Percent Good (internet-connected)",
-          "long_name": "Percent of the Internet-Connected Population with Good Internet Speed",
-          "short_description": "Percent of the internet-connected population with a good internet speed (above 25/3 MB/s, able to stream video or online game for one device).",
-          "long_description": [],
-          "statement": "{value} of the internet-connected population in {features.name} has a good internet speed.",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        }
-      ]
+      "size": 408360
     },
     {
       "name": "temp",
@@ -474,32 +289,10 @@
       "size": 823
     },
     {
-      "name": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-      "path": "Wired/Accessibility/Percent Fast (total)/data/distribution/dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+      "name": "ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+      "path": "Wired/Accessibility/Percent Fast (total)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
       "md5": "530ee037cd06aed841bf50db18ff0a09",
-      "size": 426256,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
-          "full_name": "percent_above_threshold:perc_total_100_20_using_devices",
-          "measure": "perc_total_100_20_using_devices",
-          "type": "percent",
-          "short_name": "Percent Fast (total)",
-          "long_name": "Percent of the Total Population with Fast Internet Speed",
-          "short_description": "Percent of the total population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
-          "long_description": [],
-          "statement": "{value} of the total population in {features.name} has a fast internet speed.",
-          "equity_category": "Availability",
-          "sources": [
-            {
-              "name": "Ookla",
-              "date_accessed": 2021,
-              "url": "https://www.ookla.com/ookla-for-good/open-data"
-            }
-          ]
-        }
-      ]
+      "size": 426256
     },
     {
       "name": "temp",
@@ -520,37 +313,10 @@
       "size": 1071
     },
     {
-      "name": "dcmdva_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
-      "path": "Wired/Affordability/Percentage of income for good internet/data/distribution/dcmdva_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
+      "name": "ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
+      "path": "Wired/Affordability/Percentage of income for good internet/data/distribution/ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
       "md5": "09daeb3a48622eb3d586c7b94cd78f31",
-      "size": 163248,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_broadbandnow_acs_sdad_2021_perc_income_on_internet",
-          "full_name": "perc_income_on_internet:perc_income_min_price_25",
-          "measure": "perc_income_min_price_25",
-          "type": "percent",
-          "short_name": "Percentage of income for good internet",
-          "long_name": "The minimum price for good internet (25 MB/s upload) as a percentage of median household income",
-          "short_description": "The minimum price for good internet (25 MB/s upload) as a percentage of median household income",
-          "long_description": "The minimum price for good internet (25 MB/s upload) as a percentage of median household income.",
-          "statement": "Good internet costs {value} of the median household income in {features.name}.",
-          "equity_category": "Affordability",
-          "sources": [
-            {
-              "name": "American Community Survey",
-              "date_accessed": 2021,
-              "url": "https://www.census.gov/programs-surveys/acs.html"
-            },
-            {
-              "name": "Broadband Now",
-              "date_accessed": 2021,
-              "url": "https://broadbandnow.com/"
-            }
-          ]
-        }
-      ]
+      "size": 163248
     },
     {
       "name": "temp",
@@ -571,37 +337,10 @@
       "size": 1073
     },
     {
-      "name": "dcmdva_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
-      "path": "Wired/Affordability/Percentage of income for fast internet/data/distribution/dcmdva_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
+      "name": "ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
+      "path": "Wired/Affordability/Percentage of income for fast internet/data/distribution/ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
       "md5": "e07cbfc2ffeaabd4bfd311c828c2b414",
-      "size": 161256,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_broadbandnow_acs_sdad_2021_perc_income_on_internet",
-          "full_name": "perc_income_on_internet:perc_income_min_price_100",
-          "measure": "perc_income_min_price_100",
-          "type": "percent",
-          "short_name": "Percentage of income for fast internet",
-          "long_name": "The minimum price for fast internet (100 MB/s upload) as a percentage of median household income",
-          "short_description": "The minimum price for fast internet (100 MB/s upload) as a percent of median household income",
-          "long_description": "The minimum price for fast internet (100 MB/s upload) as a percentage of median household income.",
-          "statement": "Fast internet costs {value} of the median household income in {features.name}.",
-          "equity_category": "Affordability",
-          "sources": [
-            {
-              "name": "American Community Survey",
-              "date_accessed": 2021,
-              "url": "https://www.census.gov/programs-surveys/acs.html"
-            },
-            {
-              "name": "Broadband Now",
-              "date_accessed": 2021,
-              "url": "https://broadbandnow.com/"
-            }
-          ]
-        }
-      ]
+      "size": 161256
     },
     {
       "name": "temp",
@@ -622,37 +361,10 @@
       "size": 1070
     },
     {
-      "name": "dcmdva_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
-      "path": "Wired/Affordability/Percentage of income for internet (average)/data/distribution/dcmdva_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
+      "name": "ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
+      "path": "Wired/Affordability/Percentage of income for internet (average)/data/distribution/ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
       "md5": "29f1867cdaf849dc543d166f953e5f87",
-      "size": 166648,
-      "measure_info": [
-        {
-          "category": "Broadband",
-          "measure_table": "dcmdva_broadbandnow_acs_sdad_2021_perc_income_on_internet",
-          "full_name": "perc_income_on_internet:perc_income_avg_nat_package",
-          "measure": "perc_income_avg_nat_package",
-          "type": "percent",
-          "short_name": "Percentage of income for internet (average)",
-          "long_name": "The national average price for internet as a percentage of average income",
-          "short_description": "The national average price for internet ($64) as a percentage of median household income",
-          "long_description": "The national average price for internet ($64) as a percentage of median household income.",
-          "statement": "The national average internet package costs {value} of the median household income in {features.name}.",
-          "equity_category": "Affordability",
-          "sources": [
-            {
-              "name": "American Community Survey",
-              "date_accessed": 2021,
-              "url": "https://www.census.gov/programs-surveys/acs.html"
-            },
-            {
-              "name": "Broadband Now",
-              "date_accessed": 2021,
-              "url": "https://broadbandnow.com/"
-            }
-          ]
-        }
-      ]
+      "size": 166648
     },
     {
       "name": "temp",
