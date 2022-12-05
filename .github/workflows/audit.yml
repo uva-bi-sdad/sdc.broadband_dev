@@ -55,7 +55,7 @@ jobs:
           ls -la          
       - name: Remove all files that do not have a distribution in its path, ignoring all files in root
         run: |
-          find ${{ github.workspace }} -mindepth 2 -type f ! -wholename "**/distribution/*" ! -wholename "**/dist/*" -delete
+          find ${{ github.workspace }} -mindepth 2 -type f ! -wholename "**/distribution/*" -delete
       - name: Remove github things # Required so that you can push to another directory
         run: |
           rm -rf .git
