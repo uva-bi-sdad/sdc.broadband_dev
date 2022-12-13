@@ -4,7 +4,7 @@ on:
     branches:
       - 'main'
 jobs:
-  book-keeping:
+  update_private_repo:
     if: github.repository == 'uva-bi-sdad/sdc.broadband_dev'
     runs-on: ubuntu-latest
     steps:
@@ -31,12 +31,12 @@ jobs:
       - name: Install requirements
         run: |
           pip install -r auditor/requirements.txt
-      - name: Execute python script # create a manifest with the current directory as root
+      - name: Tidying up the repo
         run: |
-          python auditor/audit.py -i .
-      # - name: update the yml file to the newest version on the auditor repo (requires permissions )
-      #   run: |
-      #     cp sdad_data-auditor/runner.yml .github/workflows/runner.yml
+          python auditor/repo_transform.py -i . -fdmg  
+      - name: Execute audit # create a manifest with the current directory as root
+        run: |
+          python auditor/audit.py -i .          
       - name: Remove auditor files
         run: |
           rm -rf auditor
@@ -50,13 +50,20 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           force: true
+          
+  update_public_repo:
+    needs: update_private_repo
+    if: success() || failure()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@master    
       - name: List current working directory
-        continue-on-error: true
         run: |
           ls -la          
       - name: Remove all files that do not have a distribution in its path, ignoring all files in root
-        run: | #/distr for legacy data
-          find ${{ github.workspace }} -mindepth 2 -type f ! -wholename "**/distribution/*" ! -wholename "**/distr/*" -delete
+        run: |
+          find ${{ github.workspace }} -mindepth 2 -type f ! -wholename "**/distribution/*" -delete
       - name: Remove github things # Required so that you can push to another directory
         run: |
           rm -rf .git
@@ -65,16 +72,14 @@ jobs:
           pwd
       - name: List current working directory
         run: |
-          ls -la
+          tree .
       - name: Push directory to another repository
         uses: cpina/github-action-push-to-another-repository@main
         env:
-          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+          SSH_DEPLOY_KEY: ${{ secrets.SDC_SECRET }}
         with:
           source-directory: .
           destination-github-username: 'uva-bi-sdad'
           destination-repository-name: 'sdc.broadband'
           target-branch: main
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      
-
