@@ -51,6 +51,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           force: true
       - name: List current working directory
+        continue-on-error: true
         run: |
           ls -la          
       - name: Remove all files that do not have a distribution in its path, ignoring all files in root
