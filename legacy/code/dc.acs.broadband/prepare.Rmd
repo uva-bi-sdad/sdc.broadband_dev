@@ -1,0 +1,15 @@
+---
+title: "prepare"
+output: html_document
+date: '2022-12-06'
+---
+
+```{r}
+library(jsonlite)
+```
+
+```{r}
+expected_cols <- fromJSON("https://raw.githubusercontent.com/uva-bi-sdad/data_repo_structure/main/col_names.json")
+```
+
+
