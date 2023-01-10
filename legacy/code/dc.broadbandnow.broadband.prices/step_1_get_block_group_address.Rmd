@@ -5,6 +5,52 @@ output: html_document
 
 # Idea here - from Corelogic, get a couple of addresses from each block group (or nearby)
 
+
+# Install the dc.utils, which contain code to access the database
+```{r}
+#install.packages("remotes")
+library(devtools)
+install_github("uva-bi-sdad/sdc.utils")
+library(dc.utils)
+```
+
+# List all available functions in util
+```{r}
+# lsf.str("package:utils")
+exists('get_db_conn', where='package:dc.utils', mode='function')
+exists('st_read', where='package:dc.utils', mode='function')
+```
+
+# Print the current working directory, and check if the credentials exist
+```{r}
+list.files(getwd())
+file.exists("~/.Renviron")
+readRenviron("~/.Renviron")
+Sys.getenv("db_nam")
+```
+
+# Assuming you don't have access to the function
+
+```{r}
+get_db_conn <-
+  function(db_name = Sys.getenv("db_nam"),
+           db_host = Sys.getenv("db_hst"),
+           db_port = Sys.getenv("db_prt"),
+           db_user = Sys.getenv("db_usr"),
+           db_pass = Sys.getenv("db_pwd")) {
+    RPostgreSQL::dbConnect(
+      drv = RPostgreSQL::PostgreSQL(),
+      dbname = db_name,
+      host = db_host,
+      port = db_port,
+      user = db_user,
+      password = db_pass
+    )
+  }
+```
+
+
+
 # load packages
 
 ```{r}
