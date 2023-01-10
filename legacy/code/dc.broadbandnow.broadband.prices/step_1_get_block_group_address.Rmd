@@ -12,6 +12,7 @@ output: html_document
 library(devtools)
 install_github("uva-bi-sdad/sdc.utils")
 library(dc.utils)
+
 ```
 
 # List all available functions in util
