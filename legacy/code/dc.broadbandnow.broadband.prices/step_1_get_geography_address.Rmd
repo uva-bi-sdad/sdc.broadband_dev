@@ -1,0 +1,145 @@
+---
+title: "Internet_Price"
+output: html_document
+---
+
+# Idea here - from Corelogic, get a couple of addresses from each block group (or nearby)
+# Install the dc.utils, which contain code to access the database
+```{r}
+#install.packages("remotes")
+library(devtools)
+install_github("uva-bi-sdad/sdc.utils")
+library(dc.utils)
+
+```
+
+# List all available functions in util
+```{r}
+# lsf.str("package:utils")
+exists('get_db_conn', where='package:dc.utils', mode='function')
+exists('st_read', where='package:dc.utils', mode='function')
+```
+
+# Print the current working directory, and check if the credentials exist
+```{r}
+list.files(getwd())
+file.exists("~/.Renviron")
+readRenviron("~/.Renviron")
+Sys.getenv("db_nam")
+```
+
+# Assuming you don't have access to the function
+
+```{r}
+get_db_conn <-
+  function(db_name = Sys.getenv("db_nam"),
+           db_host = Sys.getenv("db_hst"),
+           db_port = Sys.getenv("db_prt"),
+           db_user = Sys.getenv("db_usr"),
+           db_pass = Sys.getenv("db_pwd")) {
+    RPostgreSQL::dbConnect(
+      drv = RPostgreSQL::PostgreSQL(),
+      dbname = db_name,
+      host = db_host,
+      port = db_port,
+      user = db_user,
+      password = db_pass
+    )
+  }
+```
+
+
+
+# load packages
+```{r}
+library(sf)
+library(tidyverse)
+library(tmap)
+library(tmaptools)
+library(tigris)
+library(tidycensus)
+library(rmapshaper)
+library(matrixStats)
+library(SpatialAcc)
+library(reticulate)
+library(dplyr)
+library(tidygeocoder)
+library(readxl)
+library(DBI)
+```
+
+# download county-level data, and plot to verify
+
+```{r}
+usa <- get_acs(geography = "county",
+                 year = 2019,
+                 variables = c(median_household_income = "B19013_001"),
+                 survey = "acs5",
+                 output = "wide",
+                 geometry = T) 
+
+
+shifted_usa <- usa%>%shift_geometry() # need gemoetry for st_centroid
+
+plot(shifted_usa["median_household_incomeE"])
+```
+
+# Getting the centroid for each of the geometries (see https://stackoverflow.com/questions/54352407/tidycensus-package-can-you-get-latitudes-and-longitudes-with-census-blocks)
+```{r}
+count_centroid <- shifted_usa %>% 
+  #st_transform(2273) %>% # convert to projected coord system for better centroid
+  st_centroid()
+
+head(count_centroid)
+ggplot(shifted_usa) +
+  geom_sf() +
+  geom_sf(data = count_centroid) +
+  theme_void()
+```
+
+```{r}
+count_centroid <- usa %>% 
+  st_centroid()
+
+head(count_centroid)
+
+mapview(count_centroid)
+```
+
+
+# Get the lat lon of the positions
+```{r}
+count_centroid
+count_centroid <- cbind(count_centroid, st_coordinates(count_centroid))
+# count_centroid <- count_centroid %>% extract("geometry", c('lat', 'lon'), '\\((.*), (.*)\\)', convert = TRUE)
+names(count_centroid)[names(count_centroid) == 'X'] <- 'lon'
+names(count_centroid)[names(count_centroid) == 'Y'] <- 'lat'
+colnames(count_centroid)
+```
+
+```{r}
+
+```
+
+
+# Reverse geocode based on the lat long of the centroid. Reference: https://walker-data.com/census-r/census-geographic-data-and-applications-in-r.html
+```{r}
+centroid_address_path <- "../../data/usa_reverse_geocode_county_centroid.csv"
+
+if (file.exists(centroid_address_path)){
+  print("Centroid file exists, loading...")
+  reverse = read.csv(centroid_address_path)
+}else{ # Took me 3230.6 seconds
+  reverse <- count_centroid[c("lat", "lon")] %>%
+  reverse_geocode(lat = lat, long = lon, method = 'osm',
+                  address = address_found, full_results = TRUE) 
+  reverse <- apply(reverse, 2, as.character)
+  reverse['geoid'] <- count_centroid$GEOID
+  
+  # reverse
+  
+  write.csv(reverse, centroid_address_path, row.names=FALSE)  
+}
+
+colnames(reverse)
+```
