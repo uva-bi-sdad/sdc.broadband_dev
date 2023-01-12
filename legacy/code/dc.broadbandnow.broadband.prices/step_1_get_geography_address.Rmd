@@ -136,7 +136,7 @@ if (file.exists(centroid_address_path)){
   reverse <- apply(reverse, 2, as.character)
   reverse['geoid'] <- count_centroid$GEOID
   
-  # reverse
+  reverse
   
   write.csv(reverse, centroid_address_path, row.names=FALSE)  
 }
