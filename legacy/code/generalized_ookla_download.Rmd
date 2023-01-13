@@ -1,0 +1,131 @@
+---
+title: "generalized_ookla_download"
+output: html_document
+date: "2023-01-13"
+---
+
+# Reference https://github.com/teamookla/ookla-open-data/blob/master/tutorials/aggregate_by_county.md
+
+```{r}
+library(tigris) # county boundaries
+library(tidyverse) # data cleaning
+library(sf) # spatial functions
+library(knitr)
+library(kableExtra) # county statistics table
+library(RColorBrewer) # colors
+library(here) # file management
+library(usethis) # download data
+```
+
+
+# Download data
+```{r}
+# download the zip folder from s3 and save to working directory
+# use_zip("https://ookla-open-data.s3-us-west-2.amazonaws.com/shapefiles/performance/type%3Dfixed/year%3D2020/quarter%3D2/2020-04-01_performance_fixed_tiles.zip")
+
+
+#read the shapefile. 
+tiles <- read_sf(here("test/2020-04-01_performance_fixed_tiles/gps_fixed_tiles.shp")) %>%
+  mutate(avg_d_kbps = as.numeric(avg_d_kbps),
+         avg_u_kbps = as.numeric(avg_u_kbps),
+         avg_lat_ms = as.numeric(avg_lat_ms))
+```
+
+# Get county boundaries
+```{r}
+ky_counties <- tigris::counties(state = "Kentucky") %>%
+  select(state_code = STATEFP, geoid = GEOID, name = NAME) %>% # only keep useful variables 
+  st_transform(4326) # transform to the same CRS as the tiles
+
+summary(ky_counties)
+tiles
+```
+
+# Test Progress bars https://r-coder.com/progress-bar-r/
+```{r}
+# install.packages("progress")
+library(progress)
+
+```
+
+
+# Join tiles to counties. Takes a long time to run, therefore I added a progress bar
+Now I’ll join the tiles to the counties. I use left = FALSE because I only want to include counties that have at least 1 tile.
+```{r}
+
+n_iter <- length(tiles)
+
+pb <- progress_bar$new(format = "(:spin) [:bar] :percent [Elapsed time: :elapsedfull || Estimated time remaining: :eta]",
+                       total = n_iter,
+                       complete = "=",   # Completion bar character
+                       incomplete = "-", # Incomplete bar character
+                       current = ">",    # Current bar character
+                       clear = FALSE,    # If TRUE, clears the bar when finish
+                       width = 100)      # Width of the progress bar
+
+tiles_in_ky_counties <- NULL
+for(i in 1:n_iter) {
+  
+    # Updates the current state
+    pb$tick()
+    
+    if (is.null(tiles_in_ky_counties)){
+      tiles_in_ky_counties <- st_join(ky_counties, tiles[i], left = FALSE)
+    }
+    else{
+      tiles_in_ky_counties <- st_join(ky_counties, tiles[i], left = FALSE)
+    }
+    #---------------------
+  
+}
+
+tiles_in_ky_counties
+```
+
+# Calculate statistics
+```{r}
+county_stats <- tiles_in_ky_counties %>%
+  st_set_geometry(NULL) %>%
+  group_by(state_code, geoid, name) %>%
+  summarise(mean_dl_mbps_wt = weighted.mean(avg_d_kbps, tests) / 1000,
+            mean_ul_mbps_wt = weighted.mean(avg_u_kbps, tests) / 1000,
+            mean_lat_ms_wt = weighted.mean(avg_lat_ms, tests),
+            tests = sum(tests)) %>%
+  ungroup() %>%
+  left_join(fips_codes %>% 
+              mutate(geoid = paste0(state_code, county_code)) %>% 
+              # get nicer county and state names
+              select(state, geoid, long_name = county, county), by = c("geoid")) 
+```
+
+```{r}
+set.seed(1) # get the same random sample each time
+ky_places <- places(state = "Kentucky") %>%
+  filter(PCICBSA == "Y") %>% # principal cities only
+  st_centroid() %>%
+  mutate(NAME = if_else(NAME == "Louisville/Jefferson County metro government (balance)", "Louisville", NAME)) %>% # shorten the name for Louisville
+  sample_n(15) # just get a random 10 places
+```
+
+```{r}
+county_stats_sf <- ky_counties %>%
+  select(geoid) %>%
+  left_join(county_stats %>% mutate(geoid = as.character(geoid)), by = c("geoid")) %>%
+  mutate(mean_dl_mbps_wt = case_when(tests < 50 ~ NA_real_,
+                            TRUE ~ mean_dl_mbps_wt)) %>% # at least 50 tests
+  mutate(dl_cat = cut(mean_dl_mbps_wt, c(0, 25, 50, 100, 150, 200), ordered_result = TRUE))
+
+ggplot() +
+  geom_sf(data = county_stats_sf, aes(fill = dl_cat), color = "gray20", lwd = 0.1) +
+  geom_sf_text(data = ky_places, aes(label = NAME), color = "black", size = 3) +
+  theme_void() +
+  scale_fill_manual(values = brewer.pal(n = 6, name = "BuPu"),  
+                    na.value = "gray80", 
+                    labels = c("0 to 25", "25.1 to 50", "50.1 to 100", "100.1 to 150", "150.1 to 200", "Insufficient data"), 
+                    name = "Mean download speed (Mbps)", 
+                    guide = guide_legend(direction = "horizontal", title.position = "top", nrow = 1, label.position = "bottom", keyheight = 0.5, keywidth = 5)) +
+  theme(text = element_text(color = "gray25"),
+        legend.position = "top")
+```
+
+
