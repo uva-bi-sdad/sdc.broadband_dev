@@ -1,0 +1,90 @@
+speed,down_up,price,name,type,address,success
+115 Mbps,Download,50,T-Mobile 5G Home Internet,Home Internet w/ Autopay,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+23 Mbps,Upload,50,T-Mobile 5G Home Internet,Home Internet w/ Autopay,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+115 Mbps,Download,55,T-Mobile 5G Home Internet,Home Internet,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+23 Mbps,Upload,55,T-Mobile 5G Home Internet,Home Internet,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+100 Mbps,Download,55,AT&T Internet,Internet 100,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+20 Mbps,Upload,55,AT&T Internet,Internet 100,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+100 Mbps,Download,109.99,HDER LINK,ULTRA FASTER 100,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+5 Mbps,Upload,109.99,HDER LINK,ULTRA FASTER 100,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+100 Mbps,Download,120,WATCH Communications,WATCH ELITE,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+100 Mbps,Download,129.99,AT&T Internet,DIRECTV ENTERTAINMENT + AT&T Internet 100,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+20 Mbps,Upload,129.99,AT&T Internet,DIRECTV ENTERTAINMENT + AT&T Internet 100,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+100 Mbps,Download,134.99,AT&T Internet,DIRECTV CHOICE™ + AT&T Internet 100,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+20 Mbps,Upload,134.99,AT&T Internet,DIRECTV CHOICE™ + AT&T Internet 100,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+100 Mbps,Download,149.95,Wavelinc Communications,5G-100M,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+10 Mbps,Upload,149.95,Wavelinc Communications,5G-100M,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+100 Mbps,Download,149.99,Viasat Internet,Unlimited Platinum 100,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+100 Mbps,Download,154.99,AT&T Internet,DIRECTV ULTIMATE + AT&T  Internet 100,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+20 Mbps,Upload,154.99,AT&T Internet,DIRECTV ULTIMATE + AT&T  Internet 100,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+100 Mbps,Download,169.99,Viasat Internet,Unlimited Platinum 100,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+70 Mbps,Download,124.95,Wavelinc Communications,5G-70M,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+7 Mbps,Upload,124.95,Wavelinc Communications,5G-70M,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+50 Mbps,Download,89.99,HDER LINK,ULTRA FAST 50,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+5 Mbps,Upload,89.99,HDER LINK,ULTRA FAST 50,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+50 Mbps,Download,99.95,Wavelinc Communications,5G-50M,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+5 Mbps,Upload,99.95,Wavelinc Communications,5G-50M,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+50 Mbps,Download,99.99,Viasat Internet,Unlimited Gold 50,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+50 Mbps,Download,99.99,Viasat Internet,Unlimited Gold 50,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+50 Mbps,Download,99.99,WATCH Communications,WATCH PREMIUM,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+50 Mbps,Download,119.99,Viasat Internet,Unlimited Gold 50,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+50 Mbps,Download,149.99,Viasat Internet,Unlimited Platinum 50,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+30 Mbps,Download,99.99,Viasat Internet,Unlimited Gold 30,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+30 Mbps,Download,149.99,Viasat Internet,Unlimited Platinum 30,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,39.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+3 Mbps,Upload,39.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,44.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+3 Mbps,Upload,44.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,49.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+3 Mbps,Upload,49.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,54.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+3 Mbps,Upload,54.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,59.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+3 Mbps,Upload,59.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,59.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+3 Mbps,Upload,59.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,69.99,Viasat Internet,Unlimited Silver 25,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,69.99,Viasat Internet,Unlimited Silver 25,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,69.99,Viasat Internet,Unlimited Silver 25,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,69.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+3 Mbps,Upload,69.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,74.95,Wavelinc Communications,5G-25M,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+3 Mbps,Upload,74.95,Wavelinc Communications,5G-25M,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,74.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+3 Mbps,Upload,74.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,79.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+3 Mbps,Upload,79.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,79.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+3 Mbps,Upload,79.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,79.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+3 Mbps,Upload,79.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,79.99,WATCH Communications,WATCH PREFERRED,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,84.99,Viasat Internet,Unlimited Silver 25,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,89.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+3 Mbps,Upload,89.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,99.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+3 Mbps,Upload,99.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,99.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+3 Mbps,Upload,99.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,99.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+3 Mbps,Upload,99.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,99.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+3 Mbps,Upload,99.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,109.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+3 Mbps,Upload,109.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,139.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+3 Mbps,Upload,139.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,159.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+3 Mbps,Upload,159.99,HughesNet,Internet Only,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+25 Mbps,Download,199.95,Byhalia.net,Ultimate Package,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True
+5 Mbps,Upload,199.95,Byhalia.net,Ultimate Package,"10324, County Road 110, Salem Township, Wyandot County, Ohio, 43351, United States",True

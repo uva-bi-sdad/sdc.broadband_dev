@@ -1,0 +1,59 @@
+speed,down_up,price,name,type,address,success
+2000 Mbps,Download,179.99,GCI Communication,2 GIG red,"Kodiak Island, Alaska, United States",True
+75 Mbps,Upload,179.99,GCI Communication,2 GIG red,"Kodiak Island, Alaska, United States",True
+800 Mbps,Download,154.99,GCI Communication,Fastest,"Kodiak Island, Alaska, United States",True
+40 Mbps,Upload,154.99,GCI Communication,Fastest,"Kodiak Island, Alaska, United States",True
+400 Mbps,Download,104.99,GCI Communication,Faster,"Kodiak Island, Alaska, United States",True
+20 Mbps,Upload,104.99,GCI Communication,Faster,"Kodiak Island, Alaska, United States",True
+200 Mbps,Download,79.99,GCI Communication,Fast,"Kodiak Island, Alaska, United States",True
+10 Mbps,Upload,79.99,GCI Communication,Fast,"Kodiak Island, Alaska, United States",True
+50 Mbps,Download,89.99,Alaska Communications,Internet Only,"Kodiak Island, Alaska, United States",True
+10 Mbps,Upload,89.99,Alaska Communications,Internet Only,"Kodiak Island, Alaska, United States",True
+25 Mbps,Download,39.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+3 Mbps,Upload,39.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+25 Mbps,Download,44.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+3 Mbps,Upload,44.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+25 Mbps,Download,49.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+3 Mbps,Upload,49.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+25 Mbps,Download,54.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+3 Mbps,Upload,54.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+25 Mbps,Download,59.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+3 Mbps,Upload,59.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+25 Mbps,Download,59.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+3 Mbps,Upload,59.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+25 Mbps,Download,69.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+3 Mbps,Upload,69.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+25 Mbps,Download,74.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+3 Mbps,Upload,74.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+25 Mbps,Download,79.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+3 Mbps,Upload,79.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+25 Mbps,Download,79.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+3 Mbps,Upload,79.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+25 Mbps,Download,79.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+3 Mbps,Upload,79.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+25 Mbps,Download,89.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+3 Mbps,Upload,89.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+25 Mbps,Download,99.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+3 Mbps,Upload,99.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+25 Mbps,Download,99.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+3 Mbps,Upload,99.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+25 Mbps,Download,99.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+3 Mbps,Upload,99.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+25 Mbps,Download,99.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+3 Mbps,Upload,99.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+25 Mbps,Download,109.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+3 Mbps,Upload,109.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+25 Mbps,Download,139.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+3 Mbps,Upload,139.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+25 Mbps,Download,159.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
+3 Mbps,Upload,159.99,HughesNet,Internet Only,"Kodiak Island, Alaska, United States",True
