@@ -21,32 +21,32 @@ exists('st_read', where='package:dc.utils', mode='function')
 ```
 
 # Print the current working directory, and check if the credentials exist
-```{r}
-list.files(getwd())
-file.exists("~/.Renviron")
-readRenviron("~/.Renviron")
-Sys.getenv("db_nam")
-```
+# ```{r}
+# list.files(getwd())
+# file.exists("~/.Renviron")
+# readRenviron("~/.Renviron")
+# Sys.getenv("db_nam")
+# ```
 
 # Assuming you don't have access to the function
 
-```{r}
-get_db_conn <-
-  function(db_name = Sys.getenv("db_nam"),
-           db_host = Sys.getenv("db_hst"),
-           db_port = Sys.getenv("db_prt"),
-           db_user = Sys.getenv("db_usr"),
-           db_pass = Sys.getenv("db_pwd")) {
-    RPostgreSQL::dbConnect(
-      drv = RPostgreSQL::PostgreSQL(),
-      dbname = db_name,
-      host = db_host,
-      port = db_port,
-      user = db_user,
-      password = db_pass
-    )
-  }
-```
+<!-- ```{r} -->
+<!-- get_db_conn <- -->
+<!--   function(db_name = Sys.getenv("db_nam"), -->
+<!--            db_host = Sys.getenv("db_hst"), -->
+<!--            db_port = Sys.getenv("db_prt"), -->
+<!--            db_user = Sys.getenv("db_usr"), -->
+<!--            db_pass = Sys.getenv("db_pwd")) { -->
+<!--     RPostgreSQL::dbConnect( -->
+<!--       drv = RPostgreSQL::PostgreSQL(), -->
+<!--       dbname = db_name, -->
+<!--       host = db_host, -->
+<!--       port = db_port, -->
+<!--       user = db_user, -->
+<!--       password = db_pass -->
+<!--     ) -->
+<!--   } -->
+<!-- ``` -->
 
 
 
@@ -66,6 +66,9 @@ library(dplyr)
 library(tidygeocoder)
 library(readxl)
 library(DBI)
+library(sf)
+library(mapview)
+options(tigris_use_cache = TRUE)
 ```
 
 # download county-level data, and plot to verify
@@ -90,11 +93,40 @@ count_centroid <- shifted_usa %>%
   #st_transform(2273) %>% # convert to projected coord system for better centroid
   st_centroid()
 
-head(count_centroid)
+count_centroid
+
 ggplot(shifted_usa) +
   geom_sf() +
-  geom_sf(data = count_centroid) +
+  geom_sf(data = count_centroid, size=0.25) +
   theme_void()
+```
+
+# Add n random points per county as backup
+# https://stackoverflow.com/questions/70072417/generating-random-points-within-sub-geometries-using-st-sample-from-the-sf-packa
+```{r}
+# Good idea to test on smaller geometry first
+county <- get_acs(geography = "county",
+                 year = 2019,
+                 state = "SC",
+                 variables = c(median_household_income = "B19013_001"),
+                 survey = "acs5",
+                 output = "wide",
+                 geometry = T) 
+
+
+county
+
+sample_points <- county %>% 
+  st_sample(size = c(3,3 ))
+
+sample_points
+```
+
+```{r}
+sample_points <- usa %>% 
+  st_sample(size = c(3,3 ))
+
+sample_points
 ```
 
 ```{r}
@@ -102,20 +134,55 @@ count_centroid <- usa %>%
   st_centroid()
 
 head(count_centroid)
-
+library(mapview)
 mapview(count_centroid)
+```
+
+
+```{r}
+mapview(sample_points)
 ```
 
 
 # Get the lat lon of the positions
 ```{r}
 count_centroid
-count_centroid <- cbind(count_centroid, st_coordinates(count_centroid))
+count_centroid <- cbind(usa, st_coordinates(count_centroid))
 # count_centroid <- count_centroid %>% extract("geometry", c('lat', 'lon'), '\\((.*), (.*)\\)', convert = TRUE)
 names(count_centroid)[names(count_centroid) == 'X'] <- 'lon'
 names(count_centroid)[names(count_centroid) == 'Y'] <- 'lat'
 colnames(count_centroid)
 ```
+
+
+```{r}
+# set.seed(1) 
+
+sample_points
+
+# duplicate each row 3 times to match the n number of samples
+usa_3 <- usa %>% slice(rep(1:n(), each = 3))
+
+samp <- cbind(usa_3, st_coordinates(sample_points))
+samp
+
+# count_centroid <- count_centroid %>% extract("geometry", c('lat', 'lon'), '\\((.*), (.*)\\)', convert = TRUE)
+names(samp)[names(samp) == 'X'] <- 'lon'
+names(samp)[names(samp) == 'Y'] <- 'lat'
+colnames(samp)
+samp
+```
+
+```{r}
+colnames(count_centroid)
+colnames(samp)
+
+
+combined <- rbind(count_centroid, samp)
+```
+
+
+<!-- # Not all of the addresses returned a price point, so instead we should retrieve N points within each county to reverse geo code (https://stackoverflow.com/questions/52248394/get-census-tract-from-lat-lon-using-tigris) -->
 
 ```{r}
 
@@ -124,22 +191,29 @@ colnames(count_centroid)
 
 # Reverse geocode based on the lat long of the centroid. Reference: https://walker-data.com/census-r/census-geographic-data-and-applications-in-r.html
 ```{r}
-centroid_address_path <- "../../data/usa_reverse_geocode_county_centroid.csv"
+# centroid_address_path <- "../../data/usa_reverse_geocode_county_centroid.csv"
+sample_address_path <- "../../data/usa_reverse_geocode_county.csv"
 
-if (file.exists(centroid_address_path)){
-  print("Centroid file exists, loading...")
-  reverse = read.csv(centroid_address_path)
-}else{ # Took me 3230.6 seconds
-  reverse <- count_centroid[c("lat", "lon")] %>%
-  reverse_geocode(lat = lat, long = lon, method = 'osm',
-                  address = address_found, full_results = TRUE) 
-  reverse <- apply(reverse, 2, as.character)
-  reverse['geoid'] <- count_centroid$GEOID
+# if (file.exists(centroid_address_path)){
+#   print("Centroid file exists, loading...")
+#   reverse = read.csv(centroid_address_path)
+# }else{ # Took me 3230.6 seconds
+#   
   
-  reverse
-  
-  write.csv(reverse, centroid_address_path, row.names=FALSE)  
-}
+reverse <- count_centroid[c("lat", "lon")] %>%
+reverse_geocode(lat = lat, long = lon, method = 'osm',
+                address = address_found, full_results = TRUE) 
+reverse <- apply(reverse, 2, as.character)
+reverse['geoid'] <- count_centroid$GEOID
+
+reverse
+
+write.csv(reverse, centroid_address_path, row.names=FALSE)  
+#}
 
 colnames(reverse)
 ```
+```{r}
+reverse
+```
+
