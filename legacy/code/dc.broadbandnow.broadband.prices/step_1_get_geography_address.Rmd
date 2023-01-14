@@ -68,6 +68,7 @@ library(readxl)
 library(DBI)
 library(sf)
 library(mapview)
+library(progress)
 options(tigris_use_cache = TRUE)
 ```
 
@@ -179,13 +180,14 @@ colnames(samp)
 
 
 combined <- rbind(count_centroid, samp)
+combined
 ```
 
 
 <!-- # Not all of the addresses returned a price point, so instead we should retrieve N points within each county to reverse geo code (https://stackoverflow.com/questions/52248394/get-census-tract-from-lat-lon-using-tigris) -->
 
 ```{r}
-
+com
 ```
 
 
@@ -200,20 +202,52 @@ sample_address_path <- "../../data/usa_reverse_geocode_county.csv"
 # }else{ # Took me 3230.6 seconds
 #   
   
-reverse <- count_centroid[c("lat", "lon")] %>%
-reverse_geocode(lat = lat, long = lon, method = 'osm',
-                address = address_found, full_results = TRUE) 
-reverse <- apply(reverse, 2, as.character)
-reverse['geoid'] <- count_centroid$GEOID
+
+
+increment <- 5
+n_iter <- nrow(combined)%/% increment # integer divide
+
+pb <- progress_bar$new(format = "(:spin) [:bar] :percent [Elapsed time: :elapsedfull || Estimated time remaining: :eta]",
+                       total = n_iter,
+                       complete = "=",   # Completion bar character
+                       incomplete = "-", # Incomplete bar character
+                       current = ">",    # Current bar character
+                       clear = FALSE,    # If TRUE, clears the bar when finish
+                       width = 100)      # Width of the progress bar
+
+frames <- vector("list", i%/% increment)
+
+
+for(i in seq(from=1, to=10, by=increment)) { # reverse geocode has limit of 100
+  pb$tick()
+  frame <- combined[i:(i+(increment-1)),]
+  # print(frame)
+  reverse <- frame[c("lat", "lon")] %>%
+  reverse_geocode(lat = lat, long = lon, method = 'osm',
+                address = address, full_results = FALSE)
+  # reverse <- apply(reverse, 2, as.character)
+  print(reverse)
+  frames[[(i%/% increment + 1)]] <- reverse
+}
+```
+```{r}
+frames[[1]]
+colnames(frames[[1]])
+reversed <- bind_rows(frames)
+reversed
+```
+
+
+
+```{r}
+
+reverse['geoid'] <- combined$GEOID
 
 reverse
 
-write.csv(reverse, centroid_address_path, row.names=FALSE)  
+write.csv(reverse, sample_address_path, row.names=FALSE)  
 #}
 
 colnames(reverse)
-```
-```{r}
-reverse
 ```
 
