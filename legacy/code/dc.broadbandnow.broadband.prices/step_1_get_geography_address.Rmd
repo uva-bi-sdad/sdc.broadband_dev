@@ -100,6 +100,7 @@ ggplot(shifted_usa) +
   geom_sf() +
   geom_sf(data = count_centroid, size=0.25) +
   theme_void()
+ggsave("../../docs/usa_county_centroid.pdf")
 ```
 
 # Add n random points per county as backup
@@ -108,7 +109,7 @@ ggplot(shifted_usa) +
 # Good idea to test on smaller geometry first
 county <- get_acs(geography = "county",
                  year = 2019,
-                 state = "SC",
+                 state = "NY",
                  variables = c(median_household_income = "B19013_001"),
                  survey = "acs5",
                  output = "wide",
@@ -121,6 +122,11 @@ sample_points <- county %>%
   st_sample(size = c(3,3 ))
 
 sample_points
+ggplot(county) +
+  geom_sf() +
+  geom_sf(data = sample_points, size=0.25) +
+  theme_void()
+ggsave("../../docs/county_sample.pdf")
 ```
 
 ```{r}
@@ -186,15 +192,10 @@ combined
 
 <!-- # Not all of the addresses returned a price point, so instead we should retrieve N points within each county to reverse geo code (https://stackoverflow.com/questions/52248394/get-census-tract-from-lat-lon-using-tigris) -->
 
-```{r}
-com
-```
-
-
 # Reverse geocode based on the lat long of the centroid. Reference: https://walker-data.com/census-r/census-geographic-data-and-applications-in-r.html
 ```{r}
 # centroid_address_path <- "../../data/usa_reverse_geocode_county_centroid.csv"
-sample_address_path <- "../../data/usa_reverse_geocode_county.csv"
+
 
 # if (file.exists(centroid_address_path)){
 #   print("Centroid file exists, loading...")
@@ -202,9 +203,7 @@ sample_address_path <- "../../data/usa_reverse_geocode_county.csv"
 # }else{ # Took me 3230.6 seconds
 #   
   
-
-
-increment <- 5
+increment <- 10
 n_iter <- nrow(combined)%/% increment # integer divide
 
 pb <- progress_bar$new(format = "(:spin) [:bar] :percent [Elapsed time: :elapsedfull || Estimated time remaining: :eta]",
@@ -215,20 +214,22 @@ pb <- progress_bar$new(format = "(:spin) [:bar] :percent [Elapsed time: :elapsed
                        clear = FALSE,    # If TRUE, clears the bar when finish
                        width = 100)      # Width of the progress bar
 
-frames <- vector("list", i%/% increment)
+# nrow(combined)
 
-
-for(i in seq(from=1, to=10, by=increment)) { # reverse geocode has limit of 100
+for(i in seq(from=1, to=20, by=increment)) { # reverse geocode has limit of 100
   pb$tick()
   frame <- combined[i:(i+(increment-1)),]
-  # print(frame)
-  reverse <- frame[c("lat", "lon")] %>%
-  reverse_geocode(lat = lat, long = lon, method = 'osm',
-                address = address, full_results = FALSE)
-  # reverse <- apply(reverse, 2, as.character)
+  frame
+  reverse <- frame%>% 
+    reverse_geocode(lat = "lat", long = "lon", method = 'osm', address = "address", full_results = FALSE)
+  
   print(reverse)
-  frames[[(i%/% increment + 1)]] <- reverse
+  # reverse <- apply(reverse, 2, as.character)
+  # reverse
+  # # frames[[(i%/% increment + 1)]] 
+  write.csv(reverse, paste('../../data/reverse_address/',i,'.csv', sep=' '), row.names=FALSE)  
 }
+
 ```
 ```{r}
 frames[[1]]
@@ -241,10 +242,9 @@ reversed
 
 ```{r}
 
+sample_address_path <- "../../data/usa_reverse_geocode_county.csv"
 reverse['geoid'] <- combined$GEOID
-
 reverse
-
 write.csv(reverse, sample_address_path, row.names=FALSE)  
 #}
 
