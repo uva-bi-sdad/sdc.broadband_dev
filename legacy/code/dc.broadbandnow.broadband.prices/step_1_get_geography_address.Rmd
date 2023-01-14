@@ -216,7 +216,7 @@ pb <- progress_bar$new(format = "(:spin) [:bar] :percent [Elapsed time: :elapsed
 
 # nrow(combined)
 
-for(i in seq(from=1, to=20, by=increment)) { # reverse geocode has limit of 100
+for(i in seq(from=1, to=nrow(combined), by=increment)) { # reverse geocode has limit of 100
   pb$tick()
   frame <- combined[i:(i+(increment-1)),]
   frame
@@ -224,10 +224,15 @@ for(i in seq(from=1, to=20, by=increment)) { # reverse geocode has limit of 100
     reverse_geocode(lat = "lat", long = "lon", method = 'osm', address = "address", full_results = FALSE)
   
   print(reverse)
-  # reverse <- apply(reverse, 2, as.character)
-  # reverse
+  
+  rev <- subset(reverse, select=c('lat','lon','address','GEOID','NAME'))
+  rev
+  rev <- rev %>% 
+       rename("geoid" = "GEOID",
+              "name" = "NAME")
+  rev
   # # frames[[(i%/% increment + 1)]] 
-  write.csv(reverse, paste('../../data/reverse_address/',i,'.csv', sep=' '), row.names=FALSE)  
+  write.csv(rev, paste('../../data/reverse_address/',i,'.csv', sep=' '), row.names=FALSE)  
 }
 
 ```
