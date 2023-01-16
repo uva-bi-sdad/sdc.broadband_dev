@@ -15,17 +15,25 @@ library(kableExtra) # county statistics table
 library(RColorBrewer) # colors
 library(here) # file management
 library(usethis) # download data
+library(mapview)
+library(data.table)
 ```
 
 
-# Download data
+# Check if file exist. If not, download data
 ```{r}
-# download the zip folder from s3 and save to working directory
-# use_zip("https://ookla-open-data.s3-us-west-2.amazonaws.com/shapefiles/performance/type%3Dfixed/year%3D2020/quarter%3D2/2020-04-01_performance_fixed_tiles.zip")
 
+ookla_shape_file_loc <- here("legacy/code/temp/2020-04-01_performance_fixed_tiles/gps_fixed_tiles.shp")
+
+file.exists(ookla_shape_file_loc)
+
+if (!file.exists(ookla_shape_file_loc)){
+  # download the zip folder from s3 and save to working directory
+  use_zip("https://ookla-open-data.s3-us-west-2.amazonaws.com/shapefiles/performance/type%3Dfixed/year%3D2020/quarter%3D2/2020-04-01_performance_fixed_tiles.zip")
+}
 
 #read the shapefile. 
-tiles <- read_sf(here("legacy/code/temp/2020-04-01_performance_fixed_tiles/gps_fixed_tiles.shp")) %>%
+tiles <- read_sf(ookla_shape_file_loc) %>%
   mutate(avg_d_kbps = as.numeric(avg_d_kbps),
          avg_u_kbps = as.numeric(avg_u_kbps),
          avg_lat_ms = as.numeric(avg_lat_ms))
@@ -33,77 +41,41 @@ tiles <- read_sf(here("legacy/code/temp/2020-04-01_performance_fixed_tiles/gps_f
 
 # Get county boundaries
 ```{r}
-ky_counties <- tigris::counties(state = "Kentucky") %>%
-  select(state_code = STATEFP, geoid = GEOID, name = NAME) %>% # only keep useful variables 
-  st_transform(4326) # transform to the same CRS as the tiles
-summary(ky_counties)
+
+# states <- state.name
+# state.abb
+
+get_bg_state <- function(state, year=2019, variable="B01003_001", samples= 10000){
+
+  
+  counties <- tigris::counties(state = state) %>%
+    select(state_code = STATEFP, geoid = GEOID, name = NAME) %>% # only keep useful variables 
+    st_transform(4326) # transform to the same CRS as the tiles
+  
+  if (!is.null(samples)){
+      tile_subset <- tiles[sample(nrow(tiles), samples), ] # create smaller sample for testing
+  
+  }else{
+    tile_subset <- tiles
+  }
+  county_tiles <- st_join(counties, tile_subset, left=FALSE)
+  return(county_tiles)
+}
+
 ```
 
-# Test Progress bars https://r-coder.com/progress-bar-r/
 ```{r}
-# install.packages("progress")
-library(progress)
 
+combined <- NULL
+for (abb in state.abb)
+  if (is.null(combined)){
+    combined <- get_bg_state(abb, samples=NULL)
+  } else{
+    combined <- rbind(combined, get_bg_state(abb, samples=NULL))
+  }
+
+mapview(combined, zcol="avg_d_kbps")
 ```
-
-```{r}
-glimpse(tiles)
-```
-
-```{r}
-
-```
-
-
-
-# Join tiles to counties. Takes a long time to run, therefore I added a progress bar
-Now I’ll join the tiles to the counties. I use left = FALSE because I only want to include counties that have at least 1 tile.
-```{r}
-tiles <- tiles[sample(nrow(tiles), 500000), ] # create smaller sample for testing
-# batch = 1000
-# 
-# n_iter <- nrow(tiles)%/%batch # The total number of batches to iterate
-# 
-# n_iter
-# # n_iter <- nrow(tiles)
-# 
-# pb <- progress_bar$new(format = "(:spin) [:bar] :percent [Elapsed time: :elapsedfull || Estimated time remaining: :eta]",
-#                        total = n_iter,
-#                        complete = "=",   # Completion bar character
-#                        incomplete = "-", # Incomplete bar character
-#                        current = ">",    # Current bar character
-#                        clear = FALSE,    # If TRUE, clears the bar when finish
-#                        width = 100)      # Width of the progress bar
-
-# tiles_in_ky_counties <- NULL
-
-# a = 1:3
-# a
-# a[1:6]# 1 2 3 NA NA NA
-
-# for(i in 1:n_iter) {
-#     start <- (i-1) * batch + 1
-#     end <- (i * batch)
-#     # print(paste(start, end, sep=' '))
-#     tile_part <- tiles[start: end,]
-#     tile_part <- st_join(ky_counties, tile_part)
-#     if (is.null(tiles_in_ky_counties)){
-#       tiles_in_ky_counties <- tile_part
-#     }else{
-#       tiles_in_ky_counties <- st_join(tiles_in_ky_counties, tile_part, left=FALSE)
-#     }
-#     pb$tick()
-#     #---------------------
-# }
-
-tiles_in_ky_counties <- st_join(ky_counties, tile_part, left=FALSE)
-tiles_in_ky_counties
-```
-```{r}
-library(mapview)
-mapview(tiles_in_ky_counties, zcol="avg_d_kbps")
-```
-
 
 
 
