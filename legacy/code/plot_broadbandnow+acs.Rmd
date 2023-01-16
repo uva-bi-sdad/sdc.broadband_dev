@@ -1,0 +1,43 @@
+---
+title: "plot_broadbandnow"
+output: html_document
+date: "2023-01-16"
+---
+
+```{r}
+library(sf)
+library(tidyverse)
+library(tmap)
+library(tmaptools)
+library(tigris)
+library(tidycensus)
+library(rmapshaper)
+library(matrixStats)
+library(SpatialAcc)
+library(reticulate)
+library(dplyr)
+library(tidygeocoder)
+library(readxl)
+library(DBI)
+library(sf)
+library(mapview)
+library(progress)
+options(tigris_use_cache = TRUE)
+library(mapview)
+```
+
+```{r}
+df <- read.csv("../../data/usa_county_broadbandnow_pirces.csv.xz")
+df
+```
+```{r}
+usa <- get_acs(geography = "county",
+                 year = 2019,
+                 variables = c(median_household_income = "B19013_001"),
+                 survey = "acs5",
+                 output = "wide",
+                 geometry = T) 
+usa
+```
+
+# Join the ACS data with the broadbandnow price data using the geometry and the median household income (E is estimate, M is margin of erro)

@@ -223,7 +223,7 @@ for(i in seq(from=1, to=nrow(combined), by=increment)) { # reverse geocode has l
   reverse <- frame%>% 
     reverse_geocode(lat = "lat", long = "lon", method = 'osm', address = "address", full_results = FALSE)
   
-  print(reverse)
+  # print(reverse)
   
   rev <- subset(reverse, select=c('lat','lon','address','GEOID','NAME'))
   rev
