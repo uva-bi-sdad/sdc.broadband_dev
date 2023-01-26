@@ -60,7 +60,7 @@ agg <- aggregate(price ~ geoid, df, median)
 agg
 price_us <- merge(x = usa, y = agg, by = c('geoid'))
 
-price_us['prec_hh_income'] <- (price_us['price'] / price_us['median_household_incomeE'])*100
+price_us['prec_hh_income'] <- (price_us['price']*12 / price_us['median_household_incomeE'])*100
 
 # mapview(price_us, zcol="price", col.regions=brewer.pal(5, "Blues"), at = seq(0, 100, 10),  layer.name = c("Median Broadbandnow Prices"))
 mapview(price_us, zcol="prec_hh_income",  layer.name = c("% HH Income"))
