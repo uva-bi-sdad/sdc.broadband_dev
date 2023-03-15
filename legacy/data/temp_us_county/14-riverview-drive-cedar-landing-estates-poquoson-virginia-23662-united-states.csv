@@ -1,0 +1,7 @@
+speed,down_up,price,name,type,address,success
+1000 Mbps,Download,99.99,Cox Communications,Internet Gigablast,"14, Riverview Drive, Cedar Landing Estates, Poquoson, Virginia, 23662, United States",True
+35 Mbps,Upload,99.99,Cox Communications,Internet Gigablast,"14, Riverview Drive, Cedar Landing Estates, Poquoson, Virginia, 23662, United States",True
+1000 Mbps,Download,197.99,Cox Communications,Internet Gigablast + Contour TV Preferred,"14, Riverview Drive, Cedar Landing Estates, Poquoson, Virginia, 23662, United States",True
+35 Mbps,Upload,197.99,Cox Communications,Internet Gigablast + Contour TV Preferred,"14, Riverview Drive, Cedar Landing Estates, Poquoson, Virginia, 23662, United States",True
+1000 Mbps,Download,217.99,Cox Communications,Internet Gigablast + Contour TV Preferred + Voice Preferred,"14, Riverview Drive, Cedar Landing Estates, Poquoson, Virginia, 23662, United States",True
+35 Mbps,Upload,217.99,Cox Communications,Internet Gigablast + Contour TV Preferred + Voice Preferred,"14, Riverview Drive, Cedar Landing Estates, Poquoson, Virginia, 23662, United States",True

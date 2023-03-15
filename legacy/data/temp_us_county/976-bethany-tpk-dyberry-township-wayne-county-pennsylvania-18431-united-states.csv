@@ -1,0 +1,81 @@
+speed,down_up,price,name,type,address,success
+1000 Mbps,Download,119.95,Blue Ridge Communications,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+40 Mbps,Upload,119.95,Blue Ridge Communications,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+500 Mbps,Download,109.95,Blue Ridge Communications,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+15 Mbps,Upload,109.95,Blue Ridge Communications,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+300 Mbps,Download,87.95,Blue Ridge Communications,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+12 Mbps,Upload,87.95,Blue Ridge Communications,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+115 Mbps,Download,50,T-Mobile 5G Home Internet,Home Internet w/ Autopay,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+23 Mbps,Upload,50,T-Mobile 5G Home Internet,Home Internet w/ Autopay,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+115 Mbps,Download,55,T-Mobile 5G Home Internet,Home Internet,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+23 Mbps,Upload,55,T-Mobile 5G Home Internet,Home Internet,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+100 Mbps,Download,55.95,Blue Ridge Communications,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+4 Mbps,Upload,55.95,Blue Ridge Communications,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+100 Mbps,Download,99,Skypacket,CBRS LTE PREMIER PLAN,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+10 Mbps,Upload,99,Skypacket,CBRS LTE PREMIER PLAN,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+100 Mbps,Download,149.99,Viasat Internet,Unlimited Platinum 100,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+100 Mbps,Download,169.99,Viasat Internet,Unlimited Platinum 100,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+50 Mbps,Download,79,Skypacket,CBRS LTE DELUXE PLAN,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+10 Mbps,Upload,79,Skypacket,CBRS LTE DELUXE PLAN,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+50 Mbps,Download,99.99,Viasat Internet,Unlimited Gold 50,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+50 Mbps,Download,99.99,Viasat Internet,Unlimited Gold 50,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+50 Mbps,Download,119.99,Viasat Internet,Unlimited Gold 50,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+50 Mbps,Download,149.99,Viasat Internet,Unlimited Platinum 50,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+30 Mbps,Download,99.99,Viasat Internet,Unlimited Gold 30,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+30 Mbps,Download,149.99,Viasat Internet,Unlimited Platinum 30,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,35.95,Blue Ridge Communications,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+1 Mbps,Upload,35.95,Blue Ridge Communications,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,39.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+3 Mbps,Upload,39.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,44.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+3 Mbps,Upload,44.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,49.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+3 Mbps,Upload,49.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,54.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+3 Mbps,Upload,54.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,59.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+3 Mbps,Upload,59.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,59.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+3 Mbps,Upload,59.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,65,Skypacket,CBRS LTE BROADBAND PLAN,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+10 Mbps,Upload,65,Skypacket,CBRS LTE BROADBAND PLAN,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,69.99,Viasat Internet,Unlimited Silver 25,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,69.99,Viasat Internet,Unlimited Silver 25,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,69.99,Viasat Internet,Unlimited Silver 25,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,69.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+3 Mbps,Upload,69.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,74.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+3 Mbps,Upload,74.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,79.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+3 Mbps,Upload,79.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,79.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+3 Mbps,Upload,79.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,79.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+3 Mbps,Upload,79.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,84.99,Viasat Internet,Unlimited Silver 25,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,89.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+3 Mbps,Upload,89.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,99.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+3 Mbps,Upload,99.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,99.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+3 Mbps,Upload,99.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,99.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+3 Mbps,Upload,99.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,99.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+3 Mbps,Upload,99.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,109.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+3 Mbps,Upload,109.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,139.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+3 Mbps,Upload,139.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+25 Mbps,Download,159.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True
+3 Mbps,Upload,159.99,HughesNet,Internet Only,"976, Bethany Tpk, Dyberry Township, Wayne County, Pennsylvania, 18431, United States",True

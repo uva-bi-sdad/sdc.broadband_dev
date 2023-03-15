@@ -1,0 +1,6 @@
+speed,down_up,price,name,type,address,success
+5000 Mbps,Download,180,AT&T Fiber,Internet 5000,"Oak Neck Lane, West Islip, Town of Islip, Suffolk County, New York, 11795, United States",True
+5000 Mbps,Upload,180,AT&T Fiber,Internet 5000,"Oak Neck Lane, West Islip, Town of Islip, Suffolk County, New York, 11795, United States",True
+1200 Mbps,Download,149.99,Xfinity,Super+ More,"Oak Neck Lane, West Islip, Town of Islip, Suffolk County, New York, 11795, United States",True
+940 Mbps,Download,70,CenturyLink Fiber Gigabit,,"Oak Neck Lane, West Islip, Town of Islip, Suffolk County, New York, 11795, United States",True
+940 Mbps,Upload,70,CenturyLink Fiber Gigabit,,"Oak Neck Lane, West Islip, Town of Islip, Suffolk County, New York, 11795, United States",True

@@ -1,0 +1,11 @@
+speed,down_up,price,name,type,address,success
+1000 Mbps,Download,69.99,Mediacom Cable,Internet 1 GIG,"Piney Road, Marion, Crittenden County, Kentucky, 42064, United States",True
+50 Mbps,Upload,69.99,Mediacom Cable,Internet 1 GIG,"Piney Road, Marion, Crittenden County, Kentucky, 42064, United States",True
+1000 Mbps,Download,79.99,Mediacom Cable,Internet 1 Gig + Local TV,"Piney Road, Marion, Crittenden County, Kentucky, 42064, United States",True
+50 Mbps,Upload,79.99,Mediacom Cable,Internet 1 Gig + Local TV,"Piney Road, Marion, Crittenden County, Kentucky, 42064, United States",True
+1000 Mbps,Download,79.99,Mediacom Cable,Internet 1 GIG + Local TV + Phone,"Piney Road, Marion, Crittenden County, Kentucky, 42064, United States",True
+50 Mbps,Upload,79.99,Mediacom Cable,Internet 1 GIG + Local TV + Phone,"Piney Road, Marion, Crittenden County, Kentucky, 42064, United States",True
+400 Mbps,Download,49.99,Mediacom Cable,Internet 400,"Piney Road, Marion, Crittenden County, Kentucky, 42064, United States",True
+30 Mbps,Upload,49.99,Mediacom Cable,Internet 400,"Piney Road, Marion, Crittenden County, Kentucky, 42064, United States",True
+400 Mbps,Download,59.99,Mediacom Cable,Internet 400 + Local TV,"Piney Road, Marion, Crittenden County, Kentucky, 42064, United States",True
+30 Mbps,Upload,59.99,Mediacom Cable,Internet 400 + Local TV,"Piney Road, Marion, Crittenden County, Kentucky, 42064, United States",True

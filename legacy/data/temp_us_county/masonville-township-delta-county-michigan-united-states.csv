@@ -1,0 +1,18 @@
+speed,down_up,price,name,type,address,success
+5000 Mbps,Download,180,AT&T Fiber,Internet 5000,"Masonville Township, Delta County, Michigan, United States",True
+5000 Mbps,Upload,180,AT&T Fiber,Internet 5000,"Masonville Township, Delta County, Michigan, United States",True
+1200 Mbps,Download,149.99,Xfinity,Super+ More,"Masonville Township, Delta County, Michigan, United States",True
+940 Mbps,Download,70,CenturyLink Fiber Gigabit,,"Masonville Township, Delta County, Michigan, United States",True
+940 Mbps,Upload,70,CenturyLink Fiber Gigabit,,"Masonville Township, Delta County, Michigan, United States",True
+2000 Mbps,Download,110,AT&T Fiber,Internet 2000,"Masonville Township, Delta County, Michigan, United States",True
+2000 Mbps,Upload,110,AT&T Fiber,Internet 2000,"Masonville Township, Delta County, Michigan, United States",True
+2000 Mbps,Download,110,AT&T Fiber,Internet 2000,"Masonville Township, Delta County, Michigan, United States",True
+2000 Mbps,Upload,110,AT&T Fiber,Internet 2000,"Masonville Township, Delta County, Michigan, United States",True
+1000 Mbps,Download,89.99,Spectrum,Spectrum Internet® Gig,"Masonville Township, Delta County, Michigan, United States",True
+35 Mbps,Upload,89.99,Spectrum,Spectrum Internet® Gig,"Masonville Township, Delta County, Michigan, United States",True
+940 Mbps,Download,89.99,Verizon Fios,Fios Gigabit Connection,"Masonville Township, Delta County, Michigan, United States",True
+880 Mbps,Upload,89.99,Verizon Fios,Fios Gigabit Connection,"Masonville Township, Delta County, Michigan, United States",True
+500 Mbps,Download,50,CenturyLink Fiber Gigabit,,"Masonville Township, Delta County, Michigan, United States",True
+500 Mbps,Upload,50,CenturyLink Fiber Gigabit,,"Masonville Township, Delta County, Michigan, United States",True
+182 Mbps,Download,50,T-Mobile 5G Home Internet,Home Internet w/ Autopay,"Masonville Township, Delta County, Michigan, United States",True
+23 Mbps,Upload,50,T-Mobile 5G Home Internet,Home Internet w/ Autopay,"Masonville Township, Delta County, Michigan, United States",True

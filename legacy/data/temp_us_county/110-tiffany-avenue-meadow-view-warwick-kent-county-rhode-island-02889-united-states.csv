@@ -1,0 +1,7 @@
+speed,down_up,price,name,type,address,success
+1000 Mbps,Download,99.99,Cox Communications,Internet Gigablast,"110, Tiffany Avenue, Meadow View, Warwick, Kent County, Rhode Island, 02889, United States",True
+35 Mbps,Upload,99.99,Cox Communications,Internet Gigablast,"110, Tiffany Avenue, Meadow View, Warwick, Kent County, Rhode Island, 02889, United States",True
+1000 Mbps,Download,197.99,Cox Communications,Internet Gigablast + Contour TV Preferred,"110, Tiffany Avenue, Meadow View, Warwick, Kent County, Rhode Island, 02889, United States",True
+35 Mbps,Upload,197.99,Cox Communications,Internet Gigablast + Contour TV Preferred,"110, Tiffany Avenue, Meadow View, Warwick, Kent County, Rhode Island, 02889, United States",True
+1000 Mbps,Download,217.99,Cox Communications,Internet Gigablast + Contour TV Preferred + Voice Preferred,"110, Tiffany Avenue, Meadow View, Warwick, Kent County, Rhode Island, 02889, United States",True
+35 Mbps,Upload,217.99,Cox Communications,Internet Gigablast + Contour TV Preferred + Voice Preferred,"110, Tiffany Avenue, Meadow View, Warwick, Kent County, Rhode Island, 02889, United States",True

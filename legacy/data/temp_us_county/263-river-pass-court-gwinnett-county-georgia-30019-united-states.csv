@@ -1,0 +1,10 @@
+speed,down_up,price,name,type,address,success
+5000 Mbps,Download,180,AT&T Fiber,Internet 5000,"263, River Pass Court, Gwinnett County, Georgia, 30019, United States",True
+5000 Mbps,Upload,180,AT&T Fiber,Internet 5000,"263, River Pass Court, Gwinnett County, Georgia, 30019, United States",True
+2000 Mbps,Download,110,AT&T Fiber,Internet 2000,"263, River Pass Court, Gwinnett County, Georgia, 30019, United States",True
+2000 Mbps,Upload,110,AT&T Fiber,Internet 2000,"263, River Pass Court, Gwinnett County, Georgia, 30019, United States",True
+1200 Mbps,Download,70,Xfinity,Gigabit Extra,"263, River Pass Court, Gwinnett County, Georgia, 30019, United States",True
+35 Mbps,Upload,70,Xfinity,Gigabit Extra,"263, River Pass Court, Gwinnett County, Georgia, 30019, United States",True
+1200 Mbps,Download,79.99,Xfinity,Gigabit,"263, River Pass Court, Gwinnett County, Georgia, 30019, United States",True
+1200 Mbps,Download,79.99,Xfinity,Gigabit,"263, River Pass Court, Gwinnett County, Georgia, 30019, United States",True
+35 Mbps,Upload,79.99,Xfinity,Gigabit,"263, River Pass Court, Gwinnett County, Georgia, 30019, United States",True

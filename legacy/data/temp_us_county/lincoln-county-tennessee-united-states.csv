@@ -1,0 +1,11 @@
+speed,down_up,price,name,type,address,success
+1000 Mbps,Download,89.99,Spectrum,Spectrum Internet® GIG,"Lincoln County, Tennessee, United States",True
+35 Mbps,Upload,89.99,Spectrum,Spectrum Internet® GIG,"Lincoln County, Tennessee, United States",True
+1000 Mbps,Download,89.99,Spectrum,Spectrum Internet® Gig,"Lincoln County, Tennessee, United States",True
+35 Mbps,Upload,89.99,Spectrum,Spectrum Internet® Gig,"Lincoln County, Tennessee, United States",True
+400 Mbps,Download,69.99,Spectrum,Spectrum Internet® Ultra,"Lincoln County, Tennessee, United States",True
+20 Mbps,Upload,69.99,Spectrum,Spectrum Internet® Ultra,"Lincoln County, Tennessee, United States",True
+400 Mbps,Download,69.99,Spectrum,Spectrum Internet® Ultra,"Lincoln County, Tennessee, United States",True
+20 Mbps,Upload,69.99,Spectrum,Spectrum Internet® Ultra,"Lincoln County, Tennessee, United States",True
+400 Mbps,Download,94.99,Spectrum,Spectrum Internet® Ultra,"Lincoln County, Tennessee, United States",True
+20 Mbps,Upload,94.99,Spectrum,Spectrum Internet® Ultra,"Lincoln County, Tennessee, United States",True

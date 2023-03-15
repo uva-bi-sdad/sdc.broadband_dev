@@ -1,0 +1,8 @@
+speed,down_up,price,name,type,address,success
+300 Mbps,Download,119.99,"ETC Communications, LLC",Internet Only,"Pink Dogwood Place, Pickens County, Georgia, 30143, United States",True
+30 Mbps,Upload,119.99,"ETC Communications, LLC",Internet Only,"Pink Dogwood Place, Pickens County, Georgia, 30143, United States",True
+200 Mbps,Download,19.99,Windstream,Internet Only,"Pink Dogwood Place, Pickens County, Georgia, 30143, United States",True
+200 Mbps,Download,69.99,Windstream,Internet Only,"Pink Dogwood Place, Pickens County, Georgia, 30143, United States",True
+200 Mbps,Download,99.99,"ETC Communications, LLC",Internet Only,"Pink Dogwood Place, Pickens County, Georgia, 30143, United States",True
+20 Mbps,Upload,99.99,"ETC Communications, LLC",Internet Only,"Pink Dogwood Place, Pickens County, Georgia, 30143, United States",True
+100 Mbps,Download,25,Windstream,Internet Only,"Pink Dogwood Place, Pickens County, Georgia, 30143, United States",True

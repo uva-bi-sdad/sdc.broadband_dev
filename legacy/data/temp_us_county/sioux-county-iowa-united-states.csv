@@ -1,0 +1,71 @@
+speed,down_up,price,name,type,address,success
+115 Mbps,Download,50,T-Mobile 5G Home Internet,Home Internet w/ Autopay,"Sioux County, Iowa, United States",True
+23 Mbps,Upload,50,T-Mobile 5G Home Internet,Home Internet w/ Autopay,"Sioux County, Iowa, United States",True
+115 Mbps,Download,55,T-Mobile 5G Home Internet,Home Internet,"Sioux County, Iowa, United States",True
+23 Mbps,Upload,55,T-Mobile 5G Home Internet,Home Internet,"Sioux County, Iowa, United States",True
+100 Mbps,Download,149.99,Viasat Internet,Unlimited Platinum 100,"Sioux County, Iowa, United States",True
+100 Mbps,Download,169.99,Viasat Internet,Unlimited Platinum 100,"Sioux County, Iowa, United States",True
+50 Mbps,Download,99.95,Evertek,Internet Only,"Sioux County, Iowa, United States",True
+5 Mbps,Upload,99.95,Evertek,Internet Only,"Sioux County, Iowa, United States",True
+50 Mbps,Download,99.99,Viasat Internet,Unlimited Gold 50,"Sioux County, Iowa, United States",True
+50 Mbps,Download,99.99,Viasat Internet,Unlimited Gold 50,"Sioux County, Iowa, United States",True
+50 Mbps,Download,119.99,Viasat Internet,Unlimited Gold 50,"Sioux County, Iowa, United States",True
+50 Mbps,Download,149.99,Viasat Internet,Unlimited Platinum 50,"Sioux County, Iowa, United States",True
+35 Mbps,Download,87.95,Evertek,Internet Only,"Sioux County, Iowa, United States",True
+5 Mbps,Upload,87.95,Evertek,Internet Only,"Sioux County, Iowa, United States",True
+30 Mbps,Download,99.99,Viasat Internet,Unlimited Gold 30,"Sioux County, Iowa, United States",True
+30 Mbps,Download,149.99,Viasat Internet,Unlimited Platinum 30,"Sioux County, Iowa, United States",True
+25 Mbps,Download,39.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+3 Mbps,Upload,39.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+25 Mbps,Download,44.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+3 Mbps,Upload,44.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+25 Mbps,Download,49.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+3 Mbps,Upload,49.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+25 Mbps,Download,54.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+3 Mbps,Upload,54.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+25 Mbps,Download,59.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+3 Mbps,Upload,59.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+25 Mbps,Download,59.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+3 Mbps,Upload,59.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+25 Mbps,Download,67.95,Evertek,Internet Only,"Sioux County, Iowa, United States",True
+3 Mbps,Upload,67.95,Evertek,Internet Only,"Sioux County, Iowa, United States",True
+25 Mbps,Download,69.99,Viasat Internet,Unlimited Silver 25,"Sioux County, Iowa, United States",True
+25 Mbps,Download,69.99,Viasat Internet,Unlimited Silver 25,"Sioux County, Iowa, United States",True
+25 Mbps,Download,69.99,Viasat Internet,Unlimited Silver 25,"Sioux County, Iowa, United States",True
+25 Mbps,Download,69.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+3 Mbps,Upload,69.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+25 Mbps,Download,74.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+3 Mbps,Upload,74.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+25 Mbps,Download,79.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+3 Mbps,Upload,79.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+25 Mbps,Download,79.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+3 Mbps,Upload,79.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+25 Mbps,Download,79.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+3 Mbps,Upload,79.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+25 Mbps,Download,84.99,Viasat Internet,Unlimited Silver 25,"Sioux County, Iowa, United States",True
+25 Mbps,Download,89.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+3 Mbps,Upload,89.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+25 Mbps,Download,99.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+3 Mbps,Upload,99.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+25 Mbps,Download,99.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+3 Mbps,Upload,99.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+25 Mbps,Download,99.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+3 Mbps,Upload,99.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+25 Mbps,Download,99.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+3 Mbps,Upload,99.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+25 Mbps,Download,109.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+3 Mbps,Upload,109.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+25 Mbps,Download,139.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+3 Mbps,Upload,139.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+25 Mbps,Download,159.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True
+3 Mbps,Upload,159.99,HughesNet,Internet Only,"Sioux County, Iowa, United States",True

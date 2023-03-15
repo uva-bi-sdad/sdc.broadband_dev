@@ -1,0 +1,77 @@
+speed,down_up,price,name,type,address,success
+1000 Mbps,Download,70,Fidium,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+1000 Mbps,Upload,70,Fidium,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+300 Mbps,Download,179.9,Mid-Hudson Cablevision,MHC Ultimate,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Upload,179.9,Mid-Hudson Cablevision,MHC Ultimate,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+275 Mbps,Download,125.85,Mid-Hudson Cablevision,MHC Super,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+17 Mbps,Upload,125.85,Mid-Hudson Cablevision,MHC Super,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+250 Mbps,Download,60,Fidium,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+250 Mbps,Upload,60,Fidium,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+250 Mbps,Download,95.9,Mid-Hudson Cablevision,MHC Turbo,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+12 Mbps,Upload,95.9,Mid-Hudson Cablevision,MHC Turbo,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+225 Mbps,Download,90.9,Mid-Hudson Cablevision,MHC Express,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+10 Mbps,Upload,90.9,Mid-Hudson Cablevision,MHC Express,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+200 Mbps,Download,85.9,Mid-Hudson Cablevision,MHC Standard,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+10 Mbps,Upload,85.9,Mid-Hudson Cablevision,MHC Standard,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+100 Mbps,Download,149.99,Viasat Internet,Unlimited Platinum 100,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+100 Mbps,Download,169.99,Viasat Internet,Unlimited Platinum 100,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+50 Mbps,Download,35,Fidium,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+50 Mbps,Upload,35,Fidium,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+50 Mbps,Download,99.99,Viasat Internet,Unlimited Gold 50,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+50 Mbps,Download,99.99,Viasat Internet,Unlimited Gold 50,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+50 Mbps,Download,119.99,Viasat Internet,Unlimited Gold 50,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+50 Mbps,Download,149.99,Viasat Internet,Unlimited Platinum 50,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+30 Mbps,Download,99.99,Viasat Internet,Unlimited Gold 30,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+30 Mbps,Download,149.99,Viasat Internet,Unlimited Platinum 30,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,39.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+3 Mbps,Upload,39.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,44.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+3 Mbps,Upload,44.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,49.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+3 Mbps,Upload,49.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,54.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+3 Mbps,Upload,54.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,59.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+3 Mbps,Upload,59.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,59.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+3 Mbps,Upload,59.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,69.99,Viasat Internet,Unlimited Silver 25,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,69.99,Viasat Internet,Unlimited Silver 25,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,69.99,Viasat Internet,Unlimited Silver 25,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,69.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+3 Mbps,Upload,69.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,74.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+3 Mbps,Upload,74.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,79.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+3 Mbps,Upload,79.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,79.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+3 Mbps,Upload,79.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,79.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+3 Mbps,Upload,79.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,84.99,Viasat Internet,Unlimited Silver 25,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,89.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+3 Mbps,Upload,89.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,99.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+3 Mbps,Upload,99.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,99.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+3 Mbps,Upload,99.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,99.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+3 Mbps,Upload,99.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,99.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+3 Mbps,Upload,99.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,109.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+3 Mbps,Upload,109.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,139.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+3 Mbps,Upload,139.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+25 Mbps,Download,159.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True
+3 Mbps,Upload,159.99,HughesNet,Internet Only,"Orchard Road, Town of Claverack, Columbia County, New York, 12513, United States",True

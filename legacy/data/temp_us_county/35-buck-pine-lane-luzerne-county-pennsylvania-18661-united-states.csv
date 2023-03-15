@@ -1,0 +1,83 @@
+speed,down_up,price,name,type,address,success
+1000 Mbps,Download,59.99,Breezeline,GigaFast,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+50 Mbps,Upload,59.99,Breezeline,GigaFast,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+1000 Mbps,Download,146.95,Service Electric Cable TV,Maximum,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+40 Mbps,Upload,146.95,Service Electric Cable TV,Maximum,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+400 Mbps,Download,39.99,Breezeline,UltraFast,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+50 Mbps,Upload,39.99,Breezeline,UltraFast,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+350 Mbps,Download,125.95,Service Electric Cable TV,Supreme Plus,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+15 Mbps,Upload,125.95,Service Electric Cable TV,Supreme Plus,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+150 Mbps,Download,94.95,Service Electric Cable TV,Premier Plus,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+10 Mbps,Upload,94.95,Service Electric Cable TV,Premier Plus,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+100 Mbps,Download,39.99,Breezeline,Fast,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+10 Mbps,Upload,39.99,Breezeline,Fast,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+100 Mbps,Download,99,Skypacket,CBRS LTE PREMIER PLAN,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+10 Mbps,Upload,99,Skypacket,CBRS LTE PREMIER PLAN,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+100 Mbps,Download,149.99,Viasat Internet,Unlimited Platinum 100,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+100 Mbps,Download,169.99,Viasat Internet,Unlimited Platinum 100,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+50 Mbps,Download,34.99,Breezeline,Basic,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+2 Mbps,Upload,34.99,Breezeline,Basic,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+50 Mbps,Download,57.95,Service Electric Cable TV,Express Plus,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+5 Mbps,Upload,57.95,Service Electric Cable TV,Express Plus,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+50 Mbps,Download,79,Skypacket,CBRS LTE DELUXE PLAN,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+10 Mbps,Upload,79,Skypacket,CBRS LTE DELUXE PLAN,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+50 Mbps,Download,99.99,Viasat Internet,Unlimited Gold 50,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+50 Mbps,Download,99.99,Viasat Internet,Unlimited Gold 50,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+50 Mbps,Download,119.99,Viasat Internet,Unlimited Gold 50,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+50 Mbps,Download,149.99,Viasat Internet,Unlimited Platinum 50,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+30 Mbps,Download,99.99,Viasat Internet,Unlimited Gold 30,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+30 Mbps,Download,149.99,Viasat Internet,Unlimited Platinum 30,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,39.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+3 Mbps,Upload,39.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,44.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+3 Mbps,Upload,44.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,49.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+3 Mbps,Upload,49.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,54.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+3 Mbps,Upload,54.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,59.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+3 Mbps,Upload,59.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,59.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+3 Mbps,Upload,59.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,64.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+3 Mbps,Upload,64.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,65,Skypacket,CBRS LTE BROADBAND PLAN,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+10 Mbps,Upload,65,Skypacket,CBRS LTE BROADBAND PLAN,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,69.99,Viasat Internet,Unlimited Silver 25,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,69.99,Viasat Internet,Unlimited Silver 25,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,69.99,Viasat Internet,Unlimited Silver 25,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,69.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+3 Mbps,Upload,69.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,74.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+3 Mbps,Upload,74.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,79.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+3 Mbps,Upload,79.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,79.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+3 Mbps,Upload,79.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,79.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+3 Mbps,Upload,79.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,84.99,Viasat Internet,Unlimited Silver 25,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,89.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+3 Mbps,Upload,89.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,99.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+3 Mbps,Upload,99.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,99.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+3 Mbps,Upload,99.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,99.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+3 Mbps,Upload,99.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,99.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+3 Mbps,Upload,99.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,109.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+3 Mbps,Upload,109.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,139.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+3 Mbps,Upload,139.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+25 Mbps,Download,159.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
+3 Mbps,Upload,159.99,HughesNet,Internet Only,"35, Buck Pine Lane, Luzerne County, Pennsylvania, 18661, United States",True
