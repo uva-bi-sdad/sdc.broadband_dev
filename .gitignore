@@ -196,5 +196,8 @@ cython_debug/
 *.zip
 **/temp/*
 
+# shape files
+**/shapefiles/*
+
 # Ignore all downloaded census objects
 **/tl_2020_*
