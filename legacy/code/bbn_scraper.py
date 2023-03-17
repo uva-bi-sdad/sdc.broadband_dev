@@ -346,4 +346,7 @@ if __name__ == "__main__":
             % (os.path.isdir(args.output_dir), args.output_file)
         )
 
+    import warnings
+
+    warnings.filterwarnings("ignore")
     main(args.input_file, args.output_dir)
