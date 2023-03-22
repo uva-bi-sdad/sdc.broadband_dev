@@ -44,7 +44,7 @@ jobs:
     
       - name: Generate data # Run the script
         run: |
-          init_repository(".")
+          R -e 'init_repository(".")'
           source("build.R")
         shell: Rscript {0}
       
@@ -53,5 +53,5 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git add -A
-          git diff-index --quiet HEAD || (git commit -m "update data" && git push)
+          git diff-index --quiet HEAD || (git commit -m "update data")
           git push -f origin main:dashboard
