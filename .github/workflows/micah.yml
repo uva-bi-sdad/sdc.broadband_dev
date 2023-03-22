@@ -44,7 +44,7 @@ jobs:
     
       - name: Generate data # Run the script
         run: |
-          R -e "init_repository('.')"
+          R -e "library(community); init_repository('.')"
           source("build.R")
         shell: Rscript {0}
       
