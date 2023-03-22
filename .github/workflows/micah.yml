@@ -41,21 +41,33 @@ jobs:
         run: | 
           cd ${{ github.workspace }}
           pwd
-      - name: Initialize data repository and generate data
+      - name: Initialize data repository
         run: |
           renv::restore()
           install.packages("remotes")
-          remotes::install_github("uva-bi-sdad/community", force=TRUE)
+          remotes::install_github("uva-bi-sdad/community")
           renv::snapshot()
+        shell: Rscript {0}
+
+      - name: Configure the user
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          
+      - name: Commit renv files to the <main> 
+        run: |
+          git add -A
+          git diff-index --quiet HEAD || (git commit -m "update data" && git push)
+
+      - name: Generate the data
+        run: |
           library(community)
           init_repository('.')
           source("build.R")
         shell: Rscript {0}
-      
-      - name: Commit files to the <main> and <dashboard> branch # Commit changes
+        
+      - name: Commit files to <dashboard> branch # Commit changes
         run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
           git add -A
           git diff-index --quiet HEAD || (git commit -m "update data")
           git push -f origin main:dashboard
