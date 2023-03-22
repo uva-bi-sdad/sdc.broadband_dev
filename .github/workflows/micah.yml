@@ -41,10 +41,10 @@ jobs:
         run: | 
           cd ${{ github.workspace }}
           pwd
-    
-      - name: Generate data # Run the script
+      - name: Initialize data repository and generate data
         run: |
-          R -e "library(community); init_repository('.')"
+          library(community)
+          init_repository('.')
           source("build.R")
         shell: Rscript {0}
       
