@@ -43,6 +43,10 @@ jobs:
           pwd
       - name: Initialize data repository and generate data
         run: |
+          renv::restore()
+          # install.packages("remotes")
+          remotes::install_github("uva-bi-sdad/community", force=TRUE)
+          renv::snapshot()
           library(community)
           init_repository('.')
           source("build.R")
