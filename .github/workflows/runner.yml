@@ -101,7 +101,9 @@ jobs:
       - run: echo "💡 The ${{ github.repository }} repository have been cloned to the runner."
       
       - name: Checkout latest submodules
-        run: git submodule update --init --recursive --remote
+        run: |
+          git pull
+          git submodule update --init --recursive --remote
 
       - name: Cache packages
         uses: actions/cache@v3
