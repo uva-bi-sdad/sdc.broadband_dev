@@ -132,6 +132,10 @@ jobs:
           renv::restore()
           install.packages("remotes")
           remotes::install_github("uva-bi-sdad/community")
+        shell: Rscript {0}
+    
+      - name: Snapshot data
+        run: |
           renv::snapshot()
         shell: Rscript {0}
 
