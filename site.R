@@ -18,7 +18,11 @@ page_section(
         min = "filter.time_min", max = "filter.time_max", default = "max", id = "selected_time"
       )
     ),
+<<<<<<< HEAD
     input_select("Layer", options = "datasets", default = 0, id = "selected_dataset"),
+=======
+    input_select("Layer", options = "datasets", default = "county", id = "selected_dataset"),
+>>>>>>> 041ba19ffbda0cedbcc01327594a03e7060baf6b
     "<br />",
     output_info(title = "variables.short_name"),
     input_button("Download", "export", query = list(include = "selected_variable"), class = "btn-full"),

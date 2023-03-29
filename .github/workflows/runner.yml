@@ -105,6 +105,9 @@ jobs:
           git pull
           git submodule update --init --recursive --remote
 
+      - name: Make renv directory, if it does not yet exist
+        run: |
+          mkdir -p renv
       - name: Cache packages
         uses: actions/cache@v3
         with:
@@ -126,9 +129,12 @@ jobs:
           pwd
       - name: Initialize data repository
         run: |
-          renv::restore()
           install.packages("remotes")
           remotes::install_github("uva-bi-sdad/community")
+        shell: Rscript {0}
+    
+      - name: Snapshot data
+        run: |
           renv::snapshot()
         shell: Rscript {0}
 
