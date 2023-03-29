@@ -18,6 +18,7 @@ from decouple import config
 
 
 def download_data(county_fips, output_file):
+    # decouple so that passwords are not stored
     conn = psycopg2.connect(
         pg_connection_dict={
             "dbname": config("dbname"),
