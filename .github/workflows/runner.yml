@@ -131,18 +131,11 @@ jobs:
         run: |
           install.packages("remotes")
           remotes::install_github("uva-bi-sdad/community")
-        shell: Rscript {0}
-          
-      - name: Commit renv files to the <main> 
-        run: |
-          git add -A
-          git diff-index --quiet HEAD || (git commit -m "update data" && git push)
+        shell: Rscript {0}       
 
-      - name: Generate the data
+      - name: Load Library
         run: |
           library(community)
-          init_repository('.')
-          source("build.R")
         shell: Rscript {0}
         
       - name: Snapshot data
@@ -154,6 +147,17 @@ jobs:
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
+    
+      - name: Commit renv files to the <main> 
+        run: |
+          git add -A
+          git diff-index --quiet HEAD || (git commit -m "update data" && git push)
+          
+      - name: Build website
+        run: |
+          init_repository('.')
+          source("build.R")
+        shell: Rscript {0}
           
       - name: Commit files to <dashboard> branch # Commit changes
         run: |
