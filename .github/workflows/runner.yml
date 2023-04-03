@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@master
         with:
           repository: uva-bi-sdad/sdc.editor
-          path: auditor/
+          path: sdc.editor/
       - run: echo "🌝 The repo is now cloned on the runner"
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: List files in the repository (Useful for debugging)
