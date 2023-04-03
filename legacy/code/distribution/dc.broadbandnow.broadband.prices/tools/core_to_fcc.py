@@ -13,45 +13,61 @@ import logging
 import pathlib
 import psycopg2
 import shutil
-from sshtunnel import SSHTunnelForwarder
+from sshtunnel import SSHTunnelForwarder, open_tunnel
 from decouple import config
 
 # import traceback
 
 
 def download_data(county_fips, temp_dir):
-    # decouple so that passwords are not stored
 
-    with SSHTunnelForwarder((rivanna.hpc.virginia.edu,5432),
-    conn = psycopg2.connect(
-        dbname=config("dbname"),
-        user= config("user"),
-        password= config("password"),
-        port= config("port"),
-        host= config("host"),	
-	connect_timeout=3,
+    # decouple so that passwords are not stored
+    logging.debug("Starting download of: %s to %s" % (county_fips, temp_dir))
+    ssh_port = int(config("ssh_port"))
+    server = SSHTunnelForwarder(
+        config("ssh_host"),
+        ssh_username=config("ssh_user"),
+        ssh_password=config("ssh_password"),
+        remote_bind_address=("127.0.0.1", 8080),
     )
+    server.start()
+    print(server)
+    print(server.local_bind_port)
+
+    conn = psycopg2.connect(
+        dbname=config("db_name"),
+        user=config("db_user"),
+        password=config("db_password"),
+        port=int(config("db_port")),
+        host=config("db_host"),
+        connect_timeout=3,
+    )
+    logging.debug("Connected to database")
     cur = conn.cursor()
 
-    temp_path = os.path.join(temp_dir, "%s.csv" % county_fips)
-    # save csv to file given county_fips code
-    logging.debug('Using temporary path" %s' % temp_path)
-
-    # example:  \copy (SELECT situs_address,geoid_cnty FROM corelogic_usda WHERE geoid_cnty = '13121') TO '~/13121.csv' CSV header;
-    cur.execute(
-        "\copy (SELECT situs_address,geoid_cnty FROM %s WHERE geoid_cnty = '%s') TO '%s' CSV header;"
-        % (config("dbname"), county_fips, temp_path)
+    SQL_for_file_output = (
+        "COPY (SELECT situs_address,geoid_cnty FROM corelogic_usda current_tax_200627_latest_all_add_vars_add_progs_geom_blk WHERE geoid_cnty = '%s') TO STDOUT DELIMITER ',' CSV HEADER;"
+        % county_fips
     )
-    # sql = "COPY (SELECT * FROM a_table WHERE month=6) TO STDOUT WITH CSV DELIMITER ';'"
-    # with open("/mnt/results/month/table.csv", "w") as file:
-    #     cur.copy_expert(sql, file)
-    logging.debug('File saved to path')
-    cur.close()
+    temp_path = os.path.join(temp_dir, "%s.csv" % county_fips)
+
+    with open(temp_path, "w") as f_output:
+        cur.copy_expert(SQL_for_file_output, f_output)
+
     conn.close()
 
-    return pd.read_csv(
-        temp_path,
-    )
+    # save csv to file given county_fips code
+    logging.debug('Using temporary path" %s' % temp_path)
+    # https://github.com/psycopg/psycopg2/issues/984
+
+    logging.debug("File saved to path")
+    # cur.close()
+    # conn.close()
+    server.close()
+
+    # return pd.read_csv(
+    #     temp_path,
+    # )
 
 
 def main(county_fip, output_file, temp_dir, force):
@@ -71,6 +87,7 @@ def main(county_fip, output_file, temp_dir, force):
     county = county_fips[county_fips["fips"] == county_fip].values[0]
 
     df = download_data(county_fip, temp_dir)
+    assert not df is None, "Data frame returned is None"
     df = df.dropna()
     bdf = pd.DataFrame()
 
