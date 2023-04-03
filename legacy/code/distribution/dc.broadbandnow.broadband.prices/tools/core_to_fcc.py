@@ -13,6 +13,7 @@ import logging
 import pathlib
 import psycopg2
 import shutil
+from sshtunnel import SSHTunnelForwarder
 from decouple import config
 
 # import traceback
@@ -20,12 +21,15 @@ from decouple import config
 
 def download_data(county_fips, temp_dir):
     # decouple so that passwords are not stored
+
+    with SSHTunnelForwarder((rivanna.hpc.virginia.edu,5432),
     conn = psycopg2.connect(
         dbname=config("dbname"),
         user= config("user"),
         password= config("password"),
         port= config("port"),
-        host= config("host"),
+        host= config("host"),	
+	connect_timeout=3,
     )
     cur = conn.cursor()
 
