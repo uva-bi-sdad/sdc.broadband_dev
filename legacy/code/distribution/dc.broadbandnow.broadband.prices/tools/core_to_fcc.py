@@ -21,18 +21,19 @@ from decouple import config
 def download_data(county_fips, temp_dir):
     # decouple so that passwords are not stored
     conn = psycopg2.connect(
-        pg_connection_dict={
-            "dbname": config("dbname"),
-            "user": config("user"),
-            "password": config("password"),
-            "port": config("port"),
-            "host": config("host"),
-        }
+        dbname=config("dbname"),
+        user= config("user"),
+        password= config("password"),
+        port= config("port"),
+        host= config("host"),
     )
     cur = conn.cursor()
 
     temp_path = os.path.join(temp_dir, "%s.csv" % county_fips)
     # save csv to file given county_fips code
+    logging.debug('Using temporary path" %s' % temp_path)
+
+    # example:  \copy (SELECT situs_address,geoid_cnty FROM corelogic_usda WHERE geoid_cnty = '13121') TO '~/13121.csv' CSV header;
     cur.execute(
         "\copy (SELECT situs_address,geoid_cnty FROM %s WHERE geoid_cnty = '%s') TO '%s' CSV header;"
         % (config("dbname"), county_fips, temp_path)
@@ -40,6 +41,7 @@ def download_data(county_fips, temp_dir):
     # sql = "COPY (SELECT * FROM a_table WHERE month=6) TO STDOUT WITH CSV DELIMITER ';'"
     # with open("/mnt/results/month/table.csv", "w") as file:
     #     cur.copy_expert(sql, file)
+    logging.debug('File saved to path')
     cur.close()
     conn.close()
 

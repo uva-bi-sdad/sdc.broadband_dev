@@ -201,3 +201,5 @@ cython_debug/
 
 # Ignore all downloaded census objects
 **/tl_2020_*
+
+*.env
