@@ -3,10 +3,10 @@ import os
 import pandas as pd
 from tqdm import tqdm
 import argparse
-
-# import traceback
 import logging
 import pathlib
+
+# import traceback
 
 
 def main(input_dir, output_filepath):

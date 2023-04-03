@@ -330,7 +330,7 @@ if __name__ == "__main__":
     )
     parser.add_argument("-v", "--verbose", action=argparse.BooleanOptionalAction)
     parser.add_argument(
-        "-h",
+        "-hl",
         "--headless",
         default=False,
         help="whether or not to run the browser in headless mode or not",
