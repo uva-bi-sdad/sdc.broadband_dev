@@ -24,50 +24,46 @@ def download_data(county_fips, temp_dir):
     # decouple so that passwords are not stored
     logging.debug("Starting download of: %s to %s" % (county_fips, temp_dir))
     ssh_port = int(config("ssh_port"))
-    server = SSHTunnelForwarder(
-        config("ssh_host"),
+
+    with SSHTunnelForwarder(
+        (config("ssh_host"), 22),
         ssh_username=config("ssh_user"),
         ssh_password=config("ssh_password"),
-        remote_bind_address=("127.0.0.1", 8080),
+        remote_bind_address=(config("db_host"), ssh_port),
+        local_bind_address=("localhost", ssh_port),
+    ):
+
+        conn = psycopg2.connect(
+            dbname=config("db_name"),
+            user=config("db_user"),
+            password=config("db_password"),
+            port=config("db_port"),
+            host="localhost",
+            connect_timeout=3,
+        )
+        logging.debug("Connected to database")
+        cur = conn.cursor()
+
+        SQL_for_file_output = (
+            "COPY (SELECT situs_address,geoid_cnty FROM corelogic_usda.current_tax_200627_latest_all_add_vars_add_progs_geom_blk WHERE geoid_cnty = '%s') TO STDOUT DELIMITER ',' CSV HEADER;"
+            % county_fips
+        )
+        temp_path = os.path.join(temp_dir, "%s.csv" % county_fips)
+
+        with open(temp_path, "w") as f_output:
+            cur.copy_expert(SQL_for_file_output, f_output)
+
+        # save csv to file given county_fips code
+        logging.debug('Using temporary path" %s' % temp_path)
+        # https://github.com/psycopg/psycopg2/issues/984
+
+        logging.debug("File saved to path")
+        cur.close()
+        conn.close()
+
+    return pd.read_csv(
+        temp_path,
     )
-    server.start()
-    print(server)
-    print(server.local_bind_port)
-
-    conn = psycopg2.connect(
-        dbname=config("db_name"),
-        user=config("db_user"),
-        password=config("db_password"),
-        port=int(config("db_port")),
-        host=config("db_host"),
-        connect_timeout=3,
-    )
-    logging.debug("Connected to database")
-    cur = conn.cursor()
-
-    SQL_for_file_output = (
-        "COPY (SELECT situs_address,geoid_cnty FROM corelogic_usda current_tax_200627_latest_all_add_vars_add_progs_geom_blk WHERE geoid_cnty = '%s') TO STDOUT DELIMITER ',' CSV HEADER;"
-        % county_fips
-    )
-    temp_path = os.path.join(temp_dir, "%s.csv" % county_fips)
-
-    with open(temp_path, "w") as f_output:
-        cur.copy_expert(SQL_for_file_output, f_output)
-
-    conn.close()
-
-    # save csv to file given county_fips code
-    logging.debug('Using temporary path" %s' % temp_path)
-    # https://github.com/psycopg/psycopg2/issues/984
-
-    logging.debug("File saved to path")
-    # cur.close()
-    # conn.close()
-    server.close()
-
-    # return pd.read_csv(
-    #     temp_path,
-    # )
 
 
 def main(county_fip, output_file, temp_dir, force):
@@ -84,22 +80,25 @@ def main(county_fip, output_file, temp_dir, force):
         "https://github.com/uva-bi-sdad/national_address_database/raw/main/data/fips_county.csv",
         dtype={"fips": object},
     )
-    county = county_fips[county_fips["fips"] == county_fip].values[0]
+    county = county_fips[county_fips["fips"] == county_fip].values[0][1]
+    logging.info("County: %s" % county)
 
     df = download_data(county_fip, temp_dir)
     assert not df is None, "Data frame returned is None"
     df = df.dropna()
     bdf = pd.DataFrame()
 
+    logging.info("Length of df: %s" % len(df))
     # Clean up the csv and export the results
 
+    logging.info("Cleaning data frame: ")
     bdf["street"] = df["situs_address"].apply(lambda x: x.split(" %s" % state_abbr)[0])
     bdf["county"] = county
     bdf["state"] = state_abbr
     bdf["zip"] = df["situs_address"].apply(lambda x: x.split("%s " % state_abbr)[-1])
 
     bdf.to_csv(output_file, index=False)
-    return os.path.isfile(bdf)
+    return os.path.isfile(output_file)
 
 
 if __name__ == "__main__":
