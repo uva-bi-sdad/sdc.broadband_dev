@@ -208,7 +208,7 @@ def scrape_prices(
     for address in tqdm(addresses):
         # try below and exception IF takes too long (increments a counter before skipping address eventually)
 
-        address_name = slugify(address, slugify="_")
+        address_name = slugify(address, separator="_")
         if os.path.isfile(save_folder + address_name + ".csv"):
             continue
 
