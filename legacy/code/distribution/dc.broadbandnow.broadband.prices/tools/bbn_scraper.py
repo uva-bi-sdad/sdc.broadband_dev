@@ -208,7 +208,7 @@ def scrape_prices(
     for address in tqdm(addresses):
         # try below and exception IF takes too long (increments a counter before skipping address eventually)
 
-        address_name = slugify(address)
+        address_name = slugify(address, slugify="_")
         if os.path.isfile(save_folder + address_name + ".csv"):
             continue
 
@@ -281,7 +281,7 @@ def scrape_prices(
     return empty
 
 
-def main(input_file, output_dir, headless=False):
+def main(input_file, output_dir, column_name, headless=False):
     # start driver
     options = Options()
     # Uncomment to run headless (i.e., don't show the browser)
@@ -298,9 +298,10 @@ def main(input_file, output_dir, headless=False):
     wait = WebDriverWait(driver, driver_wait)
 
     df = pd.read_csv(input_file)
+    df = df[df[column_name].notna()]  # remove all rows that are null at a column name
 
     # cleaning addresses
-    addresses = list(df["address"].unique())
+    addresses = list(df[column_name].unique())
     addresses = [v for v in addresses if isinstance(v, str)]
 
     # save the valid file paths
@@ -330,7 +331,15 @@ if __name__ == "__main__":
     )
     parser.add_argument("-v", "--verbose", action=argparse.BooleanOptionalAction)
     parser.add_argument(
-        "-hl",
+        "-c",
+        "--column",
+        type=str,
+        help="The input address column to check. By default uses (address)",
+        default="address",
+        required=False,
+    )
+    parser.add_argument(
+        "-l",
         "--headless",
         default=False,
         help="whether or not to run the browser in headless mode or not",
@@ -344,17 +353,13 @@ if __name__ == "__main__":
 
     logging.basicConfig(format="%(levelname)s: %(message)s", level=log_level)
 
-    if not os.path.isfile(args.input_file) or not os.path.isdir(args.output_dir):
-        logging.info(
-            "[%s] Input file valid: %s"
-            % (os.path.isfile(args.input_file), args.input_file)
-        )
-        logging.info(
-            "[%s] Ouput dir valid: %s"
-            % (os.path.isdir(args.output_dir), args.output_file)
-        )
-
+    assert os.path.isdir(args.output_dir), (
+        "Output directory is invalid: %s" % args.output_dir
+    )
+    assert os.path.isfile(args.input_file), (
+        "Input file is invalid: %s" % args.input_file
+    )
     import warnings
 
     warnings.filterwarnings("ignore")
-    main(args.input_file, args.output_dir, args.headless)
+    main(args.input_file, args.output_dir, args.column, args.headless)
