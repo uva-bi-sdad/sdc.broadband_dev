@@ -195,6 +195,7 @@ cython_debug/
 
 *.zip
 **/temp/*
+**/temp_*/*
 
 # shape files
 **/shapefiles/*

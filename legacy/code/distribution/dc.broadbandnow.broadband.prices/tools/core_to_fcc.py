@@ -165,7 +165,8 @@ if __name__ == "__main__":
             "temporary directory %s already exists" % args.temp_dir
         )
     else:  # Force delete the temporary files
-        shutil.rmtree(args.temp_dir)
+        if os.path.isdir(args.temp_dir):
+            shutil.rmtree(args.temp_dir)
     os.mkdir(args.temp_dir)
 
     success = main(args.input_county_fips, args.output_file, args.temp_dir, args.force)

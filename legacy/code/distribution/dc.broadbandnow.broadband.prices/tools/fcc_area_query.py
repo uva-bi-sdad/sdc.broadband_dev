@@ -11,6 +11,8 @@ from io import StringIO
 import warnings
 import logging
 import pathlib
+import shutil
+from glob import glob
 
 # import traceback
 
@@ -24,7 +26,10 @@ def main(input_file, output_dir, force):
     chunk_names = []
     for i in range(len(dfs)):
         save_name = os.path.join(
-            output_dir, "fcc_chunk_{i}.csv".format(i=str(i).zfill(2))
+            output_dir,
+            "fcc_chunk_{i}.csv".format(
+                i=str(i).zfill(int(len(str(len(dfs)))))
+            ),  # zfill by the lenght of theh string of the length of the value
         )
         try:
             dfs[i].to_csv(save_name)
@@ -58,6 +63,21 @@ def main(input_file, output_dir, force):
         logging.debug("Saving to: %s" % save_name)
         with open(save_name, "wb") as f:
             f.write(response.content)
+
+        logging.debug("Fixing malformed headers")
+        with open(save_name, "r", encoding="utf-8") as file:
+            data = file.readlines()
+
+        data[0] = "index,input,match,non_exact,street,coordinate,tiger,lr\n"
+
+        with open(save_name, "w", encoding="utf-8") as file:
+            file.writelines(data)
+
+    logging.info("Deleting all non_geocoded files")
+
+    for file in os.listdir(output_dir):
+        if "_geocoded" not in file:
+            os.remove(os.path.join(output_dir, file))
 
 
 if __name__ == "__main__":
@@ -103,5 +123,11 @@ if __name__ == "__main__":
     assert os.path.isfile(args.input_file)
     if not args.force:
         assert not os.path.isdir(args.output_dir)
+    else:  # if it is forced, remove the directory if it exists
+        if os.path.isdir(args.output_dir):
+            shutil.rmtree(args.output_dir)
+
+    # Make an output directory. You either error out prior if not forced if it doesn't exist, or it is removed if it is forced
+    os.mkdir(args.output_dir)
 
     main(args.input_file, args.output_dir, args.force)
