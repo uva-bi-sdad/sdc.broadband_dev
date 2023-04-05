@@ -176,9 +176,10 @@ def extract_page(address, driver):
         if plan_df is not None and not plan_df.empty:
             plan_dfs.append(plan_df)
 
-    df = pd.concat(plan_dfs)
-    # print(df)
-    return df
+    if len(plan_dfs) > 0:
+        df = pd.concat(plan_dfs)
+        # print(df)
+        return df
 
 
 def scrape_prices(
@@ -254,7 +255,7 @@ def scrape_prices(
 
             adf = extract_page(address, driver)
 
-            if not adf.empty:
+            if adf is not None and not adf.empty:
                 # adfs.append(adf)
                 adf.to_csv(save_folder + address_name + ".csv", index=False)
 
