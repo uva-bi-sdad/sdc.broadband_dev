@@ -70,6 +70,7 @@ jobs:
           pwd
       - name: List current working directory
         run: |
+          git pull
           tree .
       - name: Push directory to another repository
         uses: cpina/github-action-push-to-another-repository@main
