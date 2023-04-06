@@ -31,9 +31,15 @@ jobs:
       - name: Install requirements
         run: |
           pip install -r sdc.editor/code/requirements.txt
-      - name: Edit the repository
+      - name: Test Edit
         run: |
-          for f in sdc.editor/code/edit_*.py; do python "$f" -i .; done   
+          python sdc.editor/edit_00_test.py -i .  
+      - name: Add measure info keys 
+        run: |
+          python sdc.editor/code/edit_01_add_measure_info_keys.py -i .
+      - name: Delete measure info keys 
+        run: |
+          python sdc.editor/code/edit_02_delete_measure_info_keys.py -i .
       - name: Remove editor files
         run: |
           rm -rf sdc.editor
