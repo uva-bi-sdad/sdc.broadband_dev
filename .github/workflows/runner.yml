@@ -41,13 +41,14 @@ jobs:
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add .
-          git commit -m "Automated manifest update"
-      - name: Push changes # push the output folder to your repo
+          git add -A
+          git diff-index --quiet HEAD || git commit -m 'Automated edits'
+      - name: Push changes # push the output folder to your repo        
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           force: true
+        continue-on-error: true
   
   update_public_repo:
     needs: update_private_repo
