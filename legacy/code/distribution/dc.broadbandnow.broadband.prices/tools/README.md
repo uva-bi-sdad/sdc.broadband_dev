@@ -3,7 +3,7 @@
 Theoretically, one should be able to accomplish the entire series of tasks without writing a single line of python code. The main goal is that people can call the toolkit functions and end up with the same data set
 
 
-## Example steps to parsing Fulton County (13121)
+## Example steps to compiling data for Fulton County (13121)
 
 1. `python core_to_fcc.py -i 13121 -o temp/13121.csv.xz -ft` Get the addresses given a county fips from corelogic
 2. `python fcc_area_query.py -i temp/13121.csv.xz -o temp_fcc -f` Use those address and cross match with fcc area api
@@ -13,3 +13,5 @@ Theoretically, one should be able to accomplish the entire series of tasks witho
 6. `python spatial_join.py -i temp/13121_cleaned.csv.xz -s temp/tl_2020_13121_tabblock20.zip -c 13121 -o temp/13121_spatial_joined.csv.xz` Spatial join the data with the downloaded shapefiles and sample the address at (n=1) per block
 7. `python bbn_scraper.py -i temp/13121_spatial_joined.csv.xz -c street -o ../../../../data/dc.broadbandnow.broadband.prices/temp_13121_bbn/ -l -c address` Scrape broadbandnow on the resultant addresses (in the street column) and export the data to a folder
 8. `python combine_csv.py -i ../../../../data/dc.broadbandnow.broadband.prices/13121_bbn -o ../../../../data/dc.broadbandnow.broadband.prices/13121_2023_broadband_prices.csv.xz` Combine the dataset into a single csv
+9. `python join_bbn_with_spatial.py -i ../../../../data/dc.broadbandnow.broadband.prices/13121_2023_broadband_prices.csv.xz -s temp/13121_spatial_joined.csv.xz -o temp/13121_bbn_space_joined.csv.xz -c 13121` Join the final bbn parsed data with the previous address-blocked spatial joined geometry for easy plotting
+10. `` Plot the results
