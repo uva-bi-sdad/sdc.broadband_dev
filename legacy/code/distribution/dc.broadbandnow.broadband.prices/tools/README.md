@@ -14,4 +14,4 @@ Theoretically, one should be able to accomplish the entire series of tasks witho
 7. `python bbn_scraper.py -i temp/13121_spatial_joined.csv.xz -c street -o ../../../../data/dc.broadbandnow.broadband.prices/temp_13121_bbn/ -l -c address` Scrape broadbandnow on the resultant addresses (in the street column) and export the data to a folder
 8. `python combine_csv.py -i ../../../../data/dc.broadbandnow.broadband.prices/13121_bbn -o ../../../../data/dc.broadbandnow.broadband.prices/13121_2023_broadband_prices.csv.xz` Combine the dataset into a single csv
 9. `python join_bbn_with_spatial.py -i ../../../../data/dc.broadbandnow.broadband.prices/13121_2023_broadband_prices.csv.xz -s temp/13121_spatial_joined.csv.xz -o temp/13121_bbn_space_joined.csv.xz -c 13121` Join the final bbn parsed data with the previous address-blocked spatial joined geometry for easy plotting
-10. `` Plot the results
+10. `python visualize.py -i temp/13121_bbn_space_joined.csv.xz -o 13121.png -l "Fulton County"` Plot the results
