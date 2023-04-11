@@ -15,3 +15,29 @@ Theoretically, one should be able to accomplish the entire series of tasks witho
 8. `python combine_csv.py -i ../../../../data/dc.broadbandnow.broadband.prices/temp_13121_bbn -o ../../../../data/dc.broadbandnow.broadband.prices/13121_2023_broadband_prices.csv.xz` Combine the dataset into a single csv
 9. `python join_bbn_with_spatial.py -i ../../../../data/dc.broadbandnow.broadband.prices/13121_2023_broadband_prices.csv.xz -s temp/13121_spatial_joined.csv.xz -o temp/13121_bbn_space_joined.csv.xz -c 13121` Join the final bbn parsed data with the previous address-blocked spatial joined geometry for easy plotting
 10. `python visualize.py -i temp/13121_bbn_space_joined.csv.xz -o temp/13121.png -l "Fulton County"` Plot the results
+
+
+## Example steps to compiling data for a batch
+```python
+atlanta_fips = ['Fulton County','Clayton County','Fayette County','Henry County','Rockdale County','Gwinnett County','Forsyth County','Cherokee County','Cobb County','Douglas County']
+df = pd.read_csv('https://github.com/uva-bi-sdad/national_address_database/raw/main/data/fips_county.csv', dtype={'fips':object})
+atlanta_fips = [x.lower().replace(' ','_') for x in atlanta_fips] # clean the data
+pdf = df[df['county'].isin(atlanta_fips)]
+pdf = pdf[pdf['fips'].apply(lambda x: x[:2] == '13')]
+      fips           county
+423  13057  cherokee_county
+426  13063   clayton_county
+428  13067      cobb_county
+443  13097   douglas_county
+451  13113   fayette_county
+453  13117   forsyth_county
+455  13121    fulton_county
+462  13135  gwinnett_county
+470  13151     henry_county
+517  13247  rockdale_county    
+
+rdf =pdf[~pdf['county'].isin(parsed)]
+list(rdf['fips'])
+remaining = ['13057', '13067', '13097', '13113', '13117', '13135', '13151', '13247']
+# 13057 13067 13097 13113 13117 13135 13151 13247
+```

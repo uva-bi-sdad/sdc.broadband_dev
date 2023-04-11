@@ -108,15 +108,15 @@ if __name__ == "__main__":
     parser.add_argument(
         "-i",
         "--input_county_fips",
-        type=str,
-        help="The county fips to filter from the database",
+        nargs="+",
+        help="A list of county fip(s) to filter from the database",
         required=True,
     )
     parser.add_argument(
         "-o",
-        "--output_file",
+        "--output_dir",
         type=str,
-        help="The output csv",
+        help="The output directory for the csvs",
         required=True,
     )
     parser.add_argument(
@@ -157,8 +157,8 @@ if __name__ == "__main__":
 
     logging.basicConfig(format="%(levelname)s: %(message)s", level=log_level)
 
-    if not args.force:
-        assert not os.path.isfile(args.output_file)
+    for fip in args.input_county_fips:
+        assert len(fip) == 5, "[%s] not 5 characters long" % (fip)
 
     if not args.force_delete_temp:
         assert not os.path.isdir(args.temp_dir), (
@@ -169,8 +169,17 @@ if __name__ == "__main__":
             shutil.rmtree(args.temp_dir)
     os.mkdir(args.temp_dir)
 
-    success = main(args.input_county_fips, args.output_file, args.temp_dir, args.force)
-    print("[%s] Output to %s successful" % (success, args.output_file))
+    for fip in args.input_county_fips:
+        output_filepath = os.path.join(args.output_dir, "%s.csv.xz" % fip)
+        if not args.force:
+            assert not os.path.isfile(output_filepath)
+        success = main(
+            fip,
+            output_filepath,
+            args.temp_dir,
+            args.force,
+        )
+        print("[%s] Output to %s successful" % (success, output_filepath))
 
     # Cleaning up temporary directory and its contents
     shutil.rmtree(args.temp_dir)
