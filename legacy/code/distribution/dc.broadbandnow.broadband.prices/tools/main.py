@@ -1,5 +1,7 @@
+import os
 from core_to_fcc import main as c2f
-
+from fcc_area_query import main as fca
+from combine_csv import main as cc
 
 """
 Writing a wrapper that combines everything so that:
@@ -18,4 +20,11 @@ Output:
 
 """
 
-# c2f(["-f", "/etc/hosts", "-t", "json"])
+
+def main(county_fip):
+    # c2f(["-f", "/etc/hosts", "-t", "json"])
+    pass
+    os.system(
+        "https://www2.census.gov/geo/tiger/TIGER2020PL/LAYER/TABBLOCK/2020/tl_2020_%s_tabblock20.zip"
+        % county_fip
+    )
