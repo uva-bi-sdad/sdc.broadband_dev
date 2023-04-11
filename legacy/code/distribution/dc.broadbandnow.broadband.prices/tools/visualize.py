@@ -21,12 +21,17 @@ import contextily as cx
 
 
 def main(
-    input_file,
+    input_files,
     output_file,
     location,
 ):
     warnings.filterwarnings("ignore")
-    mdf = pd.read_csv(input_file)
+
+    dfs = []
+    for file in input_files:
+        df = pd.read_csv(file)
+        dfs.append(df)
+    mdf = pd.concat(dfs)
     mdf["geometry"] = mdf["geometry"].apply(wkt.loads)
 
     gdf = gpd.GeoDataFrame(mdf, crs="epsg:4326")
@@ -52,12 +57,11 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Given a geopandas file, generate a plot"
     )
-
     parser.add_argument(
         "-i",
-        "--input_file",
-        type=str,
-        help="The input csv with broadbandnow results",
+        "--input_files",
+        nargs="+",
+        help="The input csv(s) with broadbandnow results",
         required=True,
     )
     parser.add_argument(
@@ -97,15 +101,17 @@ if __name__ == "__main__":
 
     logging.basicConfig(format="%(levelname)s: %(message)s", level=log_level)
 
-    assert os.path.isfile(args.input_file), "input file is invalid"
-    test_df = pd.read_csv(args.input_file)
-    assert "address" in test_df.columns
+    for file in args.input_files:
+        assert os.path.isfile(file), "input file is invalid: %s" % file
+
+        test_df = pd.read_csv(file)
+        assert "address" in test_df.columns, "has no address column: %s" % file
 
     if args.output_file and not args.force:
         assert not os.path.isfile(args.output_file), "output file is invalid"
 
     main(
-        args.input_file,
+        args.input_files,
         args.output_file,
         args.location,
     )
