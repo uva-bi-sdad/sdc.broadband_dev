@@ -17,7 +17,7 @@ Theoretically, one should be able to accomplish the entire series of tasks witho
 10. `python visualize.py -i temp/13121_bbn_space_joined.csv.xz -o temp/13121.png -l "Fulton County"` Plot the results
 
 
-## Example steps to compiling data for a batch
+## Example steps to compiling data for a batch in Georgia
 ```python
 atlanta_fips = ['Fulton County','Clayton County','Fayette County','Henry County','Rockdale County','Gwinnett County','Forsyth County','Cherokee County','Cobb County','Douglas County']
 df = pd.read_csv('https://github.com/uva-bi-sdad/national_address_database/raw/main/data/fips_county.csv', dtype={'fips':object})

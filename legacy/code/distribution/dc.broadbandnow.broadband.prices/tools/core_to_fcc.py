@@ -66,7 +66,7 @@ def download_data(county_fips, temp_dir):
     )
 
 
-def main(county_fip, output_file, temp_dir, force):
+def run(county_fip, output_file, temp_dir, force):
     warnings.filterwarnings("ignore")
     state_fips = pd.read_csv(
         "https://raw.githubusercontent.com/uva-bi-sdad/national_address_database/main/data/fips_state.csv",
@@ -101,7 +101,7 @@ def main(county_fip, output_file, temp_dir, force):
     return os.path.isfile(output_file)
 
 
-if __name__ == "__main__":
+def main(raw_args=None):
     parser = argparse.ArgumentParser(
         description="Given a corelogic template, convert to a csv that can be queried to the fcc. First downloads raw data into the temporary directory, then transforms it to a cleaned format in the output filepath"
     )
@@ -173,7 +173,7 @@ if __name__ == "__main__":
         output_filepath = os.path.join(args.output_dir, "%s.csv.xz" % fip)
         if not args.force:
             assert not os.path.isfile(output_filepath)
-        success = main(
+        success = run(
             fip,
             output_filepath,
             args.temp_dir,
@@ -183,3 +183,7 @@ if __name__ == "__main__":
 
     # Cleaning up temporary directory and its contents
     shutil.rmtree(args.temp_dir)
+
+
+if __name__ == "__main__":
+    main()
