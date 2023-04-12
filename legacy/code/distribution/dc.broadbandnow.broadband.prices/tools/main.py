@@ -2,17 +2,11 @@ import os
 import argparse
 import logging
 import pandas as pd
-import fcc_area_query
-import combine_csv
-import clean_fcc
-import spatial_join
-import bbn_scraper
-import join_bbn_with_spatial
 import datetime
 from tqdm import tqdm
 
 
-def main(county_fip, output_dir):
+def main(county_fip, output_dir, pbar):
     # Try making some temporary directories to store information
     logging.debug("County fip: %s" % county_fip)
 
@@ -21,56 +15,88 @@ def main(county_fip, output_dir):
     )
 
     os.system("mkdir -p %s" % output_dir)
-    os.system("mkdir -p temp_bbn")
-
+    os.system("mkdir -p temp_%s_fcc" % county_fip)
+    fcc_dir = "temp_%s_fcc" % county_fip
+    pbar.set_description("Cross matching with fcc area api")
     os.system(
-        "python fcc_area_query.py -i %s -o temp_fcc -f"
-        % os.path.join(output_dir, "%s.csv.xz" % county_fip)
+        "python fcc_area_query.py -i %s -o %s -f"
+        % (os.path.join(output_dir, "%s.csv.xz" % county_fip), fcc_dir)
     )
+    assert (
+        len([f for f in os.listdir(fcc_dir) if "_geocoded" in f]) > 0
+    ), "There are no files in temp_fcc"
+    pbar.set_description("Combining the csv")
+
+    fcc_geocoded_filepath = "%s_geocoded.csv.xz" % county_fip
     os.system(
         "python combine_csv.py -i temp_fcc -o %s -f"
-        % os.path.join(output_dir, "%s_geocoded.csv.xz" % county_fip)
+        % os.path.join(output_dir, fcc_geocoded_filepath)
     )
+    assert os.path.isfile(fcc_geocoded_filepath), "No combined geocoded file found"
 
     # Download county shapefiles
+    pbar.set_description("Downloading shape geometry")
     os.system(
         "wget -nc -P %s https://www2.census.gov/geo/tiger/TIGER2020PL/LAYER/TABBLOCK/2020/tl_2020_%s_tabblock20.zip"
         % (output_dir, county_fip)
     )
 
+    assert os.path.isfile(
+        os.path.join(output_dir, "tl_2020_%s_tabblock20.zip" % county_fip)
+    ), "Shape files not downloaded"
+
+    geocoded_filepath = os.path.join(output_dir, "%s_geocoded.csv.xz" % county_fip)
+    assert os.path.isfile(geocoded_filepath)
+
+    cleaned_fcc_filpath = os.path.join(output_dir, "%s_cleaned.csv.xz" % county_fip)
+
     # Clean downloaded fcc data
+    pbar.set_description("Cleaning downloaded fcc data")
     os.system(
         "python clean_fcc.py -i %s -o %s -f"
         % (
-            os.path.join(output_dir, "%s_geocoded.csv.xz" % county_fip),
-            os.path.join(output_dir, "%s_cleaned.csv.xz" % county_fip),
+            geocoded_filepath,
+            cleaned_fcc_filpath,
         )
+    )
+    assert os.path.isfile(cleaned_fcc_filpath)
+
+    spatial_joined_filepath = os.path.join(
+        output_dir, "%s_spatial_joined.csv.xz" % county_fip
     )
 
     # Spatiall join the cleaned data with the shapefiles
     os.system(
         "python spatial_join.py -i %s -s %s -c %s -o %s -f"
         % (
-            os.path.join(output_dir, "%s_cleaned.csv.xz" % county_fip),
+            cleaned_fcc_filpath,
             os.path.join(output_dir, "tl_2020_%s_tabblock20.zip" % county_fip),
             "%s" % county_fip,
-            os.path.join(output_dir, "%s_spatial_joined.csv.xz" % county_fip),
+            spatial_joined_filepath,
         )
     )
 
+    assert os.path.isfile(spatial_joined_filepath)
+
     # Query broadbandnow
+    pbar.set_description("Prepping for broadbandnow download")
+    temp_bbn_dir = "temp_%s_bbn/" % (county_fip)
+    os.system("mkdir -p %s" % temp_bbn_dir)
     os.system(
         "python bbn_scraper.py -i %s -c street -o %s -l -c address"
         % (
-            os.path.join(output_dir, "%s_spatial_joined_csv.xz" % county_fip),
-            "temp_%s_bbn/" % (county_fip),
+            spatial_joined_filepath,
+            temp_bbn_dir,
         )
     )
 
+    assert os.path.isdir(temp_bbn_dir)
+
+    pbar.set_description("Combining csv of bbn prices")
     os.system(
         "python combine_csv.py -i %s -o %s -f"
         % (
-            os.path.join("temp_%s_bbn/", "%s.cxv.xz" % county_fip),
+            "temp_%s_bbn/",
             os.path.join(
                 output_dir,
                 "%s_%s_broadband_prices.csv.xz"
@@ -78,6 +104,14 @@ def main(county_fip, output_dir):
             ),
         )
     )
+    assert os.path.isfile(
+        os.path.join(
+            output_dir,
+            "%s_%s_broadband_prices.csv.xz" % (county_fip, datetime.date.today().year),
+        )
+    )
+
+    pbar.set_description("Spatial joining broadbandnow data")
 
     os.system(
         "python join_bbn_with_spatial.py -i %s -s %s -o %s -c %s"
@@ -91,6 +125,10 @@ def main(county_fip, output_dir):
             os.path.join(output_dir, "%s_bbn_space_joined.csv.xz" % county_fip),
             "%s" % county_fip,
         )
+    )
+
+    assert os.path.isfile(
+        os.path.join(output_dir, "%s_bbn_space_joined.csv.xz" % county_fip)
     )
 
 
@@ -137,6 +175,7 @@ if __name__ == "__main__":
             main(
                 fip,
                 args.output_dir,
+                pbar,
             )
         except KeyboardInterrupt:
             print("Interrupted")
