@@ -56,6 +56,11 @@ def main(input_file, output_dir, force):
             "benchmark": (None, "2020"),
         }
 
+        if not force and os.path.isfile(
+            save_name
+        ):  # if not force and the file is already read
+            continue
+
         response = requests.post(
             "https://geocoding.geo.census.gov/geocoder/locations/addressbatch",
             files=files,

@@ -80,6 +80,7 @@ def run(county_fip, output_file, temp_dir, force):
         "https://github.com/uva-bi-sdad/national_address_database/raw/main/data/fips_county.csv",
         dtype={"fips": object},
     )
+    logging.info(county_fips[county_fips["fips"] == county_fip])
     county = county_fips[county_fips["fips"] == county_fip].values[0][1]
     logging.info("County: %s" % county)
 
@@ -141,14 +142,6 @@ def main(raw_args=None):
         required=False,
         default=False,
     )
-    parser.add_argument(
-        "-ft",
-        "--force_delete_temp",
-        action=argparse.BooleanOptionalAction,
-        help="Force delete the temporary directory",
-        required=False,
-        default=False,
-    )
 
     args = parser.parse_args()
     log_level = logging.INFO
@@ -160,14 +153,8 @@ def main(raw_args=None):
     for fip in args.input_county_fips:
         assert len(fip) == 5, "[%s] not 5 characters long" % (fip)
 
-    if not args.force_delete_temp:
-        assert not os.path.isdir(args.temp_dir), (
-            "temporary directory %s already exists" % args.temp_dir
-        )
-    else:  # Force delete the temporary files
-        if os.path.isdir(args.temp_dir):
-            shutil.rmtree(args.temp_dir)
-    os.mkdir(args.temp_dir)
+    if not os.path.isdir(args.temp_dir):  # if temp dir is not a dir, create a dir
+        os.mkdir(args.temp_dir)
 
     for fip in args.input_county_fips:
         output_filepath = os.path.join(args.output_dir, "%s.csv.xz" % fip)

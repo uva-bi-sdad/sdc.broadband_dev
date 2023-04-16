@@ -8,26 +8,32 @@ import sys
 
 
 def main(county_fip, output_dir, pbar):
-    # # Try making some temporary directories to store information
-    # logging.debug("County fip: %s" % county_fip)
+    # Try making some temporary directories to store information
+    logging.debug("County fip: %s" % county_fip)
 
-    # bbn_name = (
-    #     "%s_%s_broadband_prices.csv.xz" % (county_fip, datetime.date.today().year),
-    # )
-
-    # os.system("mkdir -p %s" % output_dir)
-    # os.system("mkdir -p temp_%s_fcc" % county_fip)
+    os.system("mkdir -p %s" % output_dir)
+    os.system("mkdir -p temp_%s_fcc" % county_fip)
     fcc_dir = "temp_%s_fcc" % county_fip
-    # pbar.set_description("Cross matching with fcc area api")
-    # os.system(
-    #     "python fcc_area_query.py -i %s -o %s -f"
-    #     % (os.path.join(output_dir, "%s.csv.xz" % county_fip), fcc_dir)
-    # )
-    # assert (
-    #     len([f for f in os.listdir(fcc_dir) if "_geocoded" in f]) > 0
-    # ), "There are no files in temp_fcc"
-    # pbar.set_description("Combining the csv")
+    pbar.set_description("Cross matching with fcc area api")
+    os.system(
+        "python fcc_area_query.py -i %s -o %s"
+        % (os.path.join(output_dir, "%s.csv.xz" % county_fip), fcc_dir)
+    )
 
+    num_geocoded = len([f for f in os.listdir(fcc_dir) if "_geocoded" in f])
+    num_needed = len([f for f in os.listdir(fcc_dir) if not "_geocoded" in f])
+
+    if num_geocoded != num_geocoded:
+        logging.info(
+            "Number of geocoded files needed does not match: (%s/%s)"
+            % (num_geocoded, num_needed)
+        )
+        return
+    else:
+        logging.info(
+            "Number of geocoded files match: (%s/%s)" % (num_geocoded, num_needed)
+        )
+    pbar.set_description("Combining the csv")
     fcc_geocoded_filepath = os.path.join(output_dir, "%s_geocoded.csv.xz" % county_fip)
     os.system("python combine_csv.py -i %s -o %s -f" % (fcc_dir, fcc_geocoded_filepath))
     if not os.path.isfile(fcc_geocoded_filepath):
@@ -132,7 +138,7 @@ def main(county_fip, output_dir, pbar):
         "python join_bbn_with_spatial.py -i %s -s %s -o %s -c %s"
         % (
             bbn_file,
-            os.path.join(output_dir, "%s_spatial_joined.xxsc.xz" % county_fip),
+            os.path.join(output_dir, "%s_spatial_joined.csv.xz" % county_fip),
             os.path.join(output_dir, "%s_bbn_space_joined.csv.xz" % county_fip),
             "%s" % county_fip,
         )
@@ -142,7 +148,7 @@ def main(county_fip, output_dir, pbar):
         output_dir, "%s_bbn_space_joined.csv.xz" % county_fip
     )
     if not os.path.isfile(joined_bbn_file):
-        logging.info("Joined bbn file not found")
+        logging.info("Joined bbn file not found: %s" % joined_bbn_file)
         return
 
 
