@@ -13,6 +13,7 @@ import logging
 import pathlib
 import shutil
 from glob import glob
+import time
 
 # import traceback
 
@@ -41,6 +42,7 @@ def main(input_file, output_dir, force):
     logging.debug(len(chunk_names))
     pbar = tqdm(chunk_names)
     for chunk in pbar:
+        time.sleep(15)
         save_name = "{chunk_name}_geocoded.csv".format(
             chunk_name=chunk.split(".csv")[0]
         )
@@ -125,14 +127,7 @@ if __name__ == "__main__":
 
     logging.basicConfig(format="%(levelname)s: %(message)s", level=log_level)
 
-    assert os.path.isfile(args.input_file)
-    if not args.force:
-        assert not os.path.isdir(args.output_dir)
-    else:  # if it is forced, remove the directory if it exists
-        if os.path.isdir(args.output_dir):
-            shutil.rmtree(args.output_dir)
-
-    # Make an output directory. You either error out prior if not forced if it doesn't exist, or it is removed if it is forced
-    os.mkdir(args.output_dir)
+    if not os.path.isdir(args.output_dir):
+        os.mkdir(args.output_dir)
 
     main(args.input_file, args.output_dir, args.force)

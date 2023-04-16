@@ -12,27 +12,9 @@ def main(county_fip, output_dir, pbar):
     logging.debug("County fip: %s" % county_fip)
 
     os.system("mkdir -p %s" % output_dir)
-    os.system("mkdir -p temp_%s_fcc" % county_fip)
-    fcc_dir = "temp_%s_fcc" % county_fip
-    pbar.set_description("Cross matching with fcc area api")
-    os.system(
-        "python fcc_area_query.py -i %s -o %s"
-        % (os.path.join(output_dir, "%s.csv.xz" % county_fip), fcc_dir)
-    )
+    # os.system("mkdir -p temp_%s_fcc" % county_fip)
+    # Removing the fcc piece because this requires manual attention
 
-    num_geocoded = len([f for f in os.listdir(fcc_dir) if "_geocoded" in f])
-    num_needed = len([f for f in os.listdir(fcc_dir) if not "_geocoded" in f])
-
-    if num_geocoded != num_geocoded:
-        logging.info(
-            "Number of geocoded files needed does not match: (%s/%s)"
-            % (num_geocoded, num_needed)
-        )
-        return
-    else:
-        logging.info(
-            "Number of geocoded files match: (%s/%s)" % (num_geocoded, num_needed)
-        )
     pbar.set_description("Combining the csv")
     fcc_geocoded_filepath = os.path.join(output_dir, "%s_geocoded.csv.xz" % county_fip)
     os.system("python combine_csv.py -i %s -o %s -f" % (fcc_dir, fcc_geocoded_filepath))
