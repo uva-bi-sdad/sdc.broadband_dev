@@ -12,9 +12,9 @@ def main(county_fip, output_dir, pbar):
     logging.debug("County fip: %s" % county_fip)
 
     os.system("mkdir -p %s" % output_dir)
-    # os.system("mkdir -p temp_%s_fcc" % county_fip)
-    # Removing the fcc piece because this requires manual attention
-
+    os.system("mkdir -p temp_%s_fcc" % county_fip)
+    fcc_dir = "temp_%s_fcc" % county_fip
+    pbar.set_description("Cross matching with fcc area api")
     pbar.set_description("Combining the csv")
     fcc_geocoded_filepath = os.path.join(output_dir, "%s_geocoded.csv.xz" % county_fip)
     os.system("python combine_csv.py -i %s -o %s -f" % (fcc_dir, fcc_geocoded_filepath))

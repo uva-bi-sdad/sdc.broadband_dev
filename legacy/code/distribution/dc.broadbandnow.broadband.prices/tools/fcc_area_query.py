@@ -42,7 +42,6 @@ def main(input_file, output_dir, force):
     logging.debug(len(chunk_names))
     pbar = tqdm(chunk_names)
     for chunk in pbar:
-        time.sleep(15)
         save_name = "{chunk_name}_geocoded.csv".format(
             chunk_name=chunk.split(".csv")[0]
         )
@@ -52,7 +51,7 @@ def main(input_file, output_dir, force):
             save_name
         ):  # skip if already downloaded, and force flag is False
             continue
-
+        time.sleep(15)  # Wait after you check the file does not exist in the directory
         files = {
             "addressFile": open(chunk, "r"),
             "benchmark": (None, "2020"),
