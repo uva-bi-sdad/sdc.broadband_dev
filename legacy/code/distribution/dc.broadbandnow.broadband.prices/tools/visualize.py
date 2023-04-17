@@ -46,7 +46,7 @@ def main(
         legend=True,
     )  # add block outlines
     cx.add_basemap(ax, source=cx.providers.Stamen.TonerLite)
-    ax.set_title("Minimum price for 100 Mbps download for %s" % location)
+    ax.set_title("Minimum price for 100 Mbps download")
     plt.savefig(output_file)
     logging.info(
         "[%s] File export successful: %s" % (os.path.isfile(output_file), output_file)
