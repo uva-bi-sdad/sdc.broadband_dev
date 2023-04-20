@@ -3,14 +3,63 @@ import argparse
 import logging
 import pandas as pd
 import datetime
+import json
 from tqdm import tqdm
 import sys
 
 
-def main(county_fip, output_dir, pbar):
-    # Try making some temporary directories to store information
-    logging.debug("County fip: %s" % county_fip)
+def has_been_parsed(county_fip, output_dir):
+    requirements = {
+        "1) corelogic downloaded": os.path.join(output_dir, "%s.csv.xz" % county_fip),
+        "2) fcc area api cross checked": os.path.join(
+            output_dir, "%s_geocoded.csv.xz" % county_fip
+        ),
+        "3) census shape file downloaded": os.path.join(
+            output_dir, "tl_2020_%s_tabblock20.zip" % county_fip
+        ),
+        "4) fcc geocoded file cleaned": os.path.join(
+            output_dir, "%s_cleaned.csv.xz" % county_fip
+        ),
+        "5) fcc geocoded file spatial joined with census shape files": os.path.join(
+            output_dir, "%s_spatial_joined.csv.xz" % county_fip
+        ),
+        "6) broadbandnow query completed": os.path.join(
+            output_dir,
+            "%s_%s_broadband_prices.csv.xz" % (county_fip, datetime.date.today().year),
+        ),
+        "7) broadbandnow output joined spatially": os.path.join(
+            output_dir, "%s_bbn_space_joined.csv.xz" % county_fip
+        ),
+    }
 
+    success = all([os.path.isfile(k) for k in requirements])
+
+    for key in requirements:
+        requirements[key] = (os.path.isfile(requirements[key]), requirements[key])
+
+    return success, requirements
+
+
+def main(county_fip, output_dir, pba, test):
+    # Try making some temporary directories to store information
+
+    pbar.set_description("Checking county fip: %s" % county_fip)
+
+    success, req = has_been_parsed(county_fip, output_dir)
+    if success:
+        pbar.set_description("[%s] has already been parsed" % county_fip)
+        # print("[X] %s" % json.dumps(req, sort_keys=True, indent=4))
+        print(all(req[key] for key in req))
+        for key in req:
+            print("\t[%s]: %s" % (req[key], key))
+        return
+    else:
+        print(all(req[key] for key in req))
+        for key in req:
+            print("\t[%s]: %s" % (req[key], key))
+
+    if test:
+        return
     os.system("mkdir -p %s" % output_dir)
     os.system("mkdir -p temp_%s_fcc" % county_fip)
     fcc_dir = "temp_%s_fcc" % county_fip
@@ -21,6 +70,8 @@ def main(county_fip, output_dir, pbar):
     if not os.path.isfile(fcc_geocoded_filepath):
         logging.info("No combined geocoded file found")
         return
+    else:
+        logging.info("[%s] has not yet been parsed")
 
     # Download county shapefiles
     pbar.set_description("Downloading shape geometry")
@@ -158,6 +209,12 @@ if __name__ == "__main__":
         help="Show debugging outputs",
         action=argparse.BooleanOptionalAction,
     )
+    parser.add_argument(
+        "-t",
+        "--test",
+        help="Do not actually run the functions",
+        action=argparse.BooleanOptionalAction,
+    )
 
     args = parser.parse_args()
     log_level = logging.INFO
@@ -177,4 +234,5 @@ if __name__ == "__main__":
             fip,
             args.output_dir,
             pbar,
+            args.test,
         )
