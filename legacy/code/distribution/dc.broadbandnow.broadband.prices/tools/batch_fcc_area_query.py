@@ -14,6 +14,7 @@ import pathlib
 import shutil
 from glob import glob
 import os
+import time
 
 # import traceback
 
@@ -28,6 +29,7 @@ def main(input_fips, input_dir, force):
         if force:
             command += " -f"
         os.system(command)
+        time.sleep(15)
 
 
 if __name__ == "__main__":
