@@ -156,10 +156,15 @@ def main(raw_args=None):
     if not os.path.isdir(args.temp_dir):  # if temp dir is not a dir, create a dir
         os.mkdir(args.temp_dir)
 
-    for fip in args.input_county_fips:
+    for fip in tqdm(args.input_county_fips):
         output_filepath = os.path.join(args.output_dir, "%s.csv.xz" % fip)
         if not args.force:
-            assert not os.path.isfile(output_filepath)
+            # assert not os.path.isfile(output_filepath)
+            logging.info(
+                "%s already exist and no force flag. Skipping..." % output_filepath
+            )
+
+            continue
         success = run(
             fip,
             output_filepath,

@@ -41,3 +41,9 @@ list(rdf['fips'])
 remaining = ['13057', '13067', '13097', '13113', '13117', '13135', '13151', '13247']
 # 13057 13067 13097 13113 13117 13135 13151 13247
 ```
+
+## Batching Area Codes
+```python
+python core_to_fcc.py -i <fips> -o temp
+python batch_fcc_area.py -i <fips> -d temp # check the temp directory for all the fips and assume temp_<fip>_fcc/ as output directory for the geocoded files
+```
