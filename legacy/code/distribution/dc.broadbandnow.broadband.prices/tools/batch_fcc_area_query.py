@@ -22,14 +22,17 @@ import time
 def main(input_fips, input_dir, force):
     for fip in tqdm(input_fips):
         fp = os.path.join(input_dir, "%s.csv.xz" % fip)
+
         if not os.path.isfile(fp):
-            logging.info("No file found: %s" % fp)
+            logging.info("File not found: %s" % fp)
             continue
+
         command = "python fcc_area_query.py -i %s -o temp_%s_fcc/" % (fp, fip)
         if force:
             command += " -f"
         os.system(command)
-        time.sleep(15)
+        logging.info("Waiting for 15 seconds")
+        time.sleep(15)  # can try to skip if fcc already ran. But how?
 
 
 if __name__ == "__main__":
