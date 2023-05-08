@@ -44,6 +44,15 @@ remaining = ['13057', '13067', '13097', '13113', '13117', '13135', '13151', '132
 
 ## Batching Area Codes
 ```python
+# retrieve fipis code for locations
+import pandas as pd
+df = pd.read_csv('https://raw.githubusercontent.com/uva-bi-sdad/national_address_database/main/data/fips_county.csv',dtype={'fips':object})
+ga = df[df['state']=='georgia']
+list(ga['fips'])
+```
+
+
+```python
 python core_to_fcc.py -i <fips> -o temp
 python batch_fcc_area.py -i <fips> -d temp # check the temp directory for all the fips and assume temp_<fip>_fcc/ as output directory for the geocoded files
 ```

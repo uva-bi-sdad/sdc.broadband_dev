@@ -158,8 +158,7 @@ def main(raw_args=None):
 
     for fip in tqdm(args.input_county_fips):
         output_filepath = os.path.join(args.output_dir, "%s.csv.xz" % fip)
-        if not args.force:
-            # assert not os.path.isfile(output_filepath)
+        if not args.force and os.path.isfile(output_filepath):
             logging.info(
                 "%s already exist and no force flag. Skipping..." % output_filepath
             )
