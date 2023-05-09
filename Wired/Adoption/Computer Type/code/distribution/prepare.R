@@ -27,7 +27,7 @@ for(year in years)
 {
   for(geography in geographies)
   {
-    # pull educational attainment table 
+    # pull computer type table 
     vars = c("B28001_001", "B28001_011")
     
     hh_compdev_yr <- get_acs(geography = geography, variables = vars, state = c("VA", "MD", "DC"), 
@@ -118,7 +118,7 @@ ncr_hh_compdev <- hh_compdev_long %>%
 
 # save
 
-write_csv(ncr_hh_compdev, xzfile("Wired/Adoption/Households without a computer/data/distribution/ncr_cttrbg_acs_2017_2021_hh_without_compdev.csv.xz", compression = 9))
+write_csv(ncr_hh_compdev, xzfile("Wired/Adoption/Computer Type/data/distribution/ncr_cttrbg_acs_2017_2021_hh_without_compdev.csv.xz", compression = 9))
 
 
 #
@@ -132,5 +132,5 @@ va_hh_compdev <- hh_compdev_long %>%
 
 # save
 
-write_csv(va_hh_compdev, xzfile("Wired/Adoption/Households without a computer/data/distribution/va_hdcttrbg_acs_2017_2021_hh_without_compdev.csv.xz", compression = 9))
+write_csv(va_hh_compdev, xzfile("Wired/Adoption/Computer Type/data/distribution/va_hdcttrbg_acs_2017_2021_hh_without_compdev.csv.xz", compression = 9))
 
