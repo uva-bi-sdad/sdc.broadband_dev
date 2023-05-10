@@ -98,4 +98,10 @@ md_ct_2020 <- tigris::counties(state = "MD", year = 2020, cb = T)
 md_ct_2020_wgs <- st_transform(md_ct_2020, crs = 4326)
 st_write(get_db_conn(), obj = md_ct_2020_wgs, layer = c("dc_geographies", "md_acs_2020_counties"))
 
+# VA health districts
+va_hd_2020 <- st_read("https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/State%20Geographies/Health%20Districts/2020/data/distribution/va_geo_vhd_2020_health_districts.geojson")
+st_write(get_db_conn(), obj = va_hd_2020, layer = c("dc_geographies", "va_vhd_2020_health_districts"))
+
+
+
 # go to SQL
