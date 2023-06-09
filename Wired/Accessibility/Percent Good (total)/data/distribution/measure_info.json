@@ -1,6 +1,6 @@
 {
     "perc_total_25_3_using_devices": {
-        "aggregation_method": "percent"
+        "aggregation_method": "percent",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",
