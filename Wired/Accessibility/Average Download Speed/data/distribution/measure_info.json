@@ -1,6 +1,6 @@
 {
     "avg_down_using_devices": {
-        "aggregation_method": "weighted arithmetic mean"
+        "aggregation_method": "weighted arithmetic mean",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",
