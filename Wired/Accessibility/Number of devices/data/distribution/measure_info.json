@@ -1,23 +1,25 @@
 {
-    "devices":{
-        "category":"Broadband",
-        "measure_table":"dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-        "full_name":"speed_measurements:devices",
-        "short_name":"Number of devices",
-        "long_name":"Number of devices",
-        "short_description":"The number of unique devices accessing Ookla Internet speed tests.",
-        "statement":"There are {value} unique devices in {features.name} accessing Ookla Internet speed tests.",
-        "type":"count",
-        "equity_category":"Accessibility",
-        "sources":[
+    "devices": {
+        "aggregation_method": "arithmetic mean",
+        "category": "Broadband",
+        "citations": "",
+        "data_type": "decimal",
+        "equity_category": "Accessibility",
+        "layer": "",
+        "long_description": "",
+        "long_name": "Number of devices",
+        "measure_type": "count",
+        "short_description": "The number of unique devices accessing Ookla Internet speed tests.",
+        "short_name": "Number of devices",
+        "sources": [
             {
-                "name":"Ookla",
-                "date_accessed":                2021,
-                "url":"https://www.ookla.com/ookla-for-good/open-data"
+                "name": "Ookla",
+                "date_accessed": 2021,
+                "url": "https://www.ookla.com/ookla-for-good/open-data"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
+        "statement": "There are {value} unique devices in {features.name} accessing Ookla Internet speed tests.",
+        "type": "count",
+        "unit": "devices"
     }
 }
