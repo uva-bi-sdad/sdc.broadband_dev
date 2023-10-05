@@ -11,6 +11,11 @@ import pathlib
 
 def combine_csv(input_dir):
     dfs = []
+
+    # return None if no csvs in the directory
+    if len([f for f in os.listdir(input_dir) if pathlib.Path(f).suffix == ".csv"]) <= 0:
+        return None
+
     for file in tqdm(os.listdir(input_dir)):
         suffix = pathlib.Path(file).suffix
         # print(suffix)

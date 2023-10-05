@@ -11,8 +11,16 @@ def clean_geocoded_csv(df, state, county):
     expected_columns = ["state", "county", "longitude", "latitude", "address"]
     cdf = pd.DataFrame(columns=expected_columns)
 
-    assert "street" in df.columns, "street missing in (%s,%s)" % (state, county)
-    assert "coordinate" in df.columns, "coordinate missing in (%s,%s)" % (state, county)
+    assert "street" in df.columns, "street missing in (%s,%s): %s" % (
+        state,
+        county,
+        df.columns,
+    )
+    assert "coordinate" in df.columns, "coordinate missing in (%s,%s): %s" % (
+        state,
+        county,
+        df.columns,
+    )
 
     df = df[["street", "coordinate"]].dropna()  # get only matches and remove empty rows
     cdf["address"] = df["street"].apply(lambda x: x.lower())
@@ -54,15 +62,23 @@ def main():
             continue
 
         print(f)
-        # print(f[:7])
         county_fip = f.split("_")[1]
-        export_filepath = "%s_geocoded.csv.xz" % county_fip
         logging.info(county_fip)
-        df = combine_csv(f)
         state, county = get_state_county_prefix(county_fip)
         prefix = "%s_%s" % (state, county)
-        cdf = clean_geocoded_csv(df, state, county)
         export_filepath = os.path.join(export_dir, "%s.csv.xz" % prefix)
+
+        if os.path.isfile(export_filepath):  # skip if already generated
+            logging.info("Export file already found: %s" % export_filepath)
+            continue
+
+        df = combine_csv(f)
+
+        if df is None or df.empty:
+            logging.info("No combined csv returned")
+            continue
+        cdf = clean_geocoded_csv(df, state, county)
+
         cdf.to_csv(
             export_filepath,
             index=False,
