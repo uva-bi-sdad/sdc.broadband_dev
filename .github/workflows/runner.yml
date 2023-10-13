@@ -36,7 +36,10 @@ jobs:
           pip install -r sdc.editor/code/requirements.txt
       - name: Edit the repository
         run: |
-          for f in sdc.editor/code/edit_*.py; do python "$f" -i .; done   
+          python sdc.editor/code/repo-edit_00_generate_csv_links.py
+          python sdc.editor/code/repo-edit_01_add_measure_info_keys.py
+          python sdc.editor/code/repo-edit_02_delete_measure_info_keys.py
+          python sdc.editor/code/repo-edit_03_order_csv_columns.py
       - name: Remove editor files
         run: |
           rm -rf sdc.editor
