@@ -1,6 +1,0 @@
-speed,down_up,price,name,type,address,success
-5000 Mbps,Download,180,AT&T Fiber,Internet 5000,"120, Christie Avenue, Clifton, Passaic County, New Jersey, 07011, United States",True
-5000 Mbps,Upload,180,AT&T Fiber,Internet 5000,"120, Christie Avenue, Clifton, Passaic County, New Jersey, 07011, United States",True
-1200 Mbps,Download,149.99,Xfinity,Super+ More,"120, Christie Avenue, Clifton, Passaic County, New Jersey, 07011, United States",True
-940 Mbps,Download,70,CenturyLink Fiber Gigabit,,"120, Christie Avenue, Clifton, Passaic County, New Jersey, 07011, United States",True
-940 Mbps,Upload,70,CenturyLink Fiber Gigabit,,"120, Christie Avenue, Clifton, Passaic County, New Jersey, 07011, United States",True
