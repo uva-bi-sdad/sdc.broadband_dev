@@ -6,6 +6,12 @@ on:
   pull_request:
     branches:
     - main
+
+# Cacnel previous runs if a new push is sent
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+    
 jobs:
   update_private_repo:
     if: github.repository == 'uva-bi-sdad/sdc.broadband_dev' && ((github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == 'true') || github.event_name == 'push')
