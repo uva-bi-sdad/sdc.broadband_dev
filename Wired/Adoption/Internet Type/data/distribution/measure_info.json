@@ -7,10 +7,10 @@
         "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Percentage of households self-reported to have a broadband internet connection. Broadband internet is defined as any type of internet other than a dial-up. Based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates.",
+        "long_description": "Percentage of households self-reported to have a broadband internet connection. Broadband internet is defined as any type of internet other than a dial-up. Data is based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates. Geographies: County (5), Block group (12), Census Tract (11), Health District (51_hd)",
         "long_name": "Percentage of households with broadband",
         "measure_type": "percent",
-        "short_description": "Percentage of households self-reported to have a broadband internet connection (any type of internet other than a dial-up)",
+        "short_description": "Percentage of households self-reported to have a broadband internet connection. Broadband internet is defined as any type of internet other than a dial-up. Data is based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates. Geographies: County (5), Block group (12), Census Tract (11), Health District (51_hd)",
         "short_name": "Households with broadband",
         "sources": [
             {
