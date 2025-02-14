@@ -8,7 +8,7 @@ on:
     - main
 jobs:
   update_private_repo:
-    if: github.repository == 'uva-bi-sdad/sdc.food_dev' && ((github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == 'true') || github.event_name == 'push')        
+    if: github.repository == 'uva-bi-sdad/sdc.broadband_dev' && ((github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == 'true') || github.event_name == 'push')        
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
@@ -85,6 +85,6 @@ jobs:
         with:
           source-directory: .
           destination-github-username: 'uva-bi-sdad'
-          destination-repository-name: 'sdc.food'
+          destination-repository-name: 'sdc.broadband'
           target-branch: main
       - run: echo "🍏 This job's status is ${{ job.status }}."
